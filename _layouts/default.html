@@ -1,41 +1,50 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="{{ site.lang | default: " en-US" }}">
 
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% seo %}
+        <link rel="stylesheet" href="{{ "
+            /assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+        <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    {% include head-custom.html %}
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}" style="color:rgb(75, 4, 4); font-weight: bold;">{{ site.title | default: site.github.repository_name }}</a></h1>
+        {% include head-custom.html %}
+    </head>
 
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1><a href="{{ " /" | absolute_url }}"
+                        style="color:rgb(75, 4, 4); font-weight: bold;">{{ site.title | default: site.github.repository_name }}</a>
+                </h1>
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+                {% if site.logo %}
+                <img src="{{site.logo | relative_url}}" alt="Logo" />
+                {% endif %}
 
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}" style="color:rgb(107, 16, 16); font-weight: bold;">Peržiūrėti projekto GitHub repozitoriją <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
+                <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        <p class="view"><a href="https://www.linkedin.com/in/daniele-stasiunaite-r04/" style="color:rgb(107, 16, 16); font-weight: bold;">Danielė Stasiūnaitė</a></p>        
-      </header>
-      <section>
+                {% if site.github.is_project_page %}
+                <p class="view"><a href="{{ site.github.repository_url }}"
+                        style="color:rgb(107, 16, 16); font-weight: bold;">Peržiūrėti projekto GitHub repozitoriją
+                        <small>{{ site.github.repository_nwo }}</small></a></p>
+                {% endif %}
 
-      {{ content }}
+                <p class="view"><a href="https://www.linkedin.com/in/daniele-stasiunaite-r04/"
+                        style="color:rgb(107, 16, 16); font-weight: bold;">Danielė Stasiūnaitė</a></p>
+            </header>
+            <section>
 
-      </section>
+                {{ content }}
 
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-  </body>
+            </section>
+
+        </div>
+        <script src="{{ " /assets/js/scale.fix.js" | relative_url }}"></script>
+    </body>
+
 </html>
