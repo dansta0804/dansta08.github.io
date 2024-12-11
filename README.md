@@ -16,13 +16,17 @@
 <b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.
 </p>
 
+<p style="text-align:left;color:rgb(14, 1, 1)">
+    <b>Raktažodžiai:</b> savarankiška tapatybė, tapatybės valdymas, pseudonimizavimas.
+</p>
+
 <p style="color:rgb(14, 1, 1);font-weight:bold">EN:</p>
 <p style="text-align:justify;color:rgb(14, 1, 1)">
 <b>Work objective</b>: to develop an identity management system based on the self-sovereign identity model, utilizing pseudonyms that identify individuals without revealing private information about them.
 </p>
 
 <p style="text-align:left;color:rgb(14, 1, 1)">
-    <b>Raktažodžiai:</b> self-sovereign identity, identity management, pseudonymization.
+    <b>Key words:</b> self-sovereign identity, identity management, pseudonymization.
 </p>
 
 # Projekto įgyvendinimo etapai
@@ -39,26 +43,23 @@ onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='r
 
 <a href="#iii-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">3. III semestras</a>
-    - First nested list item
-        - Second nested list item
+   - First nested list item
+     - Second nested list item
 
 <a href="#iv-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">4. IV semestras</a>
-    - First nested list item
-        - Second nested list item
+   - First nested list item
+     - Second nested list item
 
 # I semestras
-<p style="text-align:justify;color:rgb(14, 1, 1)">
-APRAŠYMAS</p>
+## 
+<p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
 
 # II semestras
-<p style="text-align:justify;color:rgb(14, 1, 1)">
-APRAŠYMAS</p>
+<p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
 
 # III semestras
-<p style="text-align:justify;color:rgb(14, 1, 1)">
-APRAŠYMAS</p>
+<p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
 
 # IV semestras
-<p style="text-align:justify;color:rgb(14, 1, 1)">
-APRAŠYMAS</p>
+<p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
