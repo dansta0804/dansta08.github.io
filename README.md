@@ -37,10 +37,10 @@
 
 <a href="#i-semestras-T000M241" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">1. I semestras (T000M241)</a>
-   - <a href="#projekto informacijos tvarkymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+   - <a href="#projekto-informacijos-tvarkymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
    onmouseout="this.style.color='rgb(14, 1, 1)';">IS: projekto saugykla, informacijos tvarkymas;</a>
-   - <a href="#projektavimo-metodologijos-ir-technologiju-analize" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+   - <a href="#projektavimo-metodologijos-ir-technologijų-analizė" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
    onmouseout="this.style.color='rgb(14, 1, 1)';">Projektavimo metodologijos ir technologijų analizė;</a>
    - <a href="#aprasymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
