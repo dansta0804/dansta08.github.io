@@ -36,22 +36,16 @@
 # Projekto įgyvendinimo etapai
 
 <a href="#i-semestras-(t000m241)" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
-onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">1. I semestras</a>
+onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">1. I semestras (T000M241)</a>
+   - First nested list item
+
+<a href="#ii-semestras-(t000m242)" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">2. II semestras (T000M242)</a>
    - First nested list item
      - Second nested list item
 
-<a href="#ii-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
-onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">2. II semestras</a>
-   - First nested list item
-     - Second nested list item
-
-<a href="#iii-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
-onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">3. III semestras</a>
-   - First nested list item
-     - Second nested list item
-
-<a href="#iv-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
-onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">4. IV semestras</a>
+<a href="#iii-semestras-(t000m250)" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">3. III semestras (T000M250)</a>
    - First nested list item
      - Second nested list item
 
@@ -63,11 +57,11 @@ onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='r
 
 ---
 
-# II semestras
+# II semestras (T000M242)
 <p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
 
 ---
 
-# III semestras
+# III semestras (T000M250)
 <p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
 
