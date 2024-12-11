@@ -19,8 +19,6 @@
 
 # Projekto įgyvendinimo etapai
 
-<p style="text-align:justify;color:rgb(14, 1, 1)">
-
 1. [I semestras](#i-semestras)
    - First nested list item
      - Second nested list item
@@ -29,19 +27,26 @@
    - First nested list item
      - Second nested list item
 
-3. III semestras
+3. [III semestras](#iii-semestras)
     - First nested list item
         - Second nested list item
 
-4. IV semestras
+4. [IV semestras](#iv-semestras)
     - First nested list item
         - Second nested list item
-</p>
 
 # I semestras
 <p style="text-align:justify;color:rgb(14, 1, 1)">
 APRAŠYMAS</p>
 
 # II semestras
+<p style="text-align:justify;color:rgb(14, 1, 1)">
+APRAŠYMAS</p>
+
+# III semestras
+<p style="text-align:justify;color:rgb(14, 1, 1)">
+APRAŠYMAS</p>
+
+# IV semestras
 <p style="text-align:justify;color:rgb(14, 1, 1)">
 APRAŠYMAS</p>
