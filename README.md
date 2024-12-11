@@ -43,10 +43,10 @@ onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='r
    - <a href="#projektavimo-metodologijos-ir-technologijų-analizė" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
    onmouseout="this.style.color='rgb(14, 1, 1)';">Projektavimo metodologijos ir technologijų analizė;</a>
-   - <a href="#aprasymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+   - <a href="#projekto-paraiška" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
    onmouseout="this.style.color='rgb(14, 1, 1)';">IS: projekto saugykla, informacijos tvarkymas;</a>
-   - <a href="#aprasymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+   - <a href="#projektavimo-planas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
    onmouseout="this.style.color='rgb(14, 1, 1)';">IS: projekto saugykla, informacijos tvarkymas;</a>
 
@@ -65,18 +65,31 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 # I semestras (T000M241)
 ## Projekto informacijos tvarkymas
 <div style="text-align:justify;color:rgb(14, 1, 1)">
-    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b> 2024-10-15.</p>
+    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2024-10-15</b>.</p>
     <p><b style="color:rgb(139, 32, 32)">Tikslas:</b> Saugoti dokumentų failus, programų kodus ir kitą informaciją apie magistrinį projektą 2 metus.</p>
     <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Sukurti privačią failų saugyklą ir (struktūrizuotą, prisitaikančią prie įrenginio ir ekrano dydžio) projekto svetainę, apsaugotą slaptažodžiu.</p>
 </div>
 
 ## Projektavimo metodologijos ir technologijų analizė
 <div style="text-align:justify;color:rgb(14, 1, 1)">
-    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b> 2024-11-13.</p>
+    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2024-11-13</b>.</p>
     <p><b style="color:rgb(139, 32, 32)">Tikslas:</b> Surasti reikiamą magistrinio projekto vykdymo procesui informaciją, ją analizuoti ir parengti baigiamojo darbo dalį.</p>
     <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Atlikti mokslinių darbų ir pasiekimų taikomoje srityje bei technologijos analizę.</p>
 </div>
 
+## Projekto paraiška
+<div style="text-align:justify;color:rgb(14, 1, 1)">
+    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2024-11-13</b>.</p>
+    <p><b style="color:rgb(139, 32, 32)">Tikslas:</b> Surasti reikiamą magistrinio projekto vykdymo procesui informaciją, ją analizuoti ir parengti baigiamojo darbo dalį.</p>
+    <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Atlikti mokslinių darbų ir pasiekimų taikomoje srityje bei technologijos analizę.</p>
+</div>
+
+## Projektavimo planas
+<div style="text-align:justify;color:rgb(14, 1, 1)">
+    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2024-12-11</b>.</p>
+    <p><b style="color:rgb(139, 32, 32)">Tikslas:</b> Rengti projektų ar verslo pasiūlymus, formuluojant ir pagrindžiant mokslines ir taikomąsias problemas, tikslus ir uždavinius, sudarant jų darbo planus ir pateikiant bei pristatant išvadas apie gautus rezultatus.</p>
+    <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Parengti magistrinio projekto paraišką.</p>
+</div>
 ---
 
 # II semestras (T000M242)
