@@ -35,34 +35,36 @@
 
 # Projekto įgyvendinimo etapai
 
-<a href="#i-semestras-(t000m241)" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+<a href="#i-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">1. I semestras (T000M241)</a>
-   - <a href="#aprasymas" style="sublists">IS: projekto saugykla, informacijos tvarkymas;</a>
+   - <a href="#aprasymas">IS: projekto saugykla, informacijos tvarkymas;</a>
 
 
-<a href="#ii-semestras-(t000m242)" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+<a href="#ii-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">2. II semestras (T000M242)</a>
    - First nested list item
      - Second nested list item
 
-<a href="#iii-semestras-(t000m250)" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+<a href="#iii-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">3. III semestras (T000M250)</a>
    - First nested list item
      - Second nested list item
 
 ---
 
-# I semestras (T000M241)
+# I semestras
 ## Aprasymas
 <p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
 
+
+(T000M241)
 ---
 
-# II semestras (T000M242)
+# II semestras
 <p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
-
+(T000M242)
 ---
 
-# III semestras (T000M250)
+# III semestras
 <p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
-
+(T000M250)
