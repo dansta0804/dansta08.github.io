@@ -21,7 +21,7 @@ Temos esmė - ištyrinėti egizistuojančius tapatybės valdymo modelius, ypatin
 
 # Projekto įgyvendinimo etapai
 
-1. AAAA [I semestras] (#i-semestras)
+1. AAAA [I semestras](#i-semestras)
    - First nested list item
      - Second nested list item
 
