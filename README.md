@@ -52,7 +52,7 @@ onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='r
      - Second nested list item
 
 # I semestras
-## 
+## Aprašymas
 <p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
 
 # II semestras
