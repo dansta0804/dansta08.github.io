@@ -1,9 +1,12 @@
 # Apie
 
 <p>
-    <div style="font-weight:bold; font-size:large">Autorė:</div> Danielė Stasiūnaitė
+    <div style="font-weight:bold; font-size:large">Autorė:</div><div style="font-size:medium">Danielė Stasiūnaitė</div>
 </p>
 
+<p>
+    <div style="font-weight:bold; font-size:large">Darbo vadovas:</div><div style="font-size:medium">Mindaugas Vasiljevas</div>
+</p>
 <p style="font-weight:bold">Darbo vadovas:</p> Mindaugas Vasiljevas
 Čia parašau kas yra autorius, koks darbo vadovas, kas užsakovas.
 
