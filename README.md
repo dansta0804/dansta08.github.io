@@ -10,8 +10,16 @@
 
 # Anotacija
 
+<p style="color:rgb(14, 1, 1);font-weight:bold">LT:</p>
+
 <p style="text-align:justify;color:rgb(14, 1, 1)">
-<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.</p>
+<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.
+</p>
+
+<p style="color:rgb(14, 1, 1);font-weight:bold">EN:</p>
+<p style="text-align:justify;color:rgb(14, 1, 1)">
+<b>Work objective</b>: to develop an identity management system based on the self-sovereign identity model, utilizing pseudonyms that identify individuals without revealing private information about them.
+</p>
 
 <p style="text-align:left;color:rgb(14, 1, 1)">
     <b>Raktažodžiai:</b> self-sovereign identity, identity management, pseudonymization.
