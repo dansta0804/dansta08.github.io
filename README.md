@@ -37,7 +37,7 @@
 
 <a href="#i-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">1. I semestras (T000M241)</a>
-   - <a href="#is:-projekto-saugykla,-informacijos tvarkymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+   - <a href="#is:-projekto-saugykla,-informacijos-tvarkymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
    onmouseout="this.style.color='rgb(14, 1, 1)';">IS: projekto saugykla, informacijos tvarkymas;</a>
    - <a href="#aprasymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
