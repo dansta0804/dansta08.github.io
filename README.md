@@ -19,20 +19,23 @@
 
 # Projekto įgyvendinimo etapai
 
-<a href="#i-semestras" style="color:rgb(14, 1, 1);font-weight:bold;" onmouseover="this.style.color='red'; this.style.textDecoration='underline';" 
-   onmouseout="this.style.color='rgb(14, 1, 1)'; this.style.textDecoration='none';">1. I semestras</a>
+<a href="#i-semestras" style="color:rgb(14, 1, 1);font-weight:bold;"
+onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">1. I semestras</a>
    - First nested list item
      - Second nested list item
 
-<a href="#ii-semestras" style="color:rgb(14, 1, 1);font-weight:bold;">2. II semestras</a>
+<a href="#ii-semestras" style="color:rgb(14, 1, 1);font-weight:bold;"
+onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">2. II semestras</a>
    - First nested list item
      - Second nested list item
 
-<a href="#iii-semestras" style="color:rgb(14, 1, 1);font-weight:bold;">3. III semestras</a>
+<a href="#iii-semestras" style="color:rgb(14, 1, 1);font-weight:bold;"
+onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">3. III semestras</a>
     - First nested list item
         - Second nested list item
 
-<a href="#iv-semestras" style="color:rgb(14, 1, 1);font-weight:bold;">4. IV semestras</a>
+<a href="#iv-semestras" style="color:rgb(14, 1, 1);font-weight:bold;"
+onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">4. IV semestras</a>
     - First nested list item
         - Second nested list item
 
