@@ -11,13 +11,15 @@
 # Anotacija
 
 <p style="text-align:justify;color:rgb(14, 1, 1)">
-<b>Darbo tikslas:</b> - ištyrinėti egizistuojančius tapatybės valdymo modelius, ypatingą dėmesį skiriant savarankiškai taptybei (Self-sovereign Identity), pasiūlyti savarankiškos taptybės modelį, kuris būtų grįstas pseudonimais – identifikuojančiais, tačiau privačios informacijos apie asmenį neaskleidžiančiais, atributais. Šio modelio pagrindu reikės sukurti sistemos prototipą. Esminis kuriamo prototipo pranašumas - galimybė identifkuotas įvairiose sistemose neaskleidžiant asmens duomenų. Tai leistų vartotojams saugoti savo privatumą internete.</p>
+<b>Darbo tikslas:</b> ištyrinėti egizistuojančius tapatybės valdymo modelius, ypatingą dėmesį skiriant savarankiškai taptybei (Self-sovereign Identity), pasiūlyti savarankiškos taptybės modelį, kuris būtų grįstas pseudonimais – identifikuojančiais, tačiau privačios informacijos apie asmenį neaskleidžiančiais, atributais. Šio modelio pagrindu reikės sukurti sistemos prototipą. Esminis kuriamo prototipo pranašumas - galimybė identifkuotas įvairiose sistemose neaskleidžiant asmens duomenų. Tai leistų vartotojams saugoti savo privatumą internete.</p>
 
 <p style="text-align:justify;color:rgb(14, 1, 1)">
     <b>Raktažodžiai:</b> self-sovereign identity, identity management, pseudonymization.
 </p>
 
 # Projekto įgyvendinimo etapai
+
+<p style="text-align:justify;color:rgb(14, 1, 1)">
 
 1. [I semestras](#i-semestras)
    - First nested list item
@@ -34,6 +36,7 @@
 4. IV semestras
     - First nested list item
         - Second nested list item
+</p>
 
 # I semestras
 <p style="text-align:justify;color:rgb(14, 1, 1)">
