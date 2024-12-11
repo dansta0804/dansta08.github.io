@@ -37,8 +37,10 @@
 
 <a href="#i-semestras-(t000m241)" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">1. I semestras (T000M241)</a>
-   <a href="#i-semestras-(t000m241)" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
-onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">- First nested list item</a>
+<div style="color:red">
+   - First nested list item
+</div>
+
 
 <a href="#ii-semestras-(t000m242)" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">2. II semestras (T000M242)</a>
