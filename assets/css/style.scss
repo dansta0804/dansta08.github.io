@@ -18,16 +18,14 @@ header {
   }
 }
 
-
 ul {
-  list-style-type: none;
+  list-style-type: none; /* Removes default list bullet */
   padding-left: 0;
 }
 
 ul li {
-  display: inline;
-  margin-right: 15px;
-  background-color: lightyellow; /* Background color for each item */
+  display: inline-block; /* Makes the list items appear inline */
+  margin-right: 10px; /* Add space between inline items */
 }
 
 ul ul li {
@@ -36,15 +34,6 @@ ul ul li {
 }
 
 ul ul ul li {
-  color: green;
-  font-size: 12px;
-}
-
-ul li::after {
-  content: "|"; /* Add a custom separator */
-  margin-left: 10px;
-}
-
-ul li:last-child::after {
-  content: ""; /* Remove the separator for the last item */
+  color: red;
+  font-style: italic;
 }
