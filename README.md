@@ -19,7 +19,7 @@
 
 # Projekto įgyvendinimo etapai
 
-1. [I semestras](#i-semestras)
+1. <a href="#i-semestras" style="color: red; text-decoration: underline; font-weight: bold;">I semestras</a>
    - First nested list item
      - Second nested list item
 
@@ -36,13 +36,6 @@
         - Second nested list item
 
 
-### Example Section
-
-Here is a [styled link](#target-section) using HTML:
-
-<a href="#target-section" style="color: red; text-decoration: underline; font-weight: bold;">Styled Section Link</a>
-
-### Target Section
 
 This is the target section.
 
