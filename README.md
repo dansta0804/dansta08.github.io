@@ -1,11 +1,13 @@
 # Apie
 
 <p>
-    <div style="font-weight:bold;font-size:large;color:rgb(22, 4, 4)">Autorė:</div><div style="font-size:medium">Danielė Stasiūnaitė</div>
+    <div style="font-weight:bold;font-size:large;color:rgb(22, 4, 4)">Autorė:</div>
+    <div style="font-size:medium;color:rgb(14, 1, 1)">Danielė Stasiūnaitė</div>
 </p>
 
 <p>
-    <div style="font-weight:bold;font-size:large;color:rgb(22, 4, 4)">Darbo vadovas:</div><div style="font-size:medium">Mindaugas Vasiljevas</div>
+    <div style="font-weight:bold;font-size:large;color:rgb(22, 4, 4)">Darbo vadovas:</div>
+    <div style="font-size:medium;color:rgb(14, 1, 1)">Mindaugas Vasiljevas</div>
 </p>
 <p style="font-weight:bold">Darbo vadovas:</p> Mindaugas Vasiljevas
 Čia parašau kas yra autorius, koks darbo vadovas, kas užsakovas.
@@ -19,7 +21,18 @@ Temos esmė - ištyrinėti egizistuojančius tapatybės valdymo modelius, ypatin
 
 # Projekto įgyvendinimo etapai
 
-1. First list item
+1. I semestras
    - First nested list item
      - Second nested list item
 
+2. II semestras
+   - First nested list item
+     - Second nested list item
+
+3. III semestras
+    - First nested list item
+        - Second nested list item
+
+4. IV semestras
+    - First nested list item
+        - Second nested list item
