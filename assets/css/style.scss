@@ -17,3 +17,34 @@ header {
     text-align: left;
   }
 }
+
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  display: inline;
+  margin-right: 15px;
+  background-color: lightyellow; /* Background color for each item */
+}
+
+ul ul li {
+  color: blue;
+  font-weight: bold;
+}
+
+ul ul ul li {
+  color: green;
+  font-size: 12px;
+}
+
+ul li::after {
+  content: "|"; /* Add a custom separator */
+  margin-left: 10px;
+}
+
+ul li:last-child::after {
+  content: ""; /* Remove the separator for the last item */
+}
