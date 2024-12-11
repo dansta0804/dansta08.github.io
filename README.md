@@ -71,7 +71,3 @@ onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='r
 # III semestras
 <p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
 
----
-
-# IV semestras
-<p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
