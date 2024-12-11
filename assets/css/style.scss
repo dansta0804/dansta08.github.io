@@ -19,21 +19,13 @@ header {
 }
 
 ul {
-  list-style-type: none; /* Removes default list bullet */
-  padding-left: 0;
+  color:red;
 }
 
 ul li {
-  display: inline-block; /* Makes the list items appear inline */
-  margin-right: 10px; /* Add space between inline items */
+  color:blue;
 }
 
 ul ul li {
-  color: blue;
-  font-weight: bold;
-}
-
-ul ul ul li {
-  color: red;
-  font-style: italic;
+  color: green;
 }
