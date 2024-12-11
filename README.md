@@ -10,34 +10,30 @@
 
 # Anotacija
 
-<p style="text-align:left;color:rgb(14, 1, 1)">
+<p style="text-align:justify;color:rgb(14, 1, 1)">
 <b>Darbo tikslas:</b> ištyrinėti egizistuojančius tapatybės valdymo modelius, ypatingą dėmesį skiriant savarankiškai taptybei (Self-sovereign Identity), pasiūlyti savarankiškos taptybės modelį, kuris būtų grįstas pseudonimais – identifikuojančiais, tačiau privačios informacijos apie asmenį neaskleidžiančiais, atributais. Šio modelio pagrindu reikės sukurti sistemos prototipą. Esminis kuriamo prototipo pranašumas - galimybė identifkuotas įvairiose sistemose neaskleidžiant asmens duomenų. Tai leistų vartotojams saugoti savo privatumą internete.</p>
 
-<p style="text-align:justify;color:rgb(14, 1, 1)">
+<p style="text-align:left;color:rgb(14, 1, 1)">
     <b>Raktažodžiai:</b> self-sovereign identity, identity management, pseudonymization.
 </p>
 
 # Projekto įgyvendinimo etapai
 
-1. <a href="#i-semestras" style="color: red; text-decoration: underline; font-weight: bold;">I semestras</a>
+<a href="#i-semestras" style="color:rgb(14, 1, 1);font-weight:bold;">1. I semestras</a>
    - First nested list item
      - Second nested list item
 
-2. [II semestras](#ii-semestras)
+<a href="#ii-semestras" style="color:rgb(14, 1, 1);font-weight:bold;">2. II semestras</a>
    - First nested list item
      - Second nested list item
 
-3. [III semestras](#iii-semestras)
+<a href="#iii-semestras" style="color:rgb(14, 1, 1);font-weight:bold;">3. III semestras</a>
     - First nested list item
         - Second nested list item
 
-4. [IV semestras](#iv-semestras)
+<a href="#iv-semestras" style="color:rgb(14, 1, 1);font-weight:bold;">4. IV semestras</a>
     - First nested list item
         - Second nested list item
-
-
-
-This is the target section.
 
 # I semestras
 <p style="text-align:justify;color:rgb(14, 1, 1)">
