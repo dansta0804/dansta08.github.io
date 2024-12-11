@@ -37,7 +37,7 @@
 
 <a href="#i-semestras-T000M241" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">1. I semestras (T000M241)</a>
-   - <a href="#is-projekto-saugykla-informacijos-tvarkymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+   - <a href="#projekto informacijos tvarkymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
    onmouseout="this.style.color='rgb(14, 1, 1)';">IS: projekto saugykla, informacijos tvarkymas;</a>
    - <a href="#projektavimo-metodologijos-ir-technologiju-analize" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
@@ -63,18 +63,20 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 ---
 
 # I semestras (T000M241)
-## IS: projekto saugykla, informacijos tvarkymas
+## Projekto informacijos tvarkymas
 <div style="text-align:justify;color:rgb(14, 1, 1)">
-<p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b> 2024-10-15.</p>
-<p><b style="color:rgb(139, 32, 32)">Tikslas:</b> Saugoti dokumentų failus, programų kodus ir kitą informaciją apie magistrinį projektą 2 metus.</p>
-<p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Sukurti privačią failų saugyklą ir (struktūrizuotą, prisitaikančią prie įrenginio ir ekrano dydžio) projekto svetainę, apsaugotą slaptažodžiu.</p>
+    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b> 2024-10-15.</p>
+    <p><b style="color:rgb(139, 32, 32)">Tikslas:</b> Saugoti dokumentų failus, programų kodus ir kitą informaciją apie magistrinį projektą 2 metus.</p>
+    <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Sukurti privačią failų saugyklą ir (struktūrizuotą, prisitaikančią prie įrenginio ir ekrano dydžio) projekto svetainę, apsaugotą slaptažodžiu.</p>
 </div>
 
-
 ## Projektavimo metodologijos ir technologijų analizė
-<p style="text-align:justify;color:rgb(14, 1, 1)">
-<b>Darbo tikslas:</b> sukurti t<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįsnkiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remnkiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.apatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.
-</p>
+<div style="text-align:justify;color:rgb(14, 1, 1)">
+    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b> 2024-11-13.</p>
+    <p><b style="color:rgb(139, 32, 32)">Tikslas:</b> Surasti reikiamą magistrinio projekto vykdymo procesui informaciją, ją analizuoti ir parengti baigiamojo darbo dalį.</p>
+    <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Atlikti mokslinių darbų ir pasiekimų taikomoje srityje bei technologijos analizę.</p>
+</div>
+
 ---
 
 # II semestras (T000M242)
