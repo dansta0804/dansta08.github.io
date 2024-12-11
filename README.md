@@ -37,6 +37,15 @@
 
 <a href="#i-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">1. I semestras (T000M241)</a>
+   - <a href="#is:-projekto-saugykla,-informacijos tvarkymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+   onmouseover="this.style.color='rgb(124, 7, 7)';"
+   onmouseout="this.style.color='rgb(14, 1, 1)';">IS: projekto saugykla, informacijos tvarkymas;</a>
+   - <a href="#aprasymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+   onmouseover="this.style.color='rgb(124, 7, 7)';"
+   onmouseout="this.style.color='rgb(14, 1, 1)';">IS: projekto saugykla, informacijos tvarkymas;</a>
+   - <a href="#aprasymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+   onmouseover="this.style.color='rgb(124, 7, 7)';"
+   onmouseout="this.style.color='rgb(14, 1, 1)';">IS: projekto saugykla, informacijos tvarkymas;</a>
    - <a href="#aprasymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
    onmouseout="this.style.color='rgb(14, 1, 1)';">IS: projekto saugykla, informacijos tvarkymas;</a>
@@ -54,7 +63,7 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 ---
 
 # I semestras
-## Aprasymas2
+## IS: projekto saugykla, informacijos tvarkymas
 <p style="text-align:justify;color:rgb(14, 1, 1)">
 <b>Darbo tikslas:</b> sukurti t<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.apatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.
 </p>
