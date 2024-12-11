@@ -17,6 +17,8 @@ Temos esmė - ištyrinėti egizistuojančius tapatybės valdymo modelius, ypatin
 
 **Raktažodžiai:** self-sovereign identity, identity management, pseudonymization.
 
+# I semestras
+
 # Projekto įgyvendinimo etapai
 
 1. [I semestras] (i-semestras)
@@ -36,4 +38,3 @@ Temos esmė - ištyrinėti egizistuojančius tapatybės valdymo modelius, ypatin
         - Second nested list item
 
 
-# I semestras
