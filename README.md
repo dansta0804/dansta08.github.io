@@ -1,5 +1,3 @@
-# Apie
-
 <p>
     <div style="font-weight:bold;font-size:large;color:rgb(22, 4, 4)">Autorė:</div>
     <div style="font-size:medium;color:rgb(14, 1, 1)">Danielė Stasiūnaitė</div>
@@ -13,9 +11,9 @@
 # Anotacija
 
 <p style="text-align:justify;color:rgb(14, 1, 1)">
-Temos esmė - ištyrinėti egizistuojančius tapatybės valdymo modelius, ypatingą dėmesį skiriant savarankiškai taptybei (Self-sovereign Identity), pasiūlyti savarankiškos taptybės modelį, kuris būtų grįstas pseudonimais – identifikuojančiais, tačiau privačios informacijos apie asmenį neaskleidžiančiais, atributais. Šio modelio pagrindu reikės sukurti sistemos prototipą. Esminis kuriamo prototipo pranašumas - galimybė identifkuotas įvairiose sistemose neaskleidžiant asmens duomenų. Tai leistų vartotojams saugoti savo privatumą internete.</p>
+<b>Darbo tikslas:</b> - ištyrinėti egizistuojančius tapatybės valdymo modelius, ypatingą dėmesį skiriant savarankiškai taptybei (Self-sovereign Identity), pasiūlyti savarankiškos taptybės modelį, kuris būtų grįstas pseudonimais – identifikuojančiais, tačiau privačios informacijos apie asmenį neaskleidžiančiais, atributais. Šio modelio pagrindu reikės sukurti sistemos prototipą. Esminis kuriamo prototipo pranašumas - galimybė identifkuotas įvairiose sistemose neaskleidžiant asmens duomenų. Tai leistų vartotojams saugoti savo privatumą internete.</p>
 
-**Raktažodžiai:** self-sovereign identity, identity management, pseudonymization.
+<p style="text-align:justify;color:rgb(14, 1, 1)"><b>Raktažodžiai:</b></p> self-sovereign identity, identity management, pseudonymization.
 
 # Projekto įgyvendinimo etapai
 
