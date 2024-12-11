@@ -52,11 +52,11 @@ onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='r
 
 <a href="#ii-semestras-T000M242" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='rgb(14, 1, 1)';">2. II semestras (T000M242)</a>
-   - First nested list item
+   - ...
 
 <a href="#iii-semestras-T000M250" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='rgb(14, 1, 1)';">3. III semestras (T000M250)</a>
-   - First nested list item
+   - ...
 
 ---
 
@@ -69,6 +69,7 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 </div>
 
 [Į pradžią](#)
+
 ---
 
 ## Projektavimo metodologijos ir technologijų analizė
@@ -105,10 +106,10 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 ---
 
 # II semestras (T000M242)
-<p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
+<p style="text-align:justify;color:rgb(14, 1, 1)">...</p>
 
 ---
 
 # III semestras (T000M250)
-<p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
+<p style="text-align:justify;color:rgb(14, 1, 1)">...</p>
 
