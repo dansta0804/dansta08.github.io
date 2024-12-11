@@ -11,7 +11,7 @@
 # Anotacija
 
 <p style="text-align:justify;color:rgb(14, 1, 1)">
-<b>Darbo tikslas:</b> ištyrinėti egizistuojančius tapatybės valdymo modelius, ypatingą dėmesį skiriant savarankiškai taptybei (Self-sovereign Identity), pasiūlyti savarankiškos taptybės modelį, kuris būtų grįstas pseudonimais – identifikuojančiais, tačiau privačios informacijos apie asmenį neaskleidžiančiais, atributais. Šio modelio pagrindu reikės sukurti sistemos prototipą. Esminis kuriamo prototipo pranašumas - galimybė identifkuotas įvairiose sistemose neaskleidžiant asmens duomenų. Tai leistų vartotojams saugoti savo privatumą internete.</p>
+<b>Darbo tikslas:</b> sukurti tapatybės valdymo sistemą, kuri remtųsi savarankiškos tapatybės (angl. self-sovereign identity) modeliu, grįstu pseudonimais, kurie identifikuoja, tačiau neatskleidžia privačios informacijos apie asmenį.</p>
 
 <p style="text-align:left;color:rgb(14, 1, 1)">
     <b>Raktažodžiai:</b> self-sovereign identity, identity management, pseudonymization.
