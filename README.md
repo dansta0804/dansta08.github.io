@@ -39,26 +39,24 @@
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">1. I semestras (T000M241)</a>
    - <a href="#projekto-informacijos-tvarkymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
-   onmouseout="this.style.color='rgb(14, 1, 1)';">IS: projekto saugykla, informacijos tvarkymas;</a>
+   onmouseout="this.style.color='rgb(14, 1, 1)';">Projekto informacijos tvarkymas;</a>
    - <a href="#projektavimo-metodologijos-ir-technologijų-analizė" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
    onmouseout="this.style.color='rgb(14, 1, 1)';">Projektavimo metodologijos ir technologijų analizė;</a>
    - <a href="#projekto-paraiška" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
-   onmouseout="this.style.color='rgb(14, 1, 1)';">IS: projekto saugykla, informacijos tvarkymas;</a>
+   onmouseout="this.style.color='rgb(14, 1, 1)';">Projekto paraiška;</a>
    - <a href="#projektavimo-planas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
-   onmouseout="this.style.color='rgb(14, 1, 1)';">IS: projekto saugykla, informacijos tvarkymas;</a>
+   onmouseout="this.style.color='rgb(14, 1, 1)';">Projektavimo planas.</a>
 
 <a href="#ii-semestras-T000M242" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='rgb(14, 1, 1)';">2. II semestras (T000M242)</a>
    - First nested list item
-     - Second nested list item
 
 <a href="#iii-semestras-T000M250" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='rgb(14, 1, 1)';">3. III semestras (T000M250)</a>
    - First nested list item
-     - Second nested list item
 
 ---
 
