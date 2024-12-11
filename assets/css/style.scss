@@ -18,20 +18,12 @@ header {
   }
 }
 
-ul {
-  color:red;
-}
-
 ul li {
   color:rgb(48, 4, 4);
   font-size:medium;
 }
 
-ul ul li {
-  color: green;
-}
-
-ul:hover {
-  color:rgb(121, 11, 11);
-  font-size:medium;
+ul li:hover {
+  color: rgb(124, 7, 7);
+  cursor: pointer;
 }

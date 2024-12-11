@@ -37,7 +37,7 @@
 
 <a href="#i-semestras-(t000m241)" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">1. I semestras (T000M241)</a>
-   - First nested list item
+   - IS: projekto saugykla, informacijos tvarkymas
 
 
 <a href="#ii-semestras-(t000m242)" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
