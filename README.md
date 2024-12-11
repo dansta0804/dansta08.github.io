@@ -37,16 +37,17 @@
 
 <a href="#i-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">1. I semestras (T000M241)</a>
-   - <a href="#aprasymas">IS: projekto saugykla, informacijos tvarkymas;</a>
+   - <a href="#aprasymas" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='rgb(14, 1, 1)';">IS: projekto saugykla, informacijos tvarkymas;</a>
 
 
 <a href="#ii-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
-onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">2. II semestras (T000M242)</a>
+onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='rgb(14, 1, 1)';">2. II semestras (T000M242)</a>
    - First nested list item
      - Second nested list item
 
 <a href="#iii-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
-onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">3. III semestras (T000M250)</a>
+onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='rgb(14, 1, 1)';">3. III semestras (T000M250)</a>
    - First nested list item
      - Second nested list item
 
