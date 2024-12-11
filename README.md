@@ -8,6 +8,8 @@
     <div style="font-size:medium;color:rgb(14, 1, 1)">Doc. Mindaugas Vasiljevas</div>
 </p>
 
+---
+
 # Anotacija
 
 <p style="color:rgb(14, 1, 1);font-weight:bold">LT:</p>
@@ -28,6 +30,8 @@
 <p style="text-align:left;color:rgb(14, 1, 1)">
     <b>Key words:</b> self-sovereign identity, identity management, pseudonymization.
 </p>
+
+---
 
 # Projekto įgyvendinimo etapai
 
@@ -55,11 +59,17 @@ onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='r
 ## Aprašymas
 <p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
 
+---
+
 # II semestras
 <p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
 
+---
+
 # III semestras
 <p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
+
+---
 
 # IV semestras
 <p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
