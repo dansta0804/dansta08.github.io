@@ -1,3 +1,14 @@
+<style>
+  .hover-link {
+    color: blue;
+    text-decoration: none;
+  }
+  .hover-link:hover {
+    color: red;
+    text-decoration: underline;
+  }
+</style>
+
 <p>
     <div style="font-weight:bold;font-size:large;color:rgb(22, 4, 4)">Autorė:</div>
     <div style="font-size:medium;color:rgb(14, 1, 1)">Danielė Stasiūnaitė</div>
@@ -19,8 +30,7 @@
 
 # Projekto įgyvendinimo etapai
 
-<a href="#i-semestras" style="color:rgb(14, 1, 1);font-weight:bold;"onmouseover="this.style.color='red'; this.style.textDecoration='underline';" 
-   onmouseout="this.style.color='blue'; this.style.textDecoration='none';">1. I semestras</a>
+<a href="#i-semestras" style="color:rgb(14, 1, 1);font-weight:bold;" class="hover-link" >1. I semestras</a>
    - First nested list item
      - Second nested list item
 
