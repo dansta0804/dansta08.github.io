@@ -5,7 +5,7 @@
 
 <p>
     <div style="font-weight:bold;font-size:large;color:rgb(22, 4, 4)">Darbo vadovas:</div>
-    <div style="font-size:medium;color:rgb(14, 1, 1)">Mindaugas Vasiljevas</div>
+    <div style="font-size:medium;color:rgb(14, 1, 1)">Doc. Mindaugas Vasiljevas</div>
 </p>
 
 # Anotacija
@@ -19,7 +19,8 @@
 
 # Projekto įgyvendinimo etapai
 
-<a href="#i-semestras" style="color:rgb(14, 1, 1);font-weight:bold;">1. I semestras</a>
+<a href="#i-semestras" style="color:rgb(14, 1, 1);font-weight:bold;"onmouseover="this.style.color='red'; this.style.textDecoration='underline';" 
+   onmouseout="this.style.color='blue'; this.style.textDecoration='none';">1. I semestras</a>
    - First nested list item
      - Second nested list item
 
