@@ -35,6 +35,17 @@
     - First nested list item
         - Second nested list item
 
+
+### Example Section
+
+Here is a [styled link](#target-section) using HTML:
+
+<a href="#target-section" style="color: red; text-decoration: underline; font-weight: bold;">Styled Section Link</a>
+
+### Target Section
+
+This is the target section.
+
 # I semestras
 <p style="text-align:justify;color:rgb(14, 1, 1)">
 APRAŠYMAS</p>
