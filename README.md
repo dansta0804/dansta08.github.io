@@ -35,7 +35,7 @@
 
 # Projekto įgyvendinimo etapai
 
-<a href="#i-semestras" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
+<a href="#i-semestras-(t000m241)" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='rgb(14, 1, 1)';">1. I semestras</a>
    - First nested list item
      - Second nested list item
@@ -57,7 +57,7 @@ onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='r
 
 ---
 
-# I semestras
+# I semestras (T000M241)
 ## Aprašymas
 <p style="text-align:justify;color:rgb(14, 1, 1)">APRAŠYMAS</p>
 
