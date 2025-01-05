@@ -80,6 +80,7 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
     
 </div>
 
+[View PDF](/PDFs/Danielė_Stasiūnaitė_Literatūros_analizė.pdf)
 <embed src="/PDFs/Danielė_Stasiūnaitė_Literatūros_analizė.pdf" width="100%" height="600px" type="application/pdf">
 
 [Į pradžią](#)
@@ -122,3 +123,4 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 ### Informacijos šaltiniai
 <p style="text-align:justify;color:rgb(14, 1, 1)">...</p>
 
+[Į pradžią](#)
