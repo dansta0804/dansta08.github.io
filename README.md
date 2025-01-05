@@ -123,7 +123,7 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 
 ### Informacijos šaltiniai
 <a href="PDFs/Literatūros_sąrašas.pdf"
-    style="color:rgb(66, 3, 3);font-size:medium;background-color:rgb(252, 167, 167);padding:100px;font-weight:bold"
+    style="color:rgb(66, 3, 3);font-size:medium;background-color:rgb(253, 213, 213);width:150px;border-radius:5px;padding-top:10px;padding-bottom:10px;font-weight:bold"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
    onmouseout="this.style.color='rgb(14, 1, 1)';">Peržiūrėti literatūros sąrašą >> </a>
 
