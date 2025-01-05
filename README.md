@@ -78,8 +78,8 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
     <p><b style="color:rgb(139, 32, 32)">Tikslas:</b> Surasti reikiamą magistrinio projekto vykdymo procesui informaciją, ją analizuoti ir parengti baigiamojo darbo dalį.</p>
     <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Atlikti mokslinių darbų ir pasiekimų taikomoje srityje bei technologijos analizę.</p>
    <p><a href="PDFs/Danielė_Stasiūnaitė_Literatūros_analizė.pdf"
-    style="color:rgb(66, 3, 3);font-size:medium;background-color:rgb(247, 201, 163);width:800px;border-radius:15px;padding-top:10px;padding-bottom:10px;padding-left:5px;padding-right:5px;font-weight:bold;font-style:italic;border: 1px solid rgb(247, 168, 103);"
-   onmouseover="this.style.color='rgb(124, 7, 7)';this.style.fontSize = '18px'"
+    style="color:rgb(66, 3, 3);font-size:16px;background-color:rgb(243, 218, 198);border-radius:10px;padding-top:8px;padding-bottom:8px;padding-left:5px;padding-right:5px;font-weight:bold;font-style:italic;border: 1px solid rgb(245, 189, 143);"
+   onmouseover="this.style.color='rgb(124, 7, 7)';this.style.fontSize = '17px'"
    onmouseout="this.style.color='rgb(14, 1, 1)';;this.style.fontSize = '16px'">Peržiūrėti literatūros analizės dokumentą >></a></p>
 </div>
 
@@ -124,10 +124,10 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 
 ### Informacijos šaltiniai
 <div style="text-align:justify;color:rgb(14, 1, 1)">
-    <p>Paspaudus ant žemiau esančios nuorodos pateikiamas naudotos literatūros sąrašas:<p>
+    <p>Paspaudus ant žemiau esančios nuorodos pateikiamas naudotos literatūros sąrašas:</p>
     <p><a href="PDFs/Literatūros_sąrašas.pdf"
-    style="color:rgb(66, 3, 3);font-size:medium;background-color:rgb(247, 201, 163);width:800px;border-radius:15px;padding-top:10px;padding-bottom:10px;padding-left:5px;padding-right:5px;font-weight:bold;font-style:italic;border: 1px solid rgb(247, 168, 103);"
-   onmouseover="this.style.color='rgb(124, 7, 7)';this.style.fontSize = '18px'"
+    style="color:rgb(66, 3, 3);font-size:16px;background-color:rgb(247, 201, 163);width:800px;border-radius:15px;padding-top:10px;padding-bottom:10px;padding-left:5px;padding-right:5px;font-weight:bold;font-style:italic;border: 1px solid rgb(247, 168, 103);"
+   onmouseover="this.style.color='rgb(124, 7, 7)';this.style.fontSize = '17px'"
    onmouseout="this.style.color='rgb(14, 1, 1)';;this.style.fontSize = '16px'">Peržiūrėti literatūros sąrašą >> </a></p>
 </div>
 
