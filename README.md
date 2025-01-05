@@ -77,12 +77,12 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
     <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2024-11-13</b>.</p>
     <p><b style="color:rgb(139, 32, 32)">Tikslas:</b> Surasti reikiamą magistrinio projekto vykdymo procesui informaciją, ją analizuoti ir parengti baigiamojo darbo dalį.</p>
     <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Atlikti mokslinių darbų ir pasiekimų taikomoje srityje bei technologijos analizę.</p>
-    <h1>PDF Display</h1>
-    <embed src="/PDFs/Danielė_Stasiūnaitė_Literatūros_analizė.pdf" width="100%" height="600px" type="application/pdf">
 </div>
 
-[View PDF](/PDFs/Danielė_Stasiūnaitė_Literatūros_analizė.pdf)
-
+<a href="PDFs/Danielė_Stasiūnaitė_Literatūros_analizė.pdf"
+    style="color:rgb(66, 3, 3);font-size:medium;background-color:rgb(252, 167, 167);padding:100px;font-weight:bold"
+   onmouseover="this.style.color='rgb(124, 7, 7)';"
+   onmouseout="this.style.color='rgb(14, 1, 1)';">Peržiūrėti literatūros analizės dokumentą >> </a>
 
 [Į pradžią](#)
 
@@ -122,6 +122,9 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 ---
 
 ### Informacijos šaltiniai
-<p style="text-align:justify;color:rgb(14, 1, 1)">...</p>
+<a href="PDFs/Literatūros_sąrašas.pdf"
+    style="color:rgb(66, 3, 3);font-size:medium;background-color:rgb(252, 167, 167);padding:100px;font-weight:bold"
+   onmouseover="this.style.color='rgb(124, 7, 7)';"
+   onmouseout="this.style.color='rgb(14, 1, 1)';">Peržiūrėti literatūros sąrašą >> </a>
 
 [Į pradžią](#)
