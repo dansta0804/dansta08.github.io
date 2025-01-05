@@ -114,3 +114,9 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 # III semestras (T000M250)
 <p style="text-align:justify;color:rgb(14, 1, 1)">...</p>
 
+
+---
+
+### Informacijos šaltiniai
+<p style="text-align:justify;color:rgb(14, 1, 1)">...</p>
+
