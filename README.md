@@ -77,14 +77,12 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
     <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2024-11-13</b>.</p>
     <p><b style="color:rgb(139, 32, 32)">Tikslas:</b> Surasti reikiamą magistrinio projekto vykdymo procesui informaciją, ją analizuoti ir parengti baigiamojo darbo dalį.</p>
     <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Atlikti mokslinių darbų ir pasiekimų taikomoje srityje bei technologijos analizę.</p>
-    <br><br>
+    <br>
    <p><a href="PDFs/Danielė_Stasiūnaitė_Literatūros_analizė.pdf"
     style="color:rgb(61, 61, 61);font-size:14px;background-color:rgb(255, 239, 223);border-radius:8px;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;font-weight:bold;font-style:italic;border: 1px solid rgb(250, 215, 187);"
-   onmouseover="this.style.color='rgb(124, 7, 7)';this.style.fontSize='14.3px';this.style.backgroundColor='rgb(228, 184, 184)'"
-   onmouseout="this.style.color='rgb(61, 61, 61)';this.style.fontSize='14px';this.style.backgroundColor='rgb(255, 239, 223)'">Peržiūrėti literatūros analizės dokumentą >></a></p>
+   onmouseover="this.style.color='rgb(124, 7, 7)';this.style.backgroundColor='rgb(228, 184, 184)'"
+   onmouseout="this.style.color='rgb(61, 61, 61)';this.style.backgroundColor='rgb(255, 239, 223)'">Peržiūrėti literatūros analizės dokumentą >></a></p>
 </div>
-
-
 
 [Į pradžią](#)
 
