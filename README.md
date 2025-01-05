@@ -76,8 +76,8 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 <div style="text-align:justify;color:rgb(14, 1, 1)">
     <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2024-11-13</b>.</p>
     <p><b style="color:rgb(139, 32, 32)">Tikslas:</b> Surasti reikiamą magistrinio projekto vykdymo procesui informaciją, ją analizuoti ir parengti baigiamojo darbo dalį.</p>
-    <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Atlikti mokslinių darbų ir pasiekimų taikomoje srityje bei technologijos analizę.</p>
-    <a href="/PDFs/Danielė_Stasiūnaitė_Literatūros_analizė.pdf" class="image fit"></a>
+    <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Atlikti mokslinių darbų ir pasiekimų taikomoje srityje bei technologijos analizę.<a href="/PDFs/Danielė_Stasiūnaitė_Literatūros_analizė.pdf" class="image fit"></a></p>
+    
 </div>
 
 [Į pradžią](#)
