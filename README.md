@@ -123,9 +123,13 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 ---
 
 ### Informacijos šaltiniai
-<a href="PDFs/Literatūros_sąrašas.pdf"
-    style="color:rgb(66, 3, 3);font-size:medium;background-color:rgb(248, 164, 96);width:400px;border-radius:15px;padding-top:10px;padding-bottom:10px;padding-left:5px;padding-right:5px;font-weight:bold;text-decoration:italic"
+<div style="text-align:justify;color:rgb(14, 1, 1)">
+    <p>Paspaudus ant žemiau pateiktos nuorodos parodomas naudotos literatūros sąrašas:<p>
+    <a href="PDFs/Literatūros_sąrašas.pdf"
+    style="color:rgb(66, 3, 3);font-size:medium;background-color:rgb(247, 201, 163);width:800px;border-radius:15px;padding-top:10px;padding-bottom:10px;padding-left:5px;padding-right:5px;font-weight:bold;text-decoration:italic"
    onmouseover="this.style.color='rgb(124, 7, 7)';this.style.fontSize = '18px'"
-   onmouseout="this.style.color='rgb(14, 1, 1)';">Peržiūrėti literatūros sąrašą >> </a>
+   onmouseout="this.style.color='rgb(14, 1, 1)';;this.style.fontSize = '16px'">Peržiūrėti literatūros sąrašą >> </a>
+</div>
+
 
 [Į pradžią](#)
