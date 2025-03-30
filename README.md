@@ -52,7 +52,9 @@ onmouseover="this.style.color='rgb(139, 9, 9)';" onmouseout="this.style.color='r
 
 <a href="#ii-semestras-T000M242" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='rgb(14, 1, 1)';">2. II semestras (T000M242)</a>
-   - ...
+   - <a href="#reikalavimų-specifikavimas" style="color:rgb(14, 1, 1);font-size:medium"
+   onmouseover="this.style.color='rgb(124, 7, 7)';"
+   onmouseout="this.style.color='rgb(14, 1, 1)';">Reikalavimų specifikavimas;</a>
 
 <a href="#iii-semestras-T000M250" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='rgb(14, 1, 1)';">3. III semestras (T000M250)</a>
@@ -119,7 +121,18 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 ---
 
 # II semestras (T000M242)
-<p style="text-align:justify;color:rgb(14, 1, 1)">...</p>
+## Reikalavimų specifikavimas
+<div style="text-align:justify;color:rgb(14, 1, 1)">
+    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2025-03-14</b>.</p>
+    <p><b style="color:rgb(139, 32, 32)">Tikslas įgyti gebėjimus:</b> planuoti laiką, pasirinkti efektyvius darbo būdus.</p>
+    <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Parengti magistrinio projekto reikalavimų specifikacijos dokumentą.</p>
+    <p><a href="PDFs/Reikalavimų_specifikacija.pdf"
+    style="color:rgb(61, 61, 61);font-size:13px;background-color:rgb(185, 216, 233);border-radius:8px;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;font-weight:bold;font-style:italic;border: 1px solid rgb(106, 164, 196);"
+   onmouseover="this.style.color='rgb(124, 7, 7)';this.style.backgroundColor='rgb(240, 204, 204)'"
+   onmouseout="this.style.color='rgb(61, 61, 61)';this.style.backgroundColor='rgb(185, 216, 233)'">Peržiūrėti reikalavimų speficikaciją >></a></p>
+</div>
+
+[Į pradžią](#)
 
 ---
 
