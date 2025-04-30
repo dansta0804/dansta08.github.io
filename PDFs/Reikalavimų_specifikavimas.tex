@@ -33,6 +33,11 @@
 \usepackage[table]{xcolor}
 \definecolor{newGray}{rgb}{0.878, 0.878, 0.878}
 \usepackage{longtable}
+\usepackage{enumitem}
+\definecolor{deepchampagne}{rgb}{0.98, 0.84, 0.65}
+\definecolor{dartmouthgreen}{rgb}{0.09, 0.45, 0.27}
+\definecolor{deepcarmine}{rgb}{0.66, 0.13, 0.24}
+\usepackage{makecell}
 
 \newcommand{\EE}{\mathbb{E}\,}
 \newcommand{\ee}{{\mathrm e}}
@@ -147,16 +152,16 @@ Darbo vadovo kontaktiniai duomenys:
     \caption{\small\textbf{Panaudojimo atvejo specifikacija Nr.2.}}
     \begin{tabular}{|m{6cm}|m{11cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Mobilusis telefonas:} &
+        \raggedleft \textbf{\cellcolor{deepchampagne}Mobilusis telefonas:} &
         +37066428763. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}El. pašto adresas} &
+        \raggedleft \textbf{\cellcolor{deepchampagne}El. pašto adresas} &
         mindaugas.vasiljevas@ktu.lt. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Adresas} & 
+        \raggedleft \textbf{\cellcolor{deepchampagne}Adresas} & 
         XI rūmai 3C2b korpusas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Informacijos galima teirautis}
+        \raggedleft \textbf{\cellcolor{deepchampagne}Informacijos galima teirautis}
         & I - V; 10:00 - 17:00. \\
         \hline
     \end{tabular}
@@ -297,25 +302,504 @@ Veiklos konteksto diagramos () srautų apibūdinimas:
 \subsection{Sistemos ribos} % (pateikiama konteksto diagrama)
 
 \subsection{Panaudojimo atvejų sąrašas}
-\begin{enumerate}
-    \item Užsiregistruoti sistemoje skirtingų kategorijų naudotojams
-    (pacientams, gydytojams - genetikams, tyrėjams).
-    \item Įkelti biologinius duomenis.
-    \item Valdyti prieigą prie asmeninių biologinių duomenų.
-    \item Pateikti prašymą „būti pamirštam“.
-    \item Išsiųsti užklausą analizės atlikimui.
-    \item Sukurti paciento analizės kortelę.
-    \item Peržiūrėti pacientų analizių atlikimo būseną.
-    \item Atlikti biologinių duomenų analizę. % Kokios bus šios analizės?
-    \item Pateikti analizės rezultatus.
-\end{enumerate}
+Žemiau yra pateiktas panaudojimo atvejų sąrašas, kuris turi būti realizuotas
+savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistemoje.
 
+\begin{enumerate}[itemsep=0.5pt]
+    \item[\textbf{PA1:}] \hypertarget{PA1}{Užsiregistruoti sistemoje skirtingų
+    kategorijų naudotojams (pacientams, gydytojams - genetikams, tyrėjams).}
+    \item[\textbf{PA2:}] \hypertarget{PA2}{Įkelti biologinius duomenis.}
+    \item[\textbf{PA3:}] \hypertarget{PA3}{Valdyti prieigą prie asmeninių
+    biologinių duomenų.}
+    \item[\textbf{PA4:}] \hypertarget{PA4}{Pateikti prašymą „būti pamirštam“.}
+    \item[\textbf{PA5:}] \hypertarget{PA5}{Išsiųsti užklausą analizės atlikimui.}
+    \item[\textbf{PA6:}] \hypertarget{PA6}{Sukurti paciento analizės kortelę.}
+    \item[\textbf{PA7:}] \hypertarget{PA7}{Peržiūrėti pacientų analizių atlikimo
+    būseną.}
+    \item[\textbf{PA8:}] \hypertarget{PA8}{Atlikti biologinių duomenų analizę.}
+    % Kokios bus šios analizės?
+    \item[\textbf{PA9:}] \hypertarget{PA9}{Pateikti analizės rezultatus.}
+\end{enumerate}
+% \hyperlink{PA5}{item PA1} Taip yra kuriama nuoroda į konkretų PA.
 \newpage
 
 \section{Funkciniai reikalavimai ir reikalavimai duomenims}
 \subsection{Funkciniai reikalavimai}
 
-\subsection{Reikalavimai duomenims} % E-R diagrama arba klasių diagrama
+\noindent \hyperlink{PA1}{\textbf{PA1:} Užsiregistruoti sistemoje skirtingų
+kategorijų naudotojams.}
+\label{sec:FR1}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.9cm}|m{11cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/uždavinys} &
+        Valdyti asmeninius duomenimis ir naudotis sistemoje realizuotu
+        funkcionalumu, priklausomai nuo naudotojo kategorijos. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} &
+        Realizavus šį panaudojimo atvejį skirtingos naudotojų grupės sistemoje
+        gali atlikti skirtingus veiksmus: pacientai gali įkelti savo biologinius
+        duomenis ir valdyti kitų asmenų prieigą prie šių duomenų; gydytojai -
+        genetikai gali kurti pacientų analizių korteles, bet ir įkelti pacientų
+        biologinius duomenis, teikti užklausas tyrėjams dėl biologinių duomenų
+        analizės atlikimo, peržiūrėti analizių atlikimo statusą; tyrėjai gali
+        vykdyti biologinių duomenų analizes ir teikti jų rezultatus gydytojams -
+        genetikams. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} &
+        5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} &
+        5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aktorius} &
+        Pacientas, gydytojas - genetikas, tyrėjas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prieš - sąlyga} &
+        Sistemos naudotojas turi būti atsidaręs pradinį sistemos langą. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Sužadinimo sąlyga} &
+        Sistemos naudotojas atsidaro sistemos langą, kuriame pateikta
+        asmeninės paskyros kūrimo - registracijos - forma. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindinis
+        scenarijus\footnote{Čia ir toliau \textcolor{dartmouthgreen}{žalia}
+        spalva pažymėti naudotojo veiksmai, \textcolor{deepcarmine}{raudona} -
+        sistemos veiksmai.}} & \vskip 5pt
+        \makecell[l]{\parbox[t]{10.5cm}{
+            \textbf{1.} \textcolor{dartmouthgreen}{Naudotojas užpildo pateiktos
+            asmeninės paskyros kūrimo formos laukus.} \\
+            \textbf{2.} \textcolor{dartmouthgreen}{Naudotojas išsaugo įvestą
+            informaciją, paspausdamas išsaugojimo mygtuką.} \\
+            \textbf{3.} \textcolor{deepcarmine}{Parodomas informacinis
+            pranešimas, informuojantis apie sėkmingai sukurtą asmeninę
+            paskyrą.} \\
+            \textbf{4.} \textcolor{deepcarmine}{Sistema prijungia naudotoją
+            prie jo asmeninės paskyros.} \\
+            \textbf{5.} \textcolor{deepcarmine}{Sistema atidaro naudotojo
+            asmeninės paskyros langą.} \\
+            \textbf{6. Baigiamas PA.}
+        }}
+        \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Po - sąlyga} &
+        Duomenų bazėje sukuiamas naujas sistemos naudotojas, galintis
+        prisijungti prie sistemos ir, pagal naudotojo kategoriją, naudotis
+        sistemos funkcionalumu. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Alternatyvūs scenarijai} &
+        \vskip 5pt
+        \makecell[l]{\parbox[t]{10.5cm}{
+            \textbf{1.} \textcolor{dartmouthgreen}{Naudotojas užpildo pateiktos
+            asmeninės paskyros kūrimo formos laukus.} \\
+            \textbf{2.} \textcolor{dartmouthgreen}{Naudotojas išsaugo įvestą
+            informaciją, paspausdamas išsaugojimo mygtuką.} \\
+            \textbf{3.} \textcolor{deepcarmine}{Parodomas informacinis
+            pranešimas, informuojantis apie sėkmingai sukurtą asmeninę
+            paskyrą.} \\
+            \textbf{4.} \textcolor{deepcarmine}{Sistema prijungia naudotoją
+            prie jo asmeninės paskyros.} \\
+            \textbf{5.} \textcolor{deepcarmine}{Sistema atidaro naudotojo
+            asmeninės paskyros langą.} \\
+            \textbf{6. Baigiamas PA.}
+        }}
+        \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\noindent \hyperlink{PA2}{\textbf{PA2:} Įkelti biologinius duomenis.}
+\label{sec:FR2}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.9cm}|m{11cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/uždavinys} &
+        Sisteminiuose languose neturi būti realizuoti iššokantys modaliniai
+        langeliai, kuriuose reikia pasirinkti, ar tikrai norima išsaugoti
+        įvestus duomenis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & 
+        Užpildžius duomenų įvedimo formas ir išsaugojus duomenis nepasirodo
+        iššokantis modalinis langelis su pranešimu apie reikalingą duomenų
+        įvedimo patvirtinimą - duomenys yra išsaugomi be papildomo naudotojo
+        veiksmo. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} &
+        1. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} &
+        3. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prieš - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aktorius} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Sužadinimo sąlyga} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindinis scenarijus} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Po - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Alternatyvūs scenarijai} &
+        Vidutinis. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\noindent \hyperlink{PA3}{\textbf{PA3:} Valdyti prieigą prie asmeninių
+biologinių duomenų.}
+\label{sec:FR3}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.9cm}|m{11cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/uždavinys} &
+        Sisteminiuose languose neturi būti realizuoti iššokantys modaliniai
+        langeliai, kuriuose reikia pasirinkti, ar tikrai norima išsaugoti
+        įvestus duomenis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & 
+        Užpildžius duomenų įvedimo formas ir išsaugojus duomenis nepasirodo
+        iššokantis modalinis langelis su pranešimu apie reikalingą duomenų
+        įvedimo patvirtinimą - duomenys yra išsaugomi be papildomo naudotojo
+        veiksmo. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} &
+        1. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} &
+        3. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prieš - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aktorius} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Sužadinimo sąlyga} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindinis scenarijus} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Po - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Alternatyvūs scenarijai} &
+        Vidutinis. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\noindent \hyperlink{PA4}{\textbf{PA4:} Pateikti prašymą „būti pamirštam“.}
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.9cm}|m{11cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/uždavinys} &
+        Sisteminiuose languose neturi būti realizuoti iššokantys modaliniai
+        langeliai, kuriuose reikia pasirinkti, ar tikrai norima išsaugoti
+        įvestus duomenis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & 
+        Užpildžius duomenų įvedimo formas ir išsaugojus duomenis nepasirodo
+        iššokantis modalinis langelis su pranešimu apie reikalingą duomenų
+        įvedimo patvirtinimą - duomenys yra išsaugomi be papildomo naudotojo
+        veiksmo. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} &
+        1. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} &
+        3. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prieš - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aktorius} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Sužadinimo sąlyga} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindinis scenarijus} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Po - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Alternatyvūs scenarijai} &
+        Vidutinis. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\noindent \hyperlink{PA5}{\textbf{PA5:} Išsiųsti užklausą analizės atlikimui.}
+\label{sec:FR5}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.9cm}|m{11cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/uždavinys} &
+        Sisteminiuose languose neturi būti realizuoti iššokantys modaliniai
+        langeliai, kuriuose reikia pasirinkti, ar tikrai norima išsaugoti
+        įvestus duomenis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & 
+        Užpildžius duomenų įvedimo formas ir išsaugojus duomenis nepasirodo
+        iššokantis modalinis langelis su pranešimu apie reikalingą duomenų
+        įvedimo patvirtinimą - duomenys yra išsaugomi be papildomo naudotojo
+        veiksmo. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} &
+        1. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} &
+        3. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prieš - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aktorius} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Sužadinimo sąlyga} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindinis scenarijus} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Po - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Alternatyvūs scenarijai} &
+        Vidutinis. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\noindent \hyperlink{PA6}{\textbf{PA6:} Sukurti paciento analizės kortelę.}
+\label{sec:FR6}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.9cm}|m{11cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/uždavinys} &
+        Sisteminiuose languose neturi būti realizuoti iššokantys modaliniai
+        langeliai, kuriuose reikia pasirinkti, ar tikrai norima išsaugoti
+        įvestus duomenis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & 
+        Užpildžius duomenų įvedimo formas ir išsaugojus duomenis nepasirodo
+        iššokantis modalinis langelis su pranešimu apie reikalingą duomenų
+        įvedimo patvirtinimą - duomenys yra išsaugomi be papildomo naudotojo
+        veiksmo. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} &
+        1. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} &
+        3. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prieš - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aktorius} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Sužadinimo sąlyga} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindinis scenarijus} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Po - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Alternatyvūs scenarijai} &
+        Vidutinis. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\noindent \hyperlink{PA7}{\textbf{PA7:} Peržiūrėti pacientų analizių atlikimo
+būseną.}
+\label{sec:FR7}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.9cm}|m{11cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/uždavinys} &
+        Sisteminiuose languose neturi būti realizuoti iššokantys modaliniai
+        langeliai, kuriuose reikia pasirinkti, ar tikrai norima išsaugoti
+        įvestus duomenis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & 
+        Užpildžius duomenų įvedimo formas ir išsaugojus duomenis nepasirodo
+        iššokantis modalinis langelis su pranešimu apie reikalingą duomenų
+        įvedimo patvirtinimą - duomenys yra išsaugomi be papildomo naudotojo
+        veiksmo. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} &
+        1. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} &
+        3. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prieš - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aktorius} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Sužadinimo sąlyga} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindinis scenarijus} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Po - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Alternatyvūs scenarijai} &
+        Vidutinis. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\noindent \hyperlink{PA8}{\textbf{PA8:} Atlikti biologinių duomenų analizę.}
+\label{sec:FR8}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.9cm}|m{11cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/uždavinys} &
+        Sisteminiuose languose neturi būti realizuoti iššokantys modaliniai
+        langeliai, kuriuose reikia pasirinkti, ar tikrai norima išsaugoti
+        įvestus duomenis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & 
+        Užpildžius duomenų įvedimo formas ir išsaugojus duomenis nepasirodo
+        iššokantis modalinis langelis su pranešimu apie reikalingą duomenų
+        įvedimo patvirtinimą - duomenys yra išsaugomi be papildomo naudotojo
+        veiksmo. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} &
+        1. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} &
+        3. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prieš - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aktorius} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Sužadinimo sąlyga} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindinis scenarijus} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Po - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Alternatyvūs scenarijai} &
+        Vidutinis. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\noindent \hyperlink{PA9}{\textbf{PA9:} Pateikti analizės rezultatus.}
+\label{sec:FR9}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.9cm}|m{11cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/uždavinys} &
+        Sisteminiuose languose neturi būti realizuoti iššokantys modaliniai
+        langeliai, kuriuose reikia pasirinkti, ar tikrai norima išsaugoti
+        įvestus duomenis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & 
+        Užpildžius duomenų įvedimo formas ir išsaugojus duomenis nepasirodo
+        iššokantis modalinis langelis su pranešimu apie reikalingą duomenų
+        įvedimo patvirtinimą - duomenys yra išsaugomi be papildomo naudotojo
+        veiksmo. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} &
+        1. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} &
+        3. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prieš - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aktorius} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Sužadinimo sąlyga} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindinis scenarijus} &
+        Nėra. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Po - sąlyga} &
+        Vidutinis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Alternatyvūs scenarijai} &
+        Vidutinis. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\subsection{Reikalavimai duomenims}
 
 \newpage
 
@@ -329,26 +813,26 @@ turi būti laikomąsi šių sistemos išvaizdos reikalavimų:
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.9cm}|m{11cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Pagrindimas} &
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
         Sisteminiuose languose neturi būti realizuoti iššokantys modaliniai
         langeliai, kuriuose reikia pasirinkti, ar tikrai norima išsaugoti
         įvestus duomenis. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Šaltinis} & Užsakovas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Atitikimo kriterijus} & 
+        \raggedleft \textbf{\cellcolor{deepchampagne}Atitikimo kriterijus} & 
         Užpildžius duomenų įvedimo formas ir išsaugojus duomenis nepasirodo
         iššokantis modalinis langelis su pranešimu apie reikalingą duomenų
         įvedimo patvirtinimą - duomenys yra išsaugomi be papildomo naudotojo
         veiksmo. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo tenkinimas} & 1. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} & 1. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo netenkinimas} & 3. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} & 3. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Prioritetas} & Vidutinis. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Vidutinis. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Konfliktai} & Nėra. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Konfliktai} & Nėra. \\
         \hline
     \end{tabular}
 \end{table}
@@ -360,28 +844,28 @@ turi būti laikomąsi šių sistemos išvaizdos reikalavimų:
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.9cm}|m{11cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Pagrindimas} &
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
         Sistema gali naudotis įvairaus amžiaus asmenys (sistemos svečiai,
         registruoti naudotojai: gydytojai - genetikai, tyrėjai), kurie dėl savo
         amžiaus gali turėti regėjimo sutrikimų, todėl sistemoje turi būti galima
         keisti langų mastelį, neišdarkant sistemos langus sudarančių elementų
         išdėstymo ir nepakenkiant naudotojo naudojimo sistema patirčiai. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Šaltinis} & Užsakovas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Atitikimo kriterijus} & 
+        \raggedleft \textbf{\cellcolor{deepchampagne}Atitikimo kriterijus} & 
         Sistemos naudotojai, pakeitę mastelį, gali ir toliau sėkmingai naudotis
         sistemos funkcionalumu ir matyti sistemos langus sudarančius elementus
         (nesukeliant naudotojų susierzinimo) dėl sistemos gebėjimo prisitaikyti
         prie keičiamo mastelio. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo tenkinimas} & 1. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} & 1. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo netenkinimas} & 3. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} & 3. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Prioritetas} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Aukštas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Konfliktai} & Nėra. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Konfliktai} & Nėra. \\
         \hline
     \end{tabular}
 \end{table}
@@ -394,7 +878,7 @@ turi būti laikomąsi šių sistemos išvaizdos reikalavimų:
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.9cm}|m{11cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Pagrindimas} &
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
         Sistema gali naudotis įvairaus amžiaus asmenys, turintys nevienodą
         technologinio raštingumo bei išsilavinimo lygį, todėl sistemos languose
         turi būti naudojami nedviprasmiški ir plačiai visuomenės asmenų daliai
@@ -402,21 +886,21 @@ turi būti laikomąsi šių sistemos išvaizdos reikalavimų:
         panaudota kuo mažiau kompleksinių informacijos pateikimo struktūrų
         (pavyzdžiui, medžio struktūrų). \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Šaltinis} & Užsakovas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Atitikimo kriterijus} & 
+        \raggedleft \textbf{\cellcolor{deepchampagne}Atitikimo kriterijus} & 
         Jeigu įvykdžius visų sistemos naudotojų apklausą praėjus 2 mėn. po
         naujos poliklinikos sistemos eksploatavimo pradžios nesulaukta daugiau
         nei 10\% atsiliepimų dėl sistemos neintuityvumo, nefunkcinis
         reikalavimas įgyvendintas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo tenkinimas} & 1. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} & 1. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo netenkinimas} & 4. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} & 4. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Prioritetas} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Aukštas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Konfliktai} & Nėra. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Konfliktai} & Nėra. \\
         \hline
     \end{tabular}
 \end{table}
@@ -432,7 +916,7 @@ naudotojams.}
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.9cm}|m{11cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Pagrindimas} &
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
         Sistema gali naudotis įvairaus amžiaus bei skirtingo išsilavinimo lygio
         asmenys, todėl sistemos naudotojai turi sugebėti tinkamai naudotis
         sistemos funkcionalumais ir užpildyti sistemoje prieinamas formas be
@@ -440,21 +924,21 @@ naudotojams.}
         pildant sistemos formas turi būti pateikiami aiškūs ir išsamūs
         paaiškinimai, kokia informacija turi būti įvesta kiekviename lauke). \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Šaltinis} & Užsakovas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Atitikimo kriterijus} & 
+        \raggedleft \textbf{\cellcolor{deepchampagne}Atitikimo kriterijus} & 
         Jeigu įvykdžius sistemos naudotojų apklausą praėjus 2 mėn. po naujos
         poliklinikos sistemos eksploatavimo pradžios nesulaukta nei vieno
         atsiliepimo dėl sudėtingo sistemos naudojimo, nefunkcinis reikalavimas
         įgyvendintas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo tenkinimas} & 2. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} & 2. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo netenkinimas} & 2. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} & 2. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Prioritetas} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Aukštas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Konfliktai} & Nėra. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Konfliktai} & Nėra. \\
         \hline
     \end{tabular}
 \end{table}
@@ -466,28 +950,28 @@ suprasti sistemoje naudojamus terminus.}
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.9cm}|m{11cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Pagrindimas} &
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
         Sistemoje pateikta informacija turi būti parašyta taip, jog būtų
         suprantama ne tik medicininės dalykinės srities ekspertams. Šalia
         kiekvieno naudojamo medicininio termino turi būti pridėta nuoroda,
         nukreipianti į sistemos langą, kuriame pateiktas techninių terminų
         žodynas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Šaltinis} & Užsakovas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Atitikimo kriterijus} & 
+        \raggedleft \textbf{\cellcolor{deepchampagne}Atitikimo kriterijus} & 
         Jeigu įvykdžius sistemos naudotojų apklausą praėjus 2 mėn. po naujos
         poliklinikos sistemos eksploatavimo pradžios nesulaukta nei vieno
         atsiliepimo dėl sudėtingo sistemos naudojimo, nefunkcinis reikalavimas
         įgyvendintas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo tenkinimas} & 2. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} & 2. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo netenkinimas} & 2. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} & 2. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Prioritetas} & Žemas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Žemas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Konfliktai} & Nėra. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Konfliktai} & Nėra. \\
         \hline
     \end{tabular}
 \end{table}
@@ -503,26 +987,26 @@ būti įvykdyta per < 1 s.}
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.9cm}|m{11cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Pagrindimas} &
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
         Greitas autentifikacijos procesas suteikia didesnį naudotojų
         pasitikėjimą sistema bei padeda užtikrinti po autentifikacijos sekančių
         operacijų atlikimą numatytu laiku. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Šaltinis} & Užsakovas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Atitikimo kriterijus} & 
+        \raggedleft \textbf{\cellcolor{deepchampagne}Atitikimo kriterijus} & 
         Jeigu pasinaudojus įrankiu Apache JMeter laiko tarpas (vidutinis atsako
         laikas) nuo naudotojo autentifikacijos pradžios iki patvirtinimo gavimo
         (fiksuojant tapatybės būsenos pasikeitimą) neviršija 1 s, laikoma, kad
         nefunkcinis reikalavimas įgyvendintas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo tenkinimas} & 2. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} & 2. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo netenkinimas} & 2. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} & 2. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Prioritetas} & Žemas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Žemas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Konfliktai} & Nėra. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Konfliktai} & Nėra. \\
         \hline
     \end{tabular}
 \end{table}
@@ -534,28 +1018,28 @@ duomenis, turi būti atliekamas per < 500 ms.}
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.9cm}|m{11cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Pagrindimas} &
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
         Sistemoje pateikta informacija turi būti parašyta taip, jog būtų
         suprantama ne tik medicininės dalykinės srities ekspertams. Šalia
         kiekvieno naudojamo medicininio termino turi būti pridėta nuoroda,
         nukreipianti į sistemos langą, kuriame pateiktas techninių terminų
         žodynas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Šaltinis} & Užsakovas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Atitikimo kriterijus} & 
+        \raggedleft \textbf{\cellcolor{deepchampagne}Atitikimo kriterijus} & 
         Jeigu įvykdžius sistemos naudotojų apklausą praėjus 2 mėn. po naujos
         poliklinikos sistemos eksploatavimo pradžios nesulaukta nei vieno
         atsiliepimo dėl sudėtingo sistemos naudojimo, nefunkcinis reikalavimas
         įgyvendintas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo tenkinimas} & 2. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} & 2. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo netenkinimas} & 2. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} & 2. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Prioritetas} & Žemas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Žemas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Konfliktai} & Nėra. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Konfliktai} & Nėra. \\
         \hline
     \end{tabular}
 \end{table}
@@ -572,23 +1056,23 @@ duomenis, turi būti atliekamas per < 500 ms.}
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.9cm}|m{11cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Pagrindimas} &
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
         .... \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Šaltinis} & Užsakovas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Atitikimo kriterijus} & 
+        \raggedleft \textbf{\cellcolor{deepchampagne}Atitikimo kriterijus} & 
         Jeigu testuojant šifravimą realiuoju laiku, naudojant tinklo
         analizatorius, asmeninių duomenų negalima perskaityti, laikoma, kad
         nefunkcinis reikalavimas įgyvendintas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo tenkinimas} & 2. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} & 2. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo netenkinimas} & 2. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} & 2. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Prioritetas} & Žemas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Žemas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Konfliktai} & Nėra. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Konfliktai} & Nėra. \\
         \hline
     \end{tabular}
 \end{table}
@@ -602,23 +1086,23 @@ genetinių duomenų, naudojant pseudonimizaciją ir anonimizaciją.}
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.9cm}|m{11cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Pagrindimas} &
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
         Sistemos pažeidimo atveju turi būti užtikrintas genetinių duomenų,
         galinčių atskleisti ne tik asmens, bet ir jo šeimos narių asmeninę
         informaciją, konfidencialumas, siekiant išvengti teisės pažeidimų. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Šaltinis} & Užsakovas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Atitikimo kriterijus} & 
+        \raggedleft \textbf{\cellcolor{deepchampagne}Atitikimo kriterijus} & 
         .... \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo tenkinimas} & 5. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} & 5. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo netenkinimas} & 5. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} & 5. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Prioritetas} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Aukštas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Konfliktai} & Nėra. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Konfliktai} & Nėra. \\
         \hline
     \end{tabular}
 \end{table}
@@ -634,28 +1118,28 @@ pacientų duomenų pseudonimizavimo.}
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.9cm}|m{11cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Pagrindimas} &
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
         Sistemos, kuriose vykdomas asmenų biologinių duomenų saugojimas bei
         apdorojimas, turi atitikti BDAR 32 straipsnyje aprašytą reikalavimą,
         nurodantį, tvarkant asmens duomenis turi būti naudojamos tinkamos
         techninės ir organizacinės priemonės, įskaitant pseudonimizavimą,
         siekiant užtikrinti duomenų saugumą. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Šaltinis} & Užsakovas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Atitikimo kriterijus} & 
+        \raggedleft \textbf{\cellcolor{deepchampagne}Atitikimo kriterijus} & 
         Laikoma, kad nefunkcinis reikalavimas įgyvendintas, jeigu atlikus
         sistemos duomenų bazės struktūros analizę nenustatomas genetinių duomenų
         saugojimas kartu su identifikavimo duomenimis bei testavimo metu
         nenustatyti tiesiogiai identifikuojantys asmeniniai duomenys. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo tenkinimas} & 5. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} & 5. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Užsakovo netenkinimas} & 5. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} & 5. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Prioritetas} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Aukštas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{orange!30}Konfliktai} & Nėra. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Konfliktai} & Nėra. \\
         \hline
     \end{tabular}
 \end{table}
