@@ -1,0 +1,53 @@
+\babel@toc {lithuanian}{}
+\babel@toc {lithuanian}{}
+\babel@toc {lithuanian}{}
+\contentsline {section}{\numberline {1}Sistemos paskirtis}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Projekto k\IeC {\=u}rimo pagrindas (pagrindimas)}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Sistemos tikslai (paskirtis)}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}U\IeC {\v z}sakovai, pirk\IeC {\.e}jai ir kiti sistema suinteresuoti asmenys}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}U\IeC {\v z}sakovas}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Pirk\IeC {\.e}jas}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Naudotojai}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Apribojimai}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Apribojimai sprendimui}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Diegimo aplinka}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Komunikuojan\IeC {\v c}ios sistemos}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Komerciniai specializuoti program\IeC {\k u} paketai}{6}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Numatoma darbo vietos aplinka}{6}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Sistemos k\IeC {\=u}rimo terminai}{7}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Sistemos k\IeC {\=u}rimo biud\IeC {\v z}etas}{7}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Termin\IeC {\k u} \IeC {\v z}odynas}{8}{section.4}%
+\contentsline {section}{\numberline {5}Svarb\IeC {\=u}s faktai ir prielaidos}{9}{section.5}%
+\contentsline {section}{\numberline {6}Veiklos sfera}{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Veiklos kontekstas}{9}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Veiklos padalinimas}{9}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Produkto veiklos sfera}{10}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Sistemos ribos}{10}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Panaudojimo atvej\IeC {\k u} s\IeC {\k a}ra\IeC {\v s}as}{10}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Funkciniai reikalavimai ir reikalavimai duomenims}{11}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Funkciniai reikalavimai}{11}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Reikalavimai duomenims}{11}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Reikalavimai sistemos i\IeC {\v s}vaizdai}{12}{section.9}%
+\contentsline {section}{\numberline {10}Reikalavimai panaudojamumui}{13}{section.10}%
+\contentsline {section}{\numberline {11}Reikalavimai vykdymo charakteristikoms}{14}{section.11}%
+\contentsline {section}{\numberline {12}Reikalavimai saugumui}{15}{section.12}%
+\contentsline {section}{\numberline {13}Teisiniai reikalavimai}{16}{section.13}%
+\contentsline {section}{\numberline {14}Atviri klausimai (problemos)}{16}{section.14}%
+\contentsline {section}{\numberline {15}Naujos problemos}{17}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Problemos diegimo palinkai}{17}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}\IeC {\k I}taka jau instaliuotoms sistemoms}{17}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}Neigiamas vartotoj\IeC {\k u} nusiteikimas}{17}{subsection.15.3}%
+\contentsline {subsection}{\numberline {15.4}Kliudantys diegimo aplinkos apribojimai}{17}{subsection.15.4}%
+\contentsline {subsection}{\numberline {15.5}Galimos naujos sistemos sukeltos problemos}{17}{subsection.15.5}%
+\contentsline {section}{\numberline {16}U\IeC {\v z}daviniai}{18}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Sistemos pateikimo \IeC {\v z}ingsniai (etapai)}{18}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Vystymo etapai}{18}{subsection.16.2}%
+\contentsline {section}{\numberline {17}U\IeC {\v z}daviniai}{19}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Pritaikymas (Cutover)}{19}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}Reikalavimai esam\IeC {\k u} duomen\IeC {\k u} perk\IeC {\.e}limui}{19}{subsection.17.2}%
+\contentsline {subsection}{\numberline {17.3}Reikalingas duomen\IeC {\k u} transformavimas perkeliant \IeC {\k i} nauj\IeC {\k a} sistem\IeC {\k a}}{19}{subsection.17.3}%
+\contentsline {section}{\numberline {18}Rizikos}{20}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Galimos sistemos k\IeC {\=u}rimo rizikos}{20}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}Atsitiktinum\IeC {\k u} (rizik\IeC {\k u}) valdymo planas}{20}{subsection.18.2}%
+\contentsline {section}{\numberline {19}Kaina}{21}{section.19}%
+\contentsline {section}{\numberline {20}Naudotojo dokumentacija ir apmokymas}{21}{section.20}%
