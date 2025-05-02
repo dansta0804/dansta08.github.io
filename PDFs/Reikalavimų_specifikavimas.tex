@@ -331,9 +331,9 @@ kategorijų naudotojams.}
 \label{sec:FR1}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
-    \begin{tabular}{|m{4.9cm}|m{11cm}|}
+    \begin{tabular}{|m{3cm}|m{13.7cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/uždavinys} &
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/ uždavinys} &
         Valdyti asmeninius duomenimis ir naudotis sistemoje realizuotu
         funkcionalumu, priklausomai nuo naudotojo kategorijos. \\
         \hline
@@ -369,7 +369,7 @@ kategorijų naudotojams.}
         scenarijus\footnote{Čia ir toliau \textcolor{dartmouthgreen}{žalia}
         spalva pažymėti naudotojo veiksmai, \textcolor{deepcarmine}{raudona} -
         sistemos veiksmai.}} & \vskip 5pt
-        \makecell[l]{\parbox[t]{10.5cm}{
+        \makecell[l]{\parbox[t]{13.7cm}{
             \textbf{1.} \textcolor{dartmouthgreen}{Naudotojas užpildo pateiktos
             asmeninės paskyros kūrimo formos laukus.} \\
             \textbf{2.} \textcolor{dartmouthgreen}{Naudotojas išsaugo įvestą
@@ -392,7 +392,7 @@ kategorijų naudotojams.}
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Alternatyvūs scenarijai} &
         \vskip 5pt
-        \makecell[l]{\parbox[t]{10.5cm}{
+        \makecell[l]{\parbox[t]{13.7cm}{
             \textbf{1.} \textcolor{dartmouthgreen}{Naudotojas užpildo pateiktos
             asmeninės paskyros kūrimo formos laukus.} \\
             \textbf{2.} \textcolor{dartmouthgreen}{Naudotojas išsaugo įvestą
@@ -417,44 +417,96 @@ kategorijų naudotojams.}
 \label{sec:FR2}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
-    \begin{tabular}{|m{4.9cm}|m{11cm}|}
+    \begin{tabular}{|m{3cm}|m{13.7cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/uždavinys} &
-        Sisteminiuose languose neturi būti realizuoti iššokantys modaliniai
-        langeliai, kuriuose reikia pasirinkti, ar tikrai norima išsaugoti
-        įvestus duomenis. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/ uždavinys} &
+        Pateikti biologinius duomenis, kurie gali būti panaudoti, siekiant
+        išsiaiškinti ligų priežastis, arba moksliniais tikslais. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Užsakovas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} &
+        Realizavus šį panaudojimo atvejį skirtingos naudotojų grupės sistemoje
+        gali atlikti skirtingus veiksmus: pacientai gali įkelti savo biologinius
+        duomenis, kurie gali būti panaudoti moksliniais tikslais, papildant
+        biologinių duomenų saugyklą naujais genetiniais variantais; gydytojai -
+        genetikai gali įkelti genetinius pacientų duomenis, kad jie būtų
+        detaliau išanalizuoti tyrėjų ir būtų galima paskirti tolimesnes
+        sutrikimo ar ligos gydymo priemones. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & 
-        Užpildžius duomenų įvedimo formas ir išsaugojus duomenis nepasirodo
-        iššokantis modalinis langelis su pranešimu apie reikalingą duomenų
-        įvedimo patvirtinimą - duomenys yra išsaugomi be papildomo naudotojo
-        veiksmo. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Aukštas. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} &
-        1. \\
+        5. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo netenkinimas} &
-        3. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Prieš - sąlyga} &
-        Vidutinis. \\
+        5. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Aktorius} &
-        Nėra. \\
+        Pacientas, gydytojas - genetikas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Prieš - sąlyga} &
+        Sistemos naudotojas turi būti prisijungęs prie sistemos. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Sužadinimo sąlyga} &
-        Nėra. \\
+        Sistemos naudotojas atsidaro sistemos langą, kuriame pateikta
+        biologinių duomenų įkėlimo skiltis su metaduomenų įvedimo forma. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindinis scenarijus} &
-        Nėra. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindinis
+        scenarijus} & \vskip 5pt
+        \makecell[l]{\parbox[t]{13.7cm}{
+            \textbf{1.} \textcolor{dartmouthgreen}{Naudotojas užpildo pateiktos
+            duomenų įkėlimo formos laukus ir prideda biologinius duomenis
+            saugantį failą.} \\
+            \textbf{2.} \textcolor{dartmouthgreen}{Naudotojas išsaugo įvestą
+            metainformaciją bei pridėtą failą, paspausdamas išsaugojimo
+            mygtuką.} \\
+            \textbf{3.} \textcolor{deepcarmine}{Sistema validuoja failo formatą
+            ir turinį.} \\
+            \textbf{4.} \textcolor{deepcarmine}{Sistema užšifruota duomenis ir
+            išsaugo juos duomenų bazėje.} \\
+            \textbf{5.} \textcolor{deepcarmine}{Sistema įrašo metainformaciją
+            apie įkeltą failą į blokų grandinę (taip užtikrinant duomenų
+            nekintamumą ir veiksmų atsekamumą).} \\
+            \textbf{6.} \textcolor{deepcarmine}{Sistema priskiria įrašui
+            identifikatorių ir susieja jį su naudotojo paskyra.} \\
+            \textbf{7.} \textcolor{deepcarmine}{Parodomas informacinis
+            pranešimas, informuojantis apie sėkmingai įkeltus duomenis.} \\
+            \textbf{8.} \textcolor{deepcarmine}{Naudotojas peržiūri įkeltų
+            duomenų įrašą savo paskyros skiltyje.} \\
+
+            \textbf{4.} \textcolor{deepcarmine}{ Parodomas informacinis
+            pranešimas, informuojantis apie sėkmingai sukurtą asmeninę
+            paskyrą.}
+            \\
+            \textbf{4.} \textcolor{deepcarmine}{Sistema prijungia naudotoją
+            prie jo asmeninės paskyros.} \\
+            \textbf{5.} \textcolor{deepcarmine}{Sistema atidaro naudotojo
+            asmeninės paskyros langą.} \\
+            \textbf{6. Baigiamas PA.}
+        }}
+        \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Po - sąlyga} &
-        Vidutinis. \\
+        Duomenų bazėje sukuiamas naujas sistemos naudotojas, galintis
+        prisijungti prie sistemos ir, pagal naudotojo kategoriją, naudotis
+        sistemos funkcionalumu. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Alternatyvūs scenarijai} &
-        Vidutinis. \\
+        \vskip 5pt
+        \makecell[l]{\parbox[t]{13.7cm}{
+            \textbf{1.} \textcolor{dartmouthgreen}{Naudotojas užpildo pateiktos
+            asmeninės paskyros kūrimo formos laukus.} \\
+            \textbf{2.} \textcolor{dartmouthgreen}{Naudotojas išsaugo įvestą
+            informaciją, paspausdamas išsaugojimo mygtuką.} \\
+            \textbf{3.} \textcolor{deepcarmine}{Parodomas informacinis
+            pranešimas, informuojantis apie sėkmingai sukurtą asmeninę
+            paskyrą.} \\
+            \textbf{4.} \textcolor{deepcarmine}{Sistema prijungia naudotoją
+            prie jo asmeninės paskyros.} \\
+            \textbf{5.} \textcolor{deepcarmine}{Sistema atidaro naudotojo
+            asmeninės paskyros langą.} \\
+            \textbf{6. Baigiamas PA.}
+        }}
+        \\
         \hline
     \end{tabular}
 \end{table}
