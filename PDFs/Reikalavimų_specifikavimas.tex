@@ -357,27 +357,49 @@ Specifikacijoje naudojamos šios santrumpos bei sąvokos:
 
 \newpage
 
-\section{Svarbūs faktai ir prielaidos}
-Svarbūs faktai ir prielaidos nebuvo identifikuoti.
-
 \section{Veiklos sfera} % Funkciniai reikalavimai
-\subsection{Veiklos kontekstas} % (pateikiama konteksto diagrama)
-X paveiksle () pateikiama veiklos konteksto diagrama.
+\subsection{Veiklos kontekstas}
+Pirmame paveiksle (\hyperref[fig:context]{1 pav.}) pavaizduota veiklos
+konteksto diagrama:
+
+\begin{figure}[ht]
+    \begin{center}
+        \captionsetup{justification=centering}
+        \includegraphics[width=1.0\linewidth]{Konteksto_diagrama.png}
+        \vspace{-1\baselineskip}
+        \caption{\small\textbf{Veiklos konteksto diagrama.}}
+        \label{fig:context}
+    \end{center}
+\end{figure}
 
 \subsection{Veiklos padalinimas}
-Veiklos konteksto diagramos () srautų apibūdinimas:
+Veiklos konteksto diagramos (\hyperref[fig:context]{1 pav.}) srautų
+apibūdinimas:
 
+\begin{enumerate}[itemsep=0.5pt]
+    \item[\textbf{SR1:}] Pacientas įkelia savo biologinius duomenis.
+    \item[\textbf{SR2:}] Gydytojas - genetikas sukuria analizės įrašą.
+    \item[\textbf{SR3:}] Gydytojas - genetikas pateikia analizės užklausą
+    tyrėjui.
+    \item[\textbf{SR4:}] Tyrėjas gauna analizės užklausą iš gydytojo - genetiko.
+    \item[\textbf{SR5:}] Esant poreikiui, tyrėjas pateikia prieigos užklausą
+    pacientui, kad galėtų dirbti su paciento biologiniais duomenimis.
+    \item[\textbf{SR6:}] Pacientas suteikia arba atmeta prieigos užklausą.
+    \item[\textbf{SR7:}] Tyrėjas atlieka biologinių duomenų analizę.
+    \item[\textbf{SR8:}] Tyrėjas pateikia analizės rezultatus, kuriuos gauna
+    gydytojas - genetikas.
+\end{enumerate}
 
 \newpage
 
-\section{Produkto veiklos sfera} % Funkciniai reikalavimai
+\section{Produkto veiklos sfera}
 \subsection{Sistemos ribos}
 Žemiau esančiame paveiksle pavaizduota sistemos panaudojimo atvejų diagrama:
 
 \begin{figure}[ht]
     \begin{center}
         \captionsetup{justification=centering}
-        \includegraphics[width=1.05\linewidth]{PAM.png}
+        \includegraphics[width=0.9\linewidth]{PAM.png}
         \vspace{-1\baselineskip}
         \caption{\small\textbf{Panaudojimo atvejų modelis (PAM).}}
         \label{fig:image2}
@@ -995,34 +1017,716 @@ duomenų analizę.}}
 
 \subsection{Reikalavimai duomenims}
 \subsubsection{Duomenų modelis}
+Žemiau pateiktame paveiksle yra pavaizduota esybių - ryšių diagrama.
+
+\begin{figure}[ht]
+    \begin{center}
+        \captionsetup{justification=centering}
+        \includegraphics[width=1.05\linewidth]{ER.png}
+        \vspace{-1\baselineskip}
+        \caption{\small\textbf{Esybių - ryšių diagrama.}}
+        \label{fig:image3}
+    \end{center}
+\end{figure}
+
+\newpage
 
 \subsubsection{Duomenų modelio specifikacija}
-
-\noindent \textbf{E1: Esybė - X.} 
+\noindent \textbf{E1: Esybė - \ttfamily ASMUO.} Generalizuojanti esybė, kuri
+bendra visiems sistemos naudotojams (pacientams, gydytojams - genetikams,
+tyrėjams).
 \label{sec:E1}
 \begin{table}[htb!]
+    \small
     \captionsetup{justification=centering}
-    \caption{\small\textbf{Esybės 'X' specifikacija}}
+    \caption{\small\textbf{Esybės \texttt{ASMUO} specifikacija}.}
     \vskip -10pt
     \begin{tabular}{
-        |>{\centering\arraybackslash}m{2cm}
-        |>{\centering\arraybackslash}m{5cm}
-        |>{\centering\arraybackslash}m{9cm}|
+        |>{\centering\arraybackslash}m{3cm}
+        |>{\centering\arraybackslash}m{4.5cm}
+        |>{\centering\arraybackslash}m{8.5cm}|
+    }
+        \hline
+        \textbf{\cellcolor{deepchampagne}Atributas} &
+        \textbf{\cellcolor{deepchampagne}Atributo apibūdinimas} &
+        \textbf{\cellcolor{deepchampagne}Galimos reikšmės} \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Asmens kodas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        asmeniui suteiktas identifikacinis numeris.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{
+            Fiksuoto ilgio - 11 - skaitmenų kombinacija, kur:
+            \begin{itemize}[leftmargin=0.5cm, itemsep=1pt, topsep=1pt,
+                            after=\vspace{-1em}]
+                \item \textbf{Pirmieji skaitmenys (1-6):} tai asmens gimimo
+                data, užrašyta kaip „YYYYMMDD“ (metai, mėnuo, diena);
+                \item \textbf{Septintasis skaitmuo:} tai ženklas, rodantis lytį.
+                Jei skaitmuo yra nevedamas, tuomet jis rodo,
+                kad žmogus yra vyriškos lyties (skaičius 1 arba 3), o jei
+                moteriškos - (skaičius 2 arba 4);
+                \item \textbf{Kiti skaitmenys (8-10):}  atsitiktinis numeris,
+                skirtas užtikrinti, kad kiekvienas asmens kodas būtų unikalus;
+                \item \textbf{11-asis skaitmuo:} tai kontrolinis skaitmuo,
+                kurio paskirtis - patikrinti viso kodo tikslumą.
+            \end{itemize}
+        }
+        \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Vardas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Asmeniui
+        suteiktas žodis, galintis padėti jį identifikuoti.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas tekstas -
+        raidžių kombinacija, kurią gali sudaryti iki 25 simbolių. Skaitmenys ir
+        simboliai negali būti naudojami.} \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Pavardė} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Asmeniui
+        suteiktas žodis, galintis padėti jį identifikuoti.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas tekstas -
+        raidžių kombinacija, kurią gali sudaryti iki 35 simbolių. Skaitmenys ir
+        simboliai negali būti naudojami.} \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Viešasis raktas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Vietoje, kurioje
+        yra sistemos svečias, gali būti silpnas arba spartus internetas.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Vietoje, kurioje
+        yra sistemos svečias, gali būti silpnas arba spartus internetas.} \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Adresas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Asmens gyvenamąją
+        vietą apibūdinantis aprašymas.} & 
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas tekstas -
+        raidžių kombinacija, kurią gali sudaryti iki 40 simbolių.} \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Elektroninis paštas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        identifikatorius, kuriuo naudojantis galima susisiekti su tam tikru
+        asmeniu.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas tekstas -
+        raidžių kombinacija, kurią gali sudaryti iki 50 simbolių. Simbolis
+        '@' yra privalomas.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Telefono numeris} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        identifikatorius, kuriuo naudojantis galima susisiekti su tam tikru
+        asmeniu.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Fiksuoto ilgio
+        (numatytas tik lietuviškų numerių naudojimas) - 12 - skaitmenų ir
+        simbolių kombinacija (+370 6XX XXXXX), kur:
+        \begin{itemize}[leftmargin=0.5cm, itemsep=1pt, topsep=1pt,
+                        after=\vspace{-1em}]
+            \item \textbf{+370:} šalies kodas;
+            \item \textbf{6XX:} mobiliojo operatoriaus kodas;
+            \item \textbf{XXXXX:} individualus numeris.
+        \end{itemize}
+        } \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Lytis} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Asmens
+        biologinė lytis.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{\textbf{Galimos
+        reikšmės:} vyras, moteris, kita.} \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Statusas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Naudotojo
+        paskyros būsena.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{\textbf{Galimos
+        reikšmės:} aktyvus, archyvuotas, nebedirba.} \\
+        \hline
+    \end{tabular}
+    \label{table:ER1_specifikacija}
+\end{table}
+
+\newpage
+
+\label{sec:E1_2}
+\begin{table}[htb!]
+    \small
+    \captionsetup{justification=centering}
+    % \caption{\small\textbf{Esybės \texttt{ASMUO} specifikacija (tęsinys).}}
+    \vskip -10pt
+    \begin{tabular}{
+        |>{\centering\arraybackslash}m{3cm}
+        |>{\centering\arraybackslash}m{4.5cm}
+        |>{\centering\arraybackslash}m{8.5cm}|
+    }
+        \hline
+        \textbf{\cellcolor{deepchampagne}Atributas} &
+        \textbf{\cellcolor{deepchampagne}Atributo apibūdinimas} &
+        \textbf{\cellcolor{deepchampagne}Galimos reikšmės} \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Registracijos data ir laikas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Reikšmė,
+        nusakanti, kokiu metu (metai, mėnuo, diena, valandos, minutės, sekundės)
+        buvo sukurta naudotojo paskyra.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Užfiksuojama
+        EINAMOJI\_DATA, kada buvo sukurta naudotojo paskyra. \textbf{Datos
+        šablonas:} YYYY-MM-DD HH:MM, čia:
+        \begin{itemize}[leftmargin=0.5cm, itemsep=1pt, topsep=1pt,
+                        after=\vspace{-1em}]
+            \item \textbf{YYYY:} metai;
+            \item \textbf{MM:} mėnesis;
+            \item \textbf{DD:} diena;
+            \item \textbf{HH:} valandos;
+            \item \textbf{MM:} minutės.
+        \end{itemize}
+        } \\
+        \hline
+    \end{tabular}
+    \label{table:ER1_2specifikacija}
+\end{table}
+
+\newpage
+
+\noindent \textbf{E2: Esybė - \ttfamily PACIENTAS.} Asmuo, kuris įkelia
+biologinius duomenis ir valdo kitų asmenų prieigą prie šių duomenų.
+\label{sec:E2}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \caption{\small\textbf{Esybės \texttt{PACIENTAS} specifikacija}.}
+    \vskip -10pt
+    \begin{tabular}{
+        |>{\centering\arraybackslash}m{3cm}
+        |>{\centering\arraybackslash}m{4.5cm}
+        |>{\centering\arraybackslash}m{8.5cm}|
     }
         \hline
         \textbf{\cellcolor{deepchampagne}Atributas} &
         \textbf{\cellcolor{deepchampagne}Atributo apibūdinimas} &
         \textbf{\cellcolor{deepchampagne}Galimos reikšmės}  \\
         \hline
-        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{2cm}|}
-            {Pacientai} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{5cm}|}{Vietoje, kurioje
-        yra sistemos svečias, gali būti silpnas arba spartus internetas.} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{9cm}|}{Vietoje, kurioje
-        yra sistemos svečias, gali būti silpnas arba spartus internetas.}\\
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Asmens kodas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus asmeniui
+        suteiktas identifikacinis numeris.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{
+            Fiksuoto ilgio - 11 - skaitmenų kombinacija, kur:
+            \begin{itemize}[leftmargin=0.5cm, itemsep=1pt, topsep=1pt,
+                            after=\vspace{-1em}]
+                \item \textbf{Pirmieji skaitmenys (1-6):} tai asmens gimimo
+                data, užrašyta kaip „YYYYMMDD“ (metai, mėnuo, diena);
+                \item \textbf{Septintasis skaitmuo:} tai ženklas, rodantis lytį.
+                Jei skaitmuo yra nevedamas, tuomet jis rodo,
+                kad žmogus yra vyriškos lyties (skaičius 1 arba 3), o jei
+                moteriškos - (skaičius 2 arba 4);
+                \item \textbf{Kiti skaitmenys (8-10):}  atsitiktinis numeris,
+                skirtas užtikrinti, kad kiekvienas asmens kodas būtų unikalus;
+                \item \textbf{11-asis skaitmuo:} tai kontrolinis skaitmuo,
+                kurio paskirtis - patikrinti viso kodo tikslumą.
+            \end{itemize}
+        }
+        \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Pseudonimas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Vietoje
+        tikro naudotojo vardo naudojamas sugeneruotas raidžių, skaitmenų ir
+        simbolių kombinacijos žodis.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas
+        tekstas - raidžių, skaitmenų ir simbolių kombinacija, kurią gali
+        sudaryti iki 25 simbolių.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Užmiršimo statusas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Požymis,
+        nusakantis, ar naudotojas išreiškė norą, kad jo duomenys būtų
+        ištrinti.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{\textbf{Galimos
+        reikšmės:} 0 (noras neišreikštas) arba 1 (noras išreikštas).} \\
         \hline
     \end{tabular}
-    \label{table:ER_specifikacija}
+    \label{table:ER2_specifikacija}
+\end{table}
+
+\newpage
+
+\noindent \textbf{E3: Esybė - \ttfamily GYDYTOJAS.} Asmuo, kuris kuria analizių
+korteles bei teikia analizių užklausas tyrėjams.
+\label{sec:E3}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \caption{\small\textbf{Esybės \texttt{GYDYTOJAS} specifikacija}.}
+    \vskip -10pt
+    \begin{tabular}{
+        |>{\centering\arraybackslash}m{3cm}
+        |>{\centering\arraybackslash}m{4.5cm}
+        |>{\centering\arraybackslash}m{8.5cm}|
+    }
+        \hline
+        \textbf{\cellcolor{deepchampagne}Atributas} &
+        \textbf{\cellcolor{deepchampagne}Atributo apibūdinimas} &
+        \textbf{\cellcolor{deepchampagne}Galimos reikšmės}  \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Asmens kodas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        asmeniui suteiktas identifikacinis numeris.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{
+            Fiksuoto ilgio - 11 - skaitmenų kombinacija, kur:
+            \begin{itemize}[leftmargin=0.5cm, itemsep=1pt, topsep=1pt,
+                            after=\vspace{-1em}]
+                \item \textbf{Pirmieji skaitmenys (1-6):} tai asmens gimimo
+                data, užrašyta kaip „YYYYMMDD“ (metai, mėnuo, diena);
+                \item \textbf{Septintasis skaitmuo:} tai ženklas, rodantis lytį.
+                Jei skaitmuo yra nevedamas, tuomet jis rodo,
+                kad žmogus yra vyriškos lyties (skaičius 1 arba 3), o jei
+                moteriškos - (skaičius 2 arba 4);
+                \item \textbf{Kiti skaitmenys (8-10):}  atsitiktinis numeris,
+                skirtas užtikrinti, kad kiekvienas asmens kodas būtų unikalus;
+                \item \textbf{11-asis skaitmuo:} tai kontrolinis skaitmuo,
+                kurio paskirtis - patikrinti viso kodo tikslumą.
+            \end{itemize}
+        }
+        \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Licencijos numeris} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        tik gydytojams suteikiamas identifikacinis numeris.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Fiksuoto
+        ilgio - 6 - skaitmenų kombinacija.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Specializacija} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Medicinos
+        sritis, kurioje gydytojas įgyja gilų žinių ir įgūdžių lygį, kad galėtų
+        gydyti tam tikras ligas.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas
+        tekstas - raidžių kombinacija, kurią gali sudaryti iki 40 simbolių.} \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Institucija} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Įstaigos,
+        kurioje dirba gydytojas, pavadinimas ir adresas.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas
+        tekstas - raidžių kombinacija, kurią gali sudaryti iki 70 simbolių.} \\
+        \hline
+    \end{tabular}
+    \label{table:ER3_specifikacija}
+\end{table}
+
+\newpage
+
+\noindent \textbf{E4: Esybė - \ttfamily TYRĖJAS.} Asmuo, kuris atlieka
+biologinių duomenų analizę ir teikia išvadas gydytojui - genetikui.
+\label{sec:E4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \caption{\small\textbf{Esybės \texttt{TYRĖJAS} specifikacija}.}
+    \vskip -10pt
+    \begin{tabular}{
+        |>{\centering\arraybackslash}m{3cm}
+        |>{\centering\arraybackslash}m{4.5cm}
+        |>{\centering\arraybackslash}m{8.5cm}|
+    }
+        \hline
+        \textbf{\cellcolor{deepchampagne}Atributas} &
+        \textbf{\cellcolor{deepchampagne}Atributo apibūdinimas} &
+        \textbf{\cellcolor{deepchampagne}Galimos reikšmės}  \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Asmens kodas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        asmeniui suteiktas identifikacinis numeris.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{
+            Fiksuoto ilgio - 11 - skaitmenų kombinacija, kur:
+            \begin{itemize}[leftmargin=0.5cm, itemsep=1pt, topsep=1pt,
+                            after=\vspace{-1em}]
+                \item \textbf{Pirmieji skaitmenys (1-6):} tai asmens gimimo
+                data, užrašyta kaip „YYYYMMDD“ (metai, mėnuo, diena);
+                \item \textbf{Septintasis skaitmuo:} tai ženklas, rodantis lytį.
+                Jei skaitmuo yra nevedamas, tuomet jis rodo,
+                kad žmogus yra vyriškos lyties (skaičius 1 arba 3), o jei
+                moteriškos - (skaičius 2 arba 4);
+                \item \textbf{Kiti skaitmenys (8-10):}  atsitiktinis numeris,
+                skirtas užtikrinti, kad kiekvienas asmens kodas būtų unikalus;
+                \item \textbf{11-asis skaitmuo:} tai kontrolinis skaitmuo,
+                kurio paskirtis - patikrinti viso kodo tikslumą.
+            \end{itemize}
+        }
+        \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Institucija} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Įstaigos,
+        kurioje dirba tyrėjas, pavadinimas ir adresas.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas
+        tekstas - raidžių kombinacija, kurią gali sudaryti iki 70 simbolių.} \\
+        \hline
+    \end{tabular}
+    \label{table:ER4_specifikacija}
+\end{table}
+
+\newpage
+
+\noindent \textbf{E5: Esybė - \ttfamily BŪTI PAMIRŠTAM PRAŠYMAS.} Prašymas,
+kuris yra sugeneruojamas paciento, norinčio, kad jo duomenys būtų panaikinti iš
+sistemos.
+\label{sec:E5}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \caption{\small\textbf{Esybės \texttt{BŪTI PAMIRŠTAM PRAŠYMAS}
+    specifikacija}.}
+    \vskip -10pt
+    \begin{tabular}{
+        |>{\centering\arraybackslash}m{3cm}
+        |>{\centering\arraybackslash}m{4.5cm}
+        |>{\centering\arraybackslash}m{8.5cm}|
+    }
+        \hline
+        \textbf{\cellcolor{deepchampagne}Atributas} &
+        \textbf{\cellcolor{deepchampagne}Atributo apibūdinimas} &
+        \textbf{\cellcolor{deepchampagne}Galimos reikšmės}  \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Pacientas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        pacientą identifikuojantis numeris.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Nefiksuoto
+        ilgio skaitmenų kombinacija.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Pateikimo data ir laikas} &
+            \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Reikšmė,
+            nusakanti, kokiu metu (metai, mėnuo, diena, valandos, minutės,
+            sekundės) buvo pateikta užklausa „būti pamirštam“.} &
+            \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{
+                Užfiksuojama EINAMOJI\_DATA, kada buvo pateikta užklausa.
+                \textbf{Datos šablonas:} YYYY-MM-DD HH:MM, čia:
+                \begin{itemize}[leftmargin=0.5cm, itemsep=1pt, topsep=1pt,
+                                after=\vspace{-1em}]
+                    \item \textbf{YYYY:} metai;
+                    \item \textbf{MM:} mėnesis;
+                    \item \textbf{DD:} diena;
+                    \item \textbf{HH:} valandos;
+                    \item \textbf{MM:} minutės.
+                \end{itemize}
+            } \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Priežastis} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Paaiškinimas,
+        kodėl naudotojas nori, kad jo duomenys būtų panaikinti iš saugyklų.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas
+        tekstas - raidžių kombinacija, kurią gali sudaryti iki 50 simbolių.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Panaikinimo statusas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Požymis,
+        nusakantis, ar naudotojo duomenys buvo panaikinti.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{\textbf{Galimos
+        reikšmės:} 0 (duomenys nepanaikinti) arba 1 (duomenys panaikinti).} \\
+        \hline
+    \end{tabular}
+    \label{table:ER5_specifikacija}
+\end{table}
+
+\newpage
+
+\noindent \textbf{E6: Esybė - \ttfamily BIOLOGINIAI DUOMENYS.} Struktūrizuota
+informacija apie biologinius duomenis, kuriuos pacientas įkelia į sistemą.
+\label{sec:E6}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \caption{\small\textbf{Esybės \texttt{BIOLOGINIAI DUOMENYS}
+    specifikacija}.}
+    \vskip -10pt
+    \begin{tabular}{
+        |>{\centering\arraybackslash}m{3cm}
+        |>{\centering\arraybackslash}m{4.5cm}
+        |>{\centering\arraybackslash}m{8.5cm}|
+    }
+        \hline
+        \textbf{\cellcolor{deepchampagne}Atributas} &
+        \textbf{\cellcolor{deepchampagne}Atributo apibūdinimas} &
+        \textbf{\cellcolor{deepchampagne}Galimos reikšmės}  \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Savininko duomenys} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        pseudonimizuotas paciento identifikatorius.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Nefiksuoto
+        ilgio skaitmenų kombinacija.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Saugyklos duomenys} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Nuoroda į
+        šifruotą failą.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Nefiksuoto
+        ilgio simbolių kombinacija.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Šifravimo rakto duomenys} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Nuoroda į
+        raktą, su kuriuo buvo užšifruoti biologiniai duomenys.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Nefiksuoto
+        ilgio simbolių kombinacija.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Kontrolinė suma} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Reikšmė,
+        leidžianti patikrinti duomenų vientisumą.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Nefiksuoto
+        ilgio skaitmenų kombinacija.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Duomenų tipas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Įkelto
+        biologinių duomenų failo apibūdinimas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas
+        tekstas - raidžių kombinacija, kurią gali sudaryti iki 50 simbolių.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Įkėlimo data ir laikas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Reikšmė,
+        nusakanti, kokiu metu (metai, mėnuo, diena, valandos, minutės, sekundės)
+        buvo įkeltas biologinių duomenų failas.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Užfiksuojama
+        EINAMOJI\_DATA, kada buvo įkelti duomenys. \textbf{Datos
+        šablonas:} YYYY-MM-DD HH:MM, čia:
+        \begin{itemize}[leftmargin=0.5cm, itemsep=1pt, topsep=1pt,
+                        after=\vspace{-1em}]
+            \item \textbf{YYYY:} metai;
+            \item \textbf{MM:} mėnesis;
+            \item \textbf{DD:} diena;
+            \item \textbf{HH:} valandos;
+            \item \textbf{MM:} minutės.
+        \end{itemize}
+        } \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Būsena} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Biologinių
+        duomenų analizės vykdymo būsena} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{\textbf{Galimos
+        reikšmės:} laukiama, analizuojama, užbaigta, atmesta.} \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Duomenis įkėlė} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        gydytoją identifikuojantis numeris.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Nefiksuoto
+        ilgio skaitmenų kombinacija.} \\
+        \hline
+    \end{tabular}
+    \label{table:ER6_specifikacija}
+\end{table}
+
+\newpage
+
+\noindent \textbf{E7: Esybė - \ttfamily ANALIZĖS ĮRAŠAS.}
+Struktūrizuota informacija apie atliktą biologinių duomenų analizę (analizės
+tipą ir išvadas).
+\label{sec:E7}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \caption{\small\textbf{Esybės \texttt{ANALIZĖS ĮRAŠAS}
+    specifikacija}.}
+    \vskip -10pt
+    \begin{tabular}{
+        |>{\centering\arraybackslash}m{3cm}
+        |>{\centering\arraybackslash}m{4.5cm}
+        |>{\centering\arraybackslash}m{8.5cm}|
+    }
+        \hline
+        \textbf{\cellcolor{deepchampagne}Atributas} &
+        \textbf{\cellcolor{deepchampagne}Atributo apibūdinimas} &
+        \textbf{\cellcolor{deepchampagne}Galimos reikšmės}  \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Biologiniai duomenys} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        biologinius duomenis identifikuojantis numeris.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Nefiksuoto
+        ilgio skaitmenų kombinacija.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Autorius} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        gydytoją identifikuojantis numeris.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Nefiksuoto
+        ilgio skaitmenų kombinacija.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Analizė priskirta} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        tyrėją identifikuojantis numeris.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Nefiksuoto
+        ilgio skaitmenų kombinacija.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Analizės tipas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Apibūdinimas,
+        kokiu būdu yra analizuojami įkelti biologiniai duomenys.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas
+        tekstas - raidžių kombinacija, kurią gali sudaryti iki 30 simbolių.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Išvada} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Atliktos
+        biologinių duomenų analizės rezultatas.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas
+        tekstas - raidžių kombinacija, kurią gali sudaryti iki 100 simbolių.} \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Sukūrimo data ir laikas} &
+            \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Reikšmė,
+            nusakanti, kokiu metu (metai, mėnuo, diena, valandos, minutės,
+            sekundės) buvo sukurtas analizės įrašas.} &
+            \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{
+                Užfiksuojama analizės įrašo sukūrimo data ir laikas.
+                \textbf{Datos šablonas:} YYYY-MM-DD HH:MM, čia:
+                \begin{itemize}[leftmargin=0.5cm, itemsep=1pt, topsep=1pt,
+                                after=\vspace{-1em}]
+                    \item \textbf{YYYY:} metai;
+                    \item \textbf{MM:} mėnesis;
+                    \item \textbf{DD:} diena;
+                    \item \textbf{HH:} valandos;
+                    \item \textbf{MM:} minutės.
+                \end{itemize}
+            } \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Analizė atlikta data ir laikas} &
+            \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Reikšmė,
+            nusakanti, kokiu metu (metai, mėnuo, diena, valandos, minutės,
+            sekundės) buvo atlikta analizė.} &
+            \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{
+                Užfiksuojama analizės atlikimo data ir laikas.
+                \textbf{Datos šablonas:} YYYY-MM-DD HH:MM, čia:
+                \begin{itemize}[leftmargin=0.5cm, itemsep=1pt, topsep=1pt,
+                                after=\vspace{-1em}]
+                    \item \textbf{YYYY:} metai;
+                    \item \textbf{MM:} mėnesis;
+                    \item \textbf{DD:} diena;
+                    \item \textbf{HH:} valandos;
+                    \item \textbf{MM:} minutės.
+                \end{itemize}
+            } \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Būsena} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Biologinių
+        duomenų analizės vykdymo būsena.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{\textbf{Galimos
+        reikšmės:} laukiama, analizuojama, užbaigta, atmesta.}\\
+        \hline
+    \end{tabular}
+    \label{table:ER7_specifikacija}
+\end{table}
+
+\newpage
+
+\noindent \textbf{E8: Esybė - \ttfamily ANALIZĖS UŽKLAUSA.}
+Struktūrizuota informacija apie reikalingą biologinių duomeų analizę, kuri yra
+siunčiama tyrėjams.
+\label{sec:E8}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \caption{\small\textbf{Esybės \texttt{ANALIZĖS UŽKLAUSA}
+    specifikacija}.}
+    \vskip -10pt
+    \begin{tabular}{
+        |>{\centering\arraybackslash}m{3cm}
+        |>{\centering\arraybackslash}m{4.5cm}
+        |>{\centering\arraybackslash}m{8.5cm}|
+    }
+        \hline
+        \textbf{\cellcolor{deepchampagne}Atributas} &
+        \textbf{\cellcolor{deepchampagne}Atributo apibūdinimas} &
+        \textbf{\cellcolor{deepchampagne}Galimos reikšmės}  \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Biologiniai duomenys} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        biologinius duomenis identifikuojantis numeris.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Nefiksuoto
+        ilgio skaitmenų kombinacija.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Autorius} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        gydytoją identifikuojantis numeris.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Nefiksuoto
+        ilgio skaitmenų kombinacija.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Tyrėjas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Unikalus
+        tyrėją identifikuojantis numeris.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Nefiksuoto
+        ilgio skaitmenų kombinacija.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Tikslas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Apibūdinimas,
+        koks yra reikalingos analizės tikslas.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas
+        tekstas - raidžių kombinacija, kurią gali sudaryti iki 50 simbolių.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Būsena} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Biologinių
+        duomenų analizės vykdymo būsena.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{\textbf{Galimos
+        reikšmės:} laukiama, analizuojama, užbaigta, atmesta.}\\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Sukūrimo data ir laikas} &
+            \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Reikšmė,
+            nusakanti, kokiu metu (metai, mėnuo, diena, valandos, minutės,
+            sekundės) buvo sukurta užklausa tyrėjui.} &
+            \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{
+                Užfiksuojama analizės užklausos sukūrimo data ir laikas.
+                \textbf{Datos šablonas:} YYYY-MM-DD HH:MM, čia:
+                \begin{itemize}[leftmargin=0.5cm, itemsep=1pt, topsep=1pt,
+                                after=\vspace{-1em}]
+                    \item \textbf{YYYY:} metai;
+                    \item \textbf{MM:} mėnesis;
+                    \item \textbf{DD:} diena;
+                    \item \textbf{HH:} valandos;
+                    \item \textbf{MM:} minutės.
+                \end{itemize}
+            } \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Pateikimo terminas} &
+            \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Reikšmė,
+            nusakanti, iki kada (metai, mėnuo, diena, valandos, minutės,
+            sekundės) turi būti atlikta analizė.} &
+            \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{
+                Nurodomas analizės atlikimo terminas.
+                \textbf{Datos šablonas:} YYYY-MM-DD HH:MM, čia:
+                \begin{itemize}[leftmargin=0.5cm, itemsep=1pt, topsep=1pt,
+                                after=\vspace{-1em}]
+                    \item \textbf{YYYY:} metai;
+                    \item \textbf{MM:} mėnesis;
+                    \item \textbf{DD:} diena;
+                    \item \textbf{HH:} valandos;
+                    \item \textbf{MM:} minutės.
+                \end{itemize}
+            } \\
+        \hline
+        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
+            {Paciento leidimas} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Požymis,
+        nusakantis, ar naudotojas davė leidimą vykdyti analizę su jo pateiktais
+        duomenimis.} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{\textbf{Galimos
+        reikšmės:} 0 (leidimas negautas) arba 1 (leidimas gautas).}\\
+        \hline
+    \end{tabular}
+    \label{table:ER8_specifikacija}
 \end{table}
 
 \newpage
@@ -1929,4 +2633,4 @@ sistema gali būti sudiegta vėliau nei yra numatyta projekto plane.
 
 % 27.Idėjos sprendimams (Ideas for solutions)
 % Tai registras idėjų ir minčių, prie kurių dar reiks grįžti ateityje. Šios idėjos kyla registruojant ir specifikuojant reikalavimus. Pateikimo forma gali būti pati įvairiausia, tačiau nereikalaujanti daug apiforminimo pastangų: eskizas, pastabos, nuorodos į kitus dokumentus ar asmenis.
-% Šis punktas gali būti nepateikiamas kaip privaloma specifikacijos dalis
+% Šis punktas gali būti nepateikiamas kaip privaloma specifikacijos dalis 
