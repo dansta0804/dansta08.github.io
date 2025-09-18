@@ -55,6 +55,9 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
    - <a href="#reikalavimų-specifikavimas" style="color:rgb(14, 1, 1);font-size:medium"
    onmouseover="this.style.color='rgb(124, 7, 7)';"
    onmouseout="this.style.color='rgb(14, 1, 1)';">Reikalavimų specifikavimas;</a>
+   - <a href="#projekto-architektūra" style="color:rgb(14, 1, 1);font-size:medium"
+   onmouseover="this.style.color='rgb(124, 7, 7)';"
+   onmouseout="this.style.color='rgb(14, 1, 1)';">Projekto architektūra.</a>
 
 <a href="#iii-semestras-T000M250" style="color:rgb(14, 1, 1);font-weight:bold;font-size:medium"
 onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='rgb(14, 1, 1)';">3. III semestras (T000M250)</a>
