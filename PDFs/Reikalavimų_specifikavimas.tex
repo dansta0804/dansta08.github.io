@@ -37,6 +37,7 @@
 \definecolor{deepchampagne}{rgb}{0.98, 0.84, 0.65}
 \definecolor{dartmouthgreen}{rgb}{0.09, 0.45, 0.27}
 \definecolor{deepcarmine}{rgb}{0.66, 0.13, 0.24}
+\definecolor{steelblue}{rgb}{0.27, 0.51, 0.71}
 \usepackage{makecell}
 
 \newcommand{\EE}{\mathbb{E}\,}
@@ -406,36 +407,17 @@ apibūdinimas:
     \end{center}
 \end{figure}
 
-\subsection{Panaudojimo atvejų sąrašas}
-Žemiau yra pateiktas panaudojimo atvejų sąrašas, kuris turi būti realizuotas
-savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistemoje.
-
-\begin{enumerate}[itemsep=0.5pt]
-    \item[\textbf{PA1:}] \hyperlink{FR1}{\hypertarget{PA1}{Užsiregistruoti
-    sistemoje skirtingų kategorijų naudotojams (pacientams, gydytojams -
-    genetikams, tyrėjams).}}
-    \item[\textbf{PA2:}] \hyperlink{FR2}{\hypertarget{PA2}{Įkelti biologinius
-    duomenis.}}
-    \item[\textbf{PA3:}] \hyperlink{FR3}{\hypertarget{PA3}{Valdyti prieigą prie
-    asmeninių biologinių duomenų.}}
-    \item[\textbf{PA4:}] \hyperlink{FR4}{\hypertarget{PA4}{Pateikti prašymą
-    „būti pamirštam“.}}
-    \item[\textbf{PA5:}] \hyperlink{FR5}{\hypertarget{PA5}{Sukurti paciento
-    analizės kortelės įrašą.}}
-    \item[\textbf{PA6:}] \hyperlink{FR6}{\hypertarget{PA6}{Išsiųsti užklausą
-    analizės atlikimui.}}
-    \item[\textbf{PA7:}] \hyperlink{FR7}{\hypertarget{PA7}{Atlikti biologinių
-    duomenų analizę.}}
-\end{enumerate}
-% \hyperlink{PA5}{item PA1} Taip yra kuriama nuoroda į konkretų PA.
 \newpage
 
-\section{Funkciniai reikalavimai ir reikalavimai duomenims}
-\subsection{Funkciniai reikalavimai}
+\subsection{Panaudojimo atvejų aprašymai}
+Šiame skyriuje yra aprašyti visi kuriamos savarankiškos suverenios
+pseudonimizuotos tapatybės valdymo sistemos panaudojimo atvejai.
 
-\noindent \hypertarget{FR1}{\hyperlink{PA1}{\textbf{PA1:} Užsiregistruoti
-sistemoje skirtingų kategorijų naudotojams.}}
-\label{sec:FR1}
+\vskip 10pt
+
+\hypertarget{PA1}{\noindent \textbf{PA1:} Užsiregistruoti sistemoje skirtingų
+kategorijų naudotojams.}
+\label{sec:PA1}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{3cm}|m{13.7cm}|}
@@ -515,9 +497,8 @@ sistemoje skirtingų kategorijų naudotojams.}}
 
 \newpage
 
-\noindent \hypertarget{FR2}{\hyperlink{PA2}{\textbf{PA2:} Įkelti biologinius
-duomenis.}}
-\label{sec:FR2}
+\hypertarget{PA2}\noindent \textbf{PA2:} Įkelti biologinius duomenis.
+\label{sec:PA2}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{3cm}|m{13.7cm}|}
@@ -606,9 +587,8 @@ duomenis.}}
 
 \newpage
 
-\noindent \hypertarget{FR3}{\hyperlink{PA3}{\textbf{PA3:} Valdyti prieigą prie
-asmeninių biologinių duomenų.}}
-\label{sec:FR3}
+\noindent \textbf{PA3:} Valdyti prieigą prie asmeninių biologinių duomenų.
+\label{sec:PA3}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{3cm}|m{13.7cm}|}
@@ -697,9 +677,8 @@ asmeninių biologinių duomenų.}}
 
 \newpage
 
-\noindent \hypertarget{FR4}{\hyperlink{PA4}{\textbf{PA4:} Pateikti prašymą
-„būti pamirštam“.}}
-\label{sec:FR4}
+\noindent \textbf{PA4:} Pateikti prašymą „būti pamirštam“.
+\label{sec:PA4}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{3cm}|m{13.7cm}|}
@@ -787,9 +766,8 @@ asmeninių biologinių duomenų.}}
 
 \newpage
 
-\noindent \hypertarget{FR5}{\hyperlink{PA5}{\textbf{PA5:} Sukurti paciento
-analizės kortelės įrašą.}}
-\label{sec:FR5}
+\noindent \textbf{PA5:} Sukurti paciento analizės kortelės įrašą.
+\label{sec:PA5}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{3cm}|m{13.7cm}|}
@@ -853,9 +831,8 @@ analizės kortelės įrašą.}}
 
 \newpage
 
-\noindent \hypertarget{FR6}{\hyperlink{PA6}{\textbf{PA6:} Išsiųsti užklausą
-analizės atlikimui.}}
-\label{sec:FR6}
+\noindent \textbf{PA6:} Išsiųsti užklausą analizės atlikimui.
+\label{sec:PA6}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{3cm}|m{13.7cm}|}
@@ -943,9 +920,8 @@ analizės atlikimui.}}
 
 \newpage
 
-\noindent \hypertarget{FR7}{\hyperlink{PA7}{\textbf{PA7:} Atlikti biologinių
-duomenų analizę.}}
-\label{sec:FR7}
+\noindent \textbf{PA7:} Atlikti biologinių duomenų analizę.
+\label{sec:PA7}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{3cm}|m{13.7cm}|}
@@ -1009,6 +985,842 @@ duomenų analizę.}}
             \textbf{4. Baigiamas PA.}
         }}
         \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\section{Funkciniai reikalavimai ir reikalavimai duomenims}
+\subsection{Funkciniai reikalavimai}
+Šiame skyriuje yra aprašyti visi kuriamos sistemos funkciniai reikalavimai bei
+su jais susieti panaudojimo atvejai.
+
+\vskip 10pt
+
+\hypertarget{FR1}\noindent \textbf{FR1:} Registracijos formos pateikimas.
+\label{sec:FR1}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema turi
+        pateikti registracijos formą, kurioje naudotojas turi galėti įvesti
+        privalomus duomenis: vardą, pavardę, el. pašto adresą arba telefono
+        numerį bei pasirinkti savo naudotojo kategoriją. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Tam, jog
+        būtų sukurta naudotojo paskyra, turi būti įvesta ir išsaugota
+        informacija apie naudotoją. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Sistemos registracijos formos lauke atvaizduojama registracijos forma
+        su išskirtais privalomais įvesties laukais. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR2}{\textcolor{steelblue}{\textbf{FR2:} Naudotojo
+            kategorijos pasirinkimas}}
+            \item \hyperlink{FR3}{\textcolor{steelblue}{\textbf{FR3:} Formų
+            validavimas ir klaidų atvaizdavimas}}
+        \end{itemize}
+        \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\hypertarget{FR2}\noindent \textbf{FR2:} Naudotojo kategorijos pasirinkimas.
+\label{sec:FR2}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema
+        turi leisti registracijos formoje pasirinkti naudotojo kategoriją
+        iš 3 galimų: „gydytojas - genetikas“, „tyrėjas“, „pacientas“. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Priklausomai
+        nuo to, kokia yra naudotojo kategorija, naudotojui yra prieinamas
+        skirtingas sistemos funkcionalumas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Registracijos formoje leidžiama pasirinkti naudotojo kategoriją. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        \hyperlink{FR1}{\textcolor{steelblue}{\textbf{FR1:} Registracijos formos
+        pateikimas}} \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\hypertarget{FR3}\noindent \textbf{FR3:} Formų validavimas.
+\label{sec:FR3}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema
+        turi validuoti privalomus formų laukus ir neleisti išsaugoti įvestos
+        informacijos tol, kol nebus pateikta visa būtina teisinga
+        informacija. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Formų
+        validavimas padeda užtikrinti korektiškų duomenų saugojimą duomenų
+        bazėje bei užtikrina, kad bus pateikta visa aktuali informacija apie
+        sistemos naudotoją. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Formose nepateikus visos būtinos informacijos pateikiami aiškūs
+        validaciniai pranešimai; įvesti duomenys neišsaugomi duomenų bazėje. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        \hyperlink{FR1}{\textcolor{steelblue}{\textbf{FR1:} Registracijos formos
+        pateikimas}} \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\hypertarget{FR4}\noindent \textbf{FR4:} Informacijos išsaugojimas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistemoje
+        įvedus duomenis, įkėlus biologinių duomenų failus, atlikus biologinę
+        analizę arba pateikus užklausą dėl analizės atlikimo paspaudus
+        duomenų išsaugojimo mygtuką visi duomenys turi būti išsaugoti
+        atitinkamose duomenų bazės lentelėse. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Naudotojų
+        pateikta informacija privalo būti išsaugota, kad ji galėtų būti
+        tikslingai panaudota, atliekant skirtingas sistemos funkcijas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Po išsaugojimo mygtuko paspaudimo visi naudotojų pateikti duomenys
+        sėkmingai įrašomi ir atvaizduojami duomenų bazės lentelėse. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR5}{\textcolor{steelblue}{\textbf{FR5:}
+            Informavimas apie sėkmingai atliktą veiksmą}}
+            \item \hyperlink{FR6}{\textcolor{steelblue}{\textbf{FR6:}
+            Informavimas apie nesėkmingai atliktą veiksmą}}
+        \end{itemize}
+        \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:}
+            Užsiregistruoti sistemoje skirtingų kategorijų naudotojams}} 
+        \end{itemize}
+        \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\hypertarget{FR5}\noindent \textbf{FR5:} Informavimas apie sėkmingai atliktą
+veiksmą.
+\label{sec:FR5}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistemoje
+        turi būti parodomas pranešimas, informuojantis apie sėkmingai
+        atliktą įrašymo į duomenų bazę (išsaugojimo) veiksmą. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Naudotojas
+        turi žinoti, ar pateikus reikalingus duomenis ir iniciavus duomenų
+        išsaugojimą šis veiksmas buvo sėkmingai įvykdytas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Sėkmingai užpildžius duomenų įvesties formas, įkėlus biologinius
+        duomenis arba pateikus analizės atlikimo užklausas parodomas
+        informacinis pranešimas apie sėkmingai atliktą veiksmą. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 4, tenkinimas: 3. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR4}{\textcolor{steelblue}{\textbf{FR4:} 
+            Informacijos išsaugojimas.}}
+        \end{itemize}
+        \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:}
+            Užsiregistruoti sistemoje skirtingų kategorijų naudotojams}} 
+        \end{itemize}
+        \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\hypertarget{FR6}\noindent \textbf{FR6:} Informavimas apie nesėkmingai atliktą
+veiksmą.
+\label{sec:FR6}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistemoje
+        turi būti parodomas pranešimas, informuojantis apie nesėkmingai
+        atliktą įrašymo į duomenų bazę (išsaugojimo) veiksmą. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Naudotojas
+        turi žinoti, ar pateikus reikalingus duomenis ir iniciavus duomenų
+        išsaugojimą šis veiksmas buvo sėkmingai įvykdytas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Užpildžius duomenų įvesties formas, įkėlus biologinius duomenis arba
+        pateikus analizės atlikimo užklausas, bet dėl nenumatytų priežasčių
+        nesėkmingai šią informaciją išsaugojus duomenų bazės lentelėse parodomas
+        informacinis pranešimas apie nesėkmingai atliktą veiksmą. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 4, tenkinimas: 3. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR4}{\textcolor{steelblue}{\textbf{FR4:} 
+            Informacijos išsaugojimas.}}
+        \end{itemize}
+        \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:}
+            Užsiregistruoti sistemoje skirtingų kategorijų naudotojams}} 
+        \end{itemize}
+        \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\hypertarget{FR7}\noindent \textbf{FR7:} Failų įkėlimas.
+\label{sec:FR7}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistemoje
+        turi būti galima įkelti failus. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Biologinių
+        formatų failai reikalingi tam, jog būtų galima atlikti biologines
+        analizes; įprasti failų formatai reikalingi sisteminiam rezultatų
+        atvaizdavimui skirtingiems naudotojams. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Atitinkamuose sistemos languose matomos failų įkėlimo įvestys. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 3. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR5}{\textcolor{steelblue}{\textbf{FR5:}
+            Informavimas apie sėkmingai atliktą veiksmą}}
+            \item \hyperlink{FR6}{\textcolor{steelblue}{\textbf{FR6:}
+            Informavimas apie nesėkmingai atliktą veiksmą}}
+            \item \hyperlink{FR8}{\textcolor{steelblue}{\textbf{FR8:}
+            Įkeltų failų validavimas}}
+        \end{itemize}
+        \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{PA2}{\textcolor{steelblue}{\textbf{PA2:} Įkelti
+            biologinius duomenis}}
+            \item \hyperlink{PA7}{\textcolor{steelblue}{\textbf{PA7:} Atlikti
+            biologinių duomenų analizę}}
+        \end{itemize}
+        \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\hypertarget{FR8}\noindent \textbf{FR8:} Įkeltų failų validavimas.
+\label{sec:FR8}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema turi
+        leisti į sistemą įkelti tik biologinių duomenų formato failus
+        (\emph{fasta, fastq, gtt}) ir \emph{txt} formato failus (po sėkmingo
+        įkėlimo turi būti parodomas informacinis pranešimas apie sėkmingą
+        failo įkėlimą). Jeigu failo formatas yra netinkamas, turi būti
+        parodomas validacinis tekstas apie bandymą įkelti neleistino formato
+        failą. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Įkeltų failų
+        formatai turi būti tikrinami, siekiant išvengti kenkėjiškų failų įkėlimo
+        į sistemą. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Įkėlus leistino formato failą parodomas sėkmingo įkėlimo informacinis
+        pranešimas, įkėlus neleistino formato failą parodomas validacinis
+        tekstas apie bandymą įkelti neleistino formato failą. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR5}{\textcolor{steelblue}{\textbf{FR5:}
+            Informavimas apie sėkmingai atliktą veiksmą}}
+            \item \hyperlink{FR8}{\textcolor{steelblue}{\textbf{FR7:}
+            Failų įkėlimas}}
+        \end{itemize}
+        \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{PA2}{\textcolor{steelblue}{\textbf{PA2:} Įkelti
+            biologinius duomenis}}
+            \item \hyperlink{PA7}{\textcolor{steelblue}{\textbf{PA7:} Atlikti
+            biologinių duomenų analizę}}
+        \end{itemize}
+        \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\hypertarget{FR7}\noindent \textbf{FR4:} Duomenų šifravimas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\hypertarget{FR8}\noindent \textbf{FR4:} Identifikatorių priskyrimas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\hypertarget{FR9}\noindent \textbf{FR4:} Informavimas apie sėkmingai atliktą
+veiksmą.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\hypertarget{FR9}\noindent \textbf{FR4:} Informavimas apie nesėkmingai atliktą
+veiksmą.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\hypertarget{FR10}\noindent \textbf{FR4:} Išsaugotos informacijos peržiūra.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\hypertarget{FR11}\noindent \textbf{FR4:} Išsaugotos informacijos redagavimas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\hypertarget{FR12}\noindent \textbf{FR4:} Išsaugotos informacijos redagavimas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\hypertarget{FR12}\noindent \textbf{FR4:} Duomenų prieigos valdymas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\hypertarget{FR12}\noindent \textbf{FR4:} Naudotojo duomenų naikinimas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\hypertarget{FR12}\noindent \textbf{FR4:} Naudotojo duomenų naikinimas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+%PA5 sieti su formos pateikimo FR.
+
+\newpage
+
+\hypertarget{FR12}\noindent \textbf{FR4:} Analizės atlikimo užklausos siuntimas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\hypertarget{FR12}\noindent \textbf{FR4:} Analizės atlikimo užklausos gavimas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\hypertarget{FR12}\noindent \textbf{FR4:} Prieigos prie duomenų tikrinimas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\hypertarget{FR12}\noindent \textbf{FR4:} Biologinių duomenų analizės atlikimas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\hypertarget{FR12}\noindent \textbf{FR4:} Biologinių duomenų analizės rezultatų
+atvaizdavimas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\hypertarget{FR12}\noindent \textbf{FR4:} Biologinių duomenų analizės užklausos
+atmetimas.
+\label{sec:FR4}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
+        sistemoje skirtingų kategorijų naudotojams}} \\
         \hline
     \end{tabular}
 \end{table}
