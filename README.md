@@ -113,7 +113,7 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
     <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2024-12-20</b>.</p>
     <p><b style="color:rgb(139, 32, 32)">Tikslas įgyti gebėjimus:</b> planuoti laiką, pasirinkti efektyvius darbo būdus.</p>
     <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Parengti magistrinio projekto planą.</p>
-    <p><a href="PDFs/Projekto_planas.pdf"
+    <p><a href="PDFs/Projekto_planas_V2.pdf"
     style="color:rgb(61, 61, 61);font-size:13px;background-color:rgb(185, 216, 233);border-radius:8px;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;font-weight:bold;font-style:italic;border: 1px solid rgb(106, 164, 196);"
    onmouseover="this.style.color='rgb(124, 7, 7)';this.style.backgroundColor='rgb(240, 204, 204)'"
    onmouseout="this.style.color='rgb(61, 61, 61)';this.style.backgroundColor='rgb(185, 216, 233)'">Peržiūrėti projekto planą >></a></p>
