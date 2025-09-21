@@ -126,7 +126,7 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 # II semestras (T000M242)
 ## Reikalavimų specifikavimas
 <div style="text-align:justify;color:rgb(14, 1, 1)">
-    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2025-03-14</b>.</p>
+    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2025-09-30</b>.</p>
     <p><b style="color:rgb(139, 32, 32)">Tikslas įgyti gebėjimus:</b> planuoti laiką, pasirinkti efektyvius darbo būdus.</p>
     <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Parengti magistrinio projekto reikalavimų specifikacijos dokumentą.</p>
     <p><a href="PDFs/Reikalavimų_specifikavimas.pdf"
@@ -139,7 +139,7 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 
 ## Projekto architektūra
 <div style="text-align:justify;color:rgb(14, 1, 1)">
-    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2025-05-XX</b>.</p>
+    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2025-09-30</b>.</p>
     <p><b style="color:rgb(139, 32, 32)">Tikslas:</b> Surasti reikiamą magistrinio projekto vykdymo procesui informaciją, ją analizuoti ir parengti baigiamojo darbo dalį.</p>
     <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Atlikti mokslinių darbų ir pasiekimų taikomoje srityje bei technologijos analizę.</p>
     <br>
@@ -154,7 +154,18 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
 ---
 
 # III semestras (T000M250)
-<p style="text-align:justify;color:rgb(14, 1, 1)">...</p>
+## Testavimo planas
+<div style="text-align:justify;color:rgb(14, 1, 1)">
+    <p><b style="color:rgb(139, 32, 32)">Darbo atlikimo terminas:</b><b> 2025-10-06</b>.</p>
+    <p><b style="color:rgb(139, 32, 32)">Gebėti parinkti programinės įrangos testavimo strategijas, metodologiją.</p>
+    <p><b style="color:rgb(139, 32, 32)">Užduotis:</b> Sukurti magistrinio
+    projekto testavimo planą, praktiškai pritaikant ir patobulinant gebėjimus,
+    įgytus modulyje <b>Programų testavimo metodai</b>.</p>
+    <p><a href="PDFs/Reikalavimų_specifikavimas.pdf"
+    style="color:rgba(255, 255, 255, 1);font-size:13px;background-color:rgba(236, 166, 148, 1);border-radius:8px;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;font-weight:bold;font-style:italic;border: 1px solid rgba(158, 60, 15, 1);"
+   onmouseover="this.style.color='rgb(124, 7, 7)';this.style.backgroundColor='rgb(240, 204, 204)'"
+   onmouseout="this.style.color='rgb(61, 61, 61)';this.style.backgroundColor='rgb(185, 216, 233)'">Peržiūrėti testavimo planą >></a></p>
+</div>
 
 
 ---
