@@ -413,14 +413,14 @@ apibūdinimas:
 Šiame skyriuje yra aprašyti visi kuriamos savarankiškos suverenios
 pseudonimizuotos tapatybės valdymo sistemos panaudojimo atvejai.
 
-\vskip 10pt
+\newpage
 
 \hypertarget{PA1}{\noindent \textbf{PA1:} Užsiregistruoti sistemoje skirtingų
 kategorijų naudotojams.}
 \label{sec:PA1}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
-    \begin{tabular}{|m{3cm}|m{13.7cm}|}
+    \begin{tabular}{|m{2.9cm}|m{14.3cm}|}
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/ uždavinys} &
         Valdyti asmeninius duomenimis ir naudotis sistemoje realizuotu
@@ -455,18 +455,25 @@ kategorijų naudotojams.}
         scenarijus\footnote{Čia ir toliau \textcolor{dartmouthgreen}{žalia}
         spalva pažymėti naudotojo veiksmai.}} & \vskip 5pt
         \makecell[l]{\parbox[t]{13.7cm}{
-            \textbf{1.} \textcolor{dartmouthgreen}{Naudotojas užpildo pateiktos
+            \textbf{1.} \textcolor{dartmouthgreen}{Užpildomi pateiktos
             asmeninės paskyros kūrimo formos laukus.} \\
-            \textbf{2.} \textcolor{dartmouthgreen}{Naudotojas išsaugo įvestą
-            informaciją, paspausdamas išsaugojimo mygtuką.} \\
-            \textbf{3.} {Parodomas informacinis
+            \textbf{2.} \textcolor{dartmouthgreen}{Išsaugoma įvesta
+            informacija, paspaudžiant išsaugojimo mygtuką.} \\
+            \textbf{3.} Sistema patikrina, ar užpildyti visi privalomi asmeninės
+            paskyros kūrimo formos laukai.
+            \\
+            \textbf{4.} {Jei visi privalomi asmeninės paskyros kūrimo formos
+            laukai yra užpildyti, tuomet:} \\
+            \textbf{5.} {Duomenų bazėje sukuriamas naujas sistemos naudotojas, o
+            jo asmeniniai duomenys yra užšifruojami jiems priskiriant
+            pseudonimus.} \\
+            \textbf{6.} {Parodomas informacinis
             pranešimas, informuojantis apie sėkmingai sukurtą asmeninę
             paskyrą.} \\
-            \textbf{4.} {Sistema prijungia naudotoją
-            prie jo asmeninės paskyros.} \\
-            \textbf{5.} {Sistema atidaro naudotojo
-            asmeninės paskyros langą.} \\
-            \textbf{6. Baigiamas PA.}
+            \textbf{7.} {Sistema prijungia naudotoją prie jo asmeninės
+            paskyros.} \\
+            \textbf{8.} {Sistema atidaro naudotojo asmeninės paskyros langą.} \\
+            \textbf{9. Baigiamas PA.}
         }}
         \\
         \hline
@@ -478,17 +485,21 @@ kategorijų naudotojams.}
         \raggedleft \textbf{\cellcolor{deepchampagne}Alternatyvūs scenarijai} &
         \vskip 5pt
         \makecell[l]{\parbox[t]{13.7cm}{
-            \textbf{1.} \textcolor{dartmouthgreen}{Naudotojas užpildo pateiktos
+            \textbf{1.} \textcolor{dartmouthgreen}{Užpildomi pateiktos
             asmeninės paskyros kūrimo formos laukus.} \\
-            \textbf{2.} \textcolor{dartmouthgreen}{Naudotojas išsaugo įvestą
-            informaciją, paspausdamas išsaugojimo mygtuką.} \\
+            \textbf{2.} \textcolor{dartmouthgreen}{Išsaugoma įvesta
+            informacija, paspaudžiant išsaugojimo mygtuką.} \\
             \textbf{3.} Parodomas informacinis pranešimas, informuojantis, kad
             neužpildyti visi privalomi asmeninės paskyros kūrimo formos
             laukai. \\
-            \textbf{4.} {Sistema prijungia naudotoją prie jo asmeninės
+            \textbf{4.} \textcolor{dartmouthgreen}{Užpildomi trūkstami
+            asmeninės paskyros kūrimo formos laukus.} \\
+            \textbf{5.} \textcolor{dartmouthgreen}{Išsaugoma įvesta
+            informacija, paspaudžiant išsaugojimo mygtuką.} \\
+            \textbf{6.} {Sistema prijungia naudotoją prie jo asmeninės
             paskyros.} \\
-            \textbf{5.} {Sistema atidaro naudotojo asmeninės paskyros langą.} \\
-            \textbf{6. Baigiamas PA.}
+            \textbf{7.} {Sistema atidaro naudotojo asmeninės paskyros langą.} \\
+            \textbf{8. Baigiamas PA.}
         }}
         \\
         \hline
@@ -677,7 +688,7 @@ kategorijų naudotojams.}
 
 \newpage
 
-\noindent \textbf{PA4:} Pateikti prašymą „būti pamirštam“.
+\hypertarget{PA4}\noindent \textbf{PA4:} Pateikti prašymą „būti pamirštam“.
 \label{sec:PA4}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
@@ -766,7 +777,8 @@ kategorijų naudotojams.}
 
 \newpage
 
-\noindent \textbf{PA5:} Sukurti paciento analizės kortelės įrašą.
+\hypertarget{PA5}\noindent \textbf{PA5:} Sukurti paciento analizės kortelės
+įrašą.
 \label{sec:PA5}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
@@ -831,7 +843,7 @@ kategorijų naudotojams.}
 
 \newpage
 
-\noindent \textbf{PA6:} Išsiųsti užklausą analizės atlikimui.
+\hypertarget{PA6}\noindent \textbf{PA6:} Išsiųsti užklausą analizės atlikimui.
 \label{sec:PA6}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
@@ -920,7 +932,7 @@ kategorijų naudotojams.}
 
 \newpage
 
-\noindent \textbf{PA7:} Atlikti biologinių duomenų analizę.
+\hypertarget{PA7}\noindent \textbf{PA7:} Atlikti biologinių duomenų analizę.
 \label{sec:PA7}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
@@ -1028,7 +1040,7 @@ su jais susieti panaudojimo atvejai.
             \item \hyperlink{FR2}{\textcolor{steelblue}{\textbf{FR2:} Naudotojo
             kategorijos pasirinkimas}}
             \item \hyperlink{FR3}{\textcolor{steelblue}{\textbf{FR3:} Formų
-            validavimas ir klaidų atvaizdavimas}}
+            validavimas}}
         \end{itemize}
         \\
         \hline
@@ -1357,470 +1369,536 @@ veiksmą.
 
 \newpage
 
-\hypertarget{FR7}\noindent \textbf{FR4:} Duomenų šifravimas.
-\label{sec:FR4}
+\hypertarget{FR9}\noindent \textbf{FR9:} Duomenų šifravimas.
+\label{sec:FR9}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.8cm}|m{12cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema turi
+        šifruoti visus jautrius naudotojų duomenis (tapatybės atributus,
+        pseudonimus, autentifikacijos raktus bei genetinius duomenis) tiek
+        laikymo, tiek perdavimo metu. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Asmens
+        duomenys turi būti apsaugoti nuo neteisėtos prieigos ir atitiktų
+        teisinius (BDAR) reikalavimus. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Visi duomenys duomenų bazėje, failų sistemoje ir blokų grandinėje yra
+        saugomi naudojant šifravimą ir negalima nustatyti nešifruotų jautrių
+        duomenų nei duomenų saugyklose, nei informacijos perdavimo srautuose. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        Netenkinimas: 5, tenkinimas: 2. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR4}{\textcolor{steelblue}{\textbf{FR4:}
+            Informacijos išsaugojimas}}
+        \end{itemize}
+        \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
         atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:}
+            Užsiregistruoti sistemoje skirtingų kategorijų naudotojams}}
+            \item \hyperlink{PA2}{\textcolor{steelblue}{\textbf{PA2:} Įkelti
+            biologinius duomenis}}
+        \end{itemize}
+        \\
         \hline
     \end{tabular}
 \end{table}
 
-\hypertarget{FR8}\noindent \textbf{FR4:} Identifikatorių priskyrimas.
-\label{sec:FR4}
+\hypertarget{FR10}\noindent \textbf{FR10:} Identifikatorių priskyrimas.
+\label{sec:FR10}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.8cm}|m{12cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema
+        turi automatiškai priskirti unikalų pseudoniminį identifikatorių
+        (neleidžiantį tiesiogiai atskleisti tikrosios naudotojo tapatybės)
+        kiekvienam naujam naudotojui ar duomenų įrašui, kuris yra įkeliamas
+        į sistemą. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
+        Identifikatorių priskyrimas padeda išlaikyti privatumo ir
+        pseudonimizacijos principus. Taip pat užtikrina, kad naudotojai ir jų
+        duomenys galėtų būti tvarkomi sistemoje, nesiejant jų tiesiogiai su
+        asmens tapatybe. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Visi sukurti įrašai turi priskirtus identifikatorius, pagal kuriuos
+        negalima atsekti naudotojo tikrosios tapatybės. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
         Netenkinimas: 5, tenkinimas: 5. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR9}{\textcolor{steelblue}{\textbf{FR9:}
+            Duomenų šifravimas}}
+        \end{itemize}
+        \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
         atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
-        \hline
-    \end{tabular}
-\end{table}
-
-\newpage
-
-\hypertarget{FR9}\noindent \textbf{FR4:} Informavimas apie sėkmingai atliktą
-veiksmą.
-\label{sec:FR4}
-\begin{table}[htb!]
-    \captionsetup{justification=centering}
-    \begin{tabular}{|m{4.8cm}|m{12cm}|}
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
-        Netenkinimas: 5, tenkinimas: 5. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
-        atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
-        \hline
-    \end{tabular}
-\end{table}
-
-\hypertarget{FR9}\noindent \textbf{FR4:} Informavimas apie nesėkmingai atliktą
-veiksmą.
-\label{sec:FR4}
-\begin{table}[htb!]
-    \captionsetup{justification=centering}
-    \begin{tabular}{|m{4.8cm}|m{12cm}|}
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
-        Netenkinimas: 5, tenkinimas: 5. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
-        atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:}
+            Užsiregistruoti sistemoje skirtingų kategorijų naudotojams}}
+            \item \hyperlink{PA2}{\textcolor{steelblue}{\textbf{PA2:} Įkelti
+            biologinius duomenis}}
+        \end{itemize}
+        \\
         \hline
     \end{tabular}
 \end{table}
 
 \newpage
 
-\hypertarget{FR10}\noindent \textbf{FR4:} Išsaugotos informacijos peržiūra.
-\label{sec:FR4}
+\hypertarget{FR11}\noindent \textbf{FR11:} Išsaugotos informacijos peržiūra.
+\label{sec:FR11}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.8cm}|m{12cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistemoje
+        turi būti sudaryta galimybė peržiūrėti naudotojų įvestus duomenis. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Naudotojas
+        privalo galėti peržiūrėti įvestą informaciją jos teisingumui įvertinti. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Po to, kai naudotojas įveda ir sėkmingai išsaugo duomenis, atidaromas
+        sistemos atitinkamų duomenų peržiūros langas. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        Netenkinimas: 4, tenkinimas: 3. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR4}{\textcolor{steelblue}{\textbf{FR4:}
+            Informacijos išsaugojimas}}
+            \item \hyperlink{FR7}{\textcolor{steelblue}{\textbf{FR7:}
+            Failų įkėlimas}}
+        \end{itemize}
+        \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
         atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:}
+            Užsiregistruoti sistemoje skirtingų kategorijų naudotojams}}
+            \item \hyperlink{PA2}{\textcolor{steelblue}{\textbf{PA2:}
+            Įkelti biologinius duomenis}}
+            \item \hyperlink{PA5}{\textcolor{steelblue}{\textbf{PA5:}
+            Sukurti paciento analizės kortelės įrašą}}
+        \end{itemize}
+        \\
         \hline
     \end{tabular}
 \end{table}
 
-\hypertarget{FR11}\noindent \textbf{FR4:} Išsaugotos informacijos redagavimas.
-\label{sec:FR4}
+\hypertarget{FR12}\noindent \textbf{FR12:} Išsaugotos informacijos redagavimas.
+\label{sec:FR12}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.8cm}|m{12cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistemoje turi
+        būti sudaryta galimybė redaguoti naudotojų įvestus duomenis. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Naudotojas
+        privalo galėti redaguoti įvestą informaciją. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Po to, kai naudotojui atidaromas sėkmingai įvestų duomenų peržiūros
+        langas, sistemos lange pateikiamas įvestos informacijos redagavimo
+        mygtukas, kurį paspaudus yra pereinama į duomenų redagavimo režimą. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        Netenkinimas: 4, tenkinimas: 3. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        \hyperlink{FR11}{\textcolor{steelblue}{\textbf{FR11:} Išsaugotos
+        informacijos peržiūra}}
+        \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
         atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
-        \hline
-    \end{tabular}
-\end{table}
-
-\newpage
-
-\hypertarget{FR12}\noindent \textbf{FR4:} Išsaugotos informacijos redagavimas.
-\label{sec:FR4}
-\begin{table}[htb!]
-    \captionsetup{justification=centering}
-    \begin{tabular}{|m{4.8cm}|m{12cm}|}
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
-        Netenkinimas: 5, tenkinimas: 5. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
-        atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
-        \hline
-    \end{tabular}
-\end{table}
-
-\hypertarget{FR12}\noindent \textbf{FR4:} Duomenų prieigos valdymas.
-\label{sec:FR4}
-\begin{table}[htb!]
-    \captionsetup{justification=centering}
-    \begin{tabular}{|m{4.8cm}|m{12cm}|}
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
-        Netenkinimas: 5, tenkinimas: 5. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
-        atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:}
+            Užsiregistruoti sistemoje skirtingų kategorijų naudotojams}}
+            \item \hyperlink{PA2}{\textcolor{steelblue}{\textbf{PA2:}
+            Įkelti biologinius duomenis}}
+            \item \hyperlink{PA5}{\textcolor{steelblue}{\textbf{PA5:}
+            Sukurti paciento analizės kortelės įrašą}}
+        \end{itemize}
+        \\
         \hline
     \end{tabular}
 \end{table}
 
 \newpage
 
-\hypertarget{FR12}\noindent \textbf{FR4:} Naudotojo duomenų naikinimas.
-\label{sec:FR4}
+\hypertarget{FR13}\noindent \textbf{FR13:} Duomenų prieigos valdymas.
+\label{sec:FR13}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.8cm}|m{12cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema turi
+        leisti valdyti prieigą prie asmeninių naudotojų duomenų. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Prieigos
+        valdymas užtikrina duomenų saugumą ir privatumo reikalavimus,
+        įgyvendinant atitikimą teisiniams BDAR reikalavimams. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Jeigu naudotojas neturi prieigos prie duomenų, jam parodomas
+        informacinis pranešimas apie draudžiamą duomenų prieigą. Jeigu
+        naudotojui prieiga suteikta - naudotojas gali peržiūrėti naudotojo
+        asmeninius duomenis. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
         Netenkinimas: 5, tenkinimas: 5. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR15}{\textcolor{steelblue}{\textbf{FR15:}
+            Analizės atlikimo užklausos siuntimas}}
+        \end{itemize}
+        \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
         atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hyperlink{PA6}{\textcolor{steelblue}{\textbf{PA6:} Išsiųsti užklausą
+        analizės atlikimui}} \\
         \hline
     \end{tabular}
 \end{table}
 
-\hypertarget{FR12}\noindent \textbf{FR4:} Naudotojo duomenų naikinimas.
-\label{sec:FR4}
+\hypertarget{FR14}\noindent \textbf{FR14:} Naudotojo duomenų naikinimas.
+\label{sec:FR14}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.8cm}|m{12cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema turi
+        leisti naudotojui panaikinti jo asmeninę informaciją bei su juo
+        susijusius biologinius duomenis. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
+        Savarankiškos suverenios tapatybės valdymo sistema privalo atitikti
+        BDAR 17 straipsnio reikalavimą suteikti naudotojui galimybę „būti
+        pamirštam“. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & 
+        Naudotojo asmeninėje paskyroje yra duomenų panaikinimo parinktis, kurią
+        pasirinkus yra panaikinami visi naudotojo asmeniniai bei su juo susiję
+        duomenys. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
         Netenkinimas: 5, tenkinimas: 5. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        - \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
         atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
-        \hline
-    \end{tabular}
-\end{table}
-
-%PA5 sieti su formos pateikimo FR.
-
-\newpage
-
-\hypertarget{FR12}\noindent \textbf{FR4:} Analizės atlikimo užklausos siuntimas.
-\label{sec:FR4}
-\begin{table}[htb!]
-    \captionsetup{justification=centering}
-    \begin{tabular}{|m{4.8cm}|m{12cm}|}
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
-        Netenkinimas: 5, tenkinimas: 5. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
-        atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
-        \hline
-    \end{tabular}
-\end{table}
-
-\hypertarget{FR12}\noindent \textbf{FR4:} Analizės atlikimo užklausos gavimas.
-\label{sec:FR4}
-\begin{table}[htb!]
-    \captionsetup{justification=centering}
-    \begin{tabular}{|m{4.8cm}|m{12cm}|}
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
-        Netenkinimas: 5, tenkinimas: 5. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
-        atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hyperlink{PA4}{\textcolor{steelblue}{\textbf{PA4:} Pateikti prašymą
+        „būti pamirštam“}} \\
         \hline
     \end{tabular}
 \end{table}
 
 \newpage
 
-\hypertarget{FR12}\noindent \textbf{FR4:} Prieigos prie duomenų tikrinimas.
-\label{sec:FR4}
+\hypertarget{FR15}\noindent \textbf{FR15:} Analizės atlikimo užklausos
+siuntimas.
+\label{sec:FR15}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.8cm}|m{12cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema turi
+        leisti sistemos naudotojams (gydytojams - genetikams) išsiųsti užklausą
+        tyrėjams su prašymu atlikti turimų biologinių duomenų analizę. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Analizių
+        atlikimas su biologiniais duomenimis yra esminis sistemos
+        funkcionalumas, todėl sistema turi leisti inicijuoti šių analizių
+        atlikimą. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Gydytojas - genetikas sistemoje gali pasirinkti biologinius duomenis,
+        kurių analizės rezultatų tikisi, ir pateikti analizės atlikimo užklausą
+        tyrėjui. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
         Netenkinimas: 5, tenkinimas: 5. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR17}{\textcolor{steelblue}{\textbf{FR17:}
+            Prieigos prie duomenų tikrinimas}}
+        \end{itemize}
+        \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
         atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hyperlink{PA6}{\textcolor{steelblue}{\textbf{PA6:} Išsiųsti užklausą
+        analizės atlikimui}} \\
         \hline
     \end{tabular}
 \end{table}
 
-\hypertarget{FR12}\noindent \textbf{FR4:} Biologinių duomenų analizės atlikimas.
-\label{sec:FR4}
+\hypertarget{FR16}\noindent \textbf{FR16:} Analizės atlikimo užklausos gavimas.
+\label{sec:FR16}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.8cm}|m{12cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema turi
+        leisti sistemos naudotojams (tyrėjams) gauti užklausą su prašymu atlikti
+        tam tikrų biologinių duomenų analizę. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Analizių
+        atlikimas su biologiniais duomenimis yra esminis sistemos
+        funkcionalumas, todėl sistema turi leisti tyrėjams gauti užklausą apie
+        reikalingą analizės atlikimą. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Tyrėjas sistemoje mato sąrašą su visomis analizių atlikimo užklausomis
+        bei jų atlikimo terminais. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        Netenkinimas: 5, tenkinimas: 3. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR15}{\textcolor{steelblue}{\textbf{FR15:}
+            Analizės atlikimo užklausos siuntimas}}
+        \end{itemize}
+        \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
         atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hyperlink{PA6}{\textcolor{steelblue}{\textbf{PA6:} Išsiųsti užklausą
+        analizės atlikimui}} \\
         \hline
     \end{tabular}
 \end{table}
 
 \newpage
 
-\hypertarget{FR12}\noindent \textbf{FR4:} Biologinių duomenų analizės rezultatų
+\hypertarget{FR17}\noindent \textbf{FR17:} Prieigos prie duomenų tikrinimas.
+\label{sec:FR17}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema
+        turi tikrinti, ar naudotojas - tyrėjas - gavęs užklausą atlikti
+        biologinių duomenų analizę turi prieigą prie šių duomenų. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
+        Savarankiškos suverenios asmens tapatybės valdymo sistemoje duomenų
+        savininkas pats valdo savo duomenis ir pats suteikia prieigą prie šių
+        duomenų kitiems naudotojams, todėl prieš atliekant biologinių duomenų
+        analizę svarbu įsitikinti, ar duomenų savininkas yra davęs leidimą
+        naudoti dirbti su jo duomenimis. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & 
+        Po to, kai gydytojas - genetikas inicijuoja biologinės duomenų
+        analizės atlikimo užklausos siuntimą, sistema patikrina, ar užklausoje
+        nurodytas tyrėjas turi prieigą prie duomenų. Pagal tai sistema turi
+        atlikti kitus sisteminius veiksmus. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 1. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR13}{\textcolor{steelblue}{\textbf{FR13:}
+            Duomenų prieigos valdymas}}
+            \item \hyperlink{FR15}{\textcolor{steelblue}{\textbf{FR15:}
+            Analizės atlikimo užklausos siuntimas}}
+        \end{itemize}
+        \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA6}{\textcolor{steelblue}{\textbf{PA6:} Išsiųsti užklausą
+        analizės atlikimui}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\hypertarget{FR18}\noindent \textbf{FR18:} Biologinių duomenų analizės
+atlikimas.
+\label{sec:FR18}
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \begin{tabular}{|m{4.8cm}|m{12cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema turi
+        leisti atlikti skirtingas biologinių duomenų analizes. Atliekamų
+        analizių sąrašas pateiktas \textbf{\emph{\color{red}{Priede Nr.1}}}. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Analizių
+        atlikimas su biologiniais duomenimis yra esminis sistemos
+        funkcionalumas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Sistemos naudotojas - tyrėjas - gavęs biologinių duomenų atlikimo
+        analizės užklausą ir turintis prieigą prie aktualių duomenų gali atlikti
+        \textbf{\emph{\color{red}{Priede Nr.1}}} aprašytas analizes. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
+        Netenkinimas: 5, tenkinimas: 5. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR7}{\textcolor{steelblue}{\textbf{FR7:}
+            Failų įkėlimas}}
+            \item \hyperlink{FR9}{\textcolor{steelblue}{\textbf{FR9:}
+            Duomenų šifravimas}}
+            \item \hyperlink{FR16}{\textcolor{steelblue}{\textbf{FR16:}
+            Analizės atlikimo užklausos gavimas}}
+            \item \hyperlink{FR17}{\textcolor{steelblue}{\textbf{FR17:}
+            Prieigos prie duomenų tikrinimas}}
+        \end{itemize}
+        \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
+        atvejis} &
+        \hyperlink{PA7}{\textcolor{steelblue}{\textbf{PA7:} Atlikti biologinių
+        duomenų analizę}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+
+\hypertarget{FR19}\noindent \textbf{FR19:} Biologinių duomenų analizės rezultatų
 atvaizdavimas.
-\label{sec:FR4}
+\label{sec:FR19}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.8cm}|m{12cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema turi
+        atvaizduoti atliktos analizės rezultatus analizės užklausą pateikuriam
+        naudotojui gydytojui - genetikui. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Atlikus
+        biologinių duomenų analizę jie privalo būti atvaizduoti naudotojui,
+        iniciavusiam analizės atlikimą, kad, remiantis rezultatais, galėtų
+        daryti išvadas apie genetinius rodmenis. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
+        Sistemos naudotojas gydytojas - genetikas prie užklausos, kurią
+        pateikė tyrėjui, pamato atsiradusią analizės rezultatų peržiūros
+        parinktį. \\ % rezultatus įrašyti prie medicininės kortelės???
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
         Netenkinimas: 5, tenkinimas: 5. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{FR15}{\textcolor{steelblue}{\textbf{FR15:}
+            Analizės atlikimo užklausos siuntimas}}
+            \item \hyperlink{FR18}{\textcolor{steelblue}{\textbf{FR18:}
+            Biologinių duomenų analizės atlikimas}}
+        \end{itemize}
+        \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
         atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hyperlink{PA7}{\textcolor{steelblue}{\textbf{PA7:} Atlikti biologinių
+        duomenų analizę}} \\
         \hline
     \end{tabular}
 \end{table}
 
-\hypertarget{FR12}\noindent \textbf{FR4:} Biologinių duomenų analizės užklausos
+\hypertarget{FR20}\noindent \textbf{FR20:} Biologinių duomenų analizės užklausos
 atmetimas.
-\label{sec:FR4}
+\label{sec:FR20}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.8cm}|m{12cm}|}
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema turi
+        parodyti informacinį pranešimą apie neleistiną biologinių duomenų
+        analizės užklausos išsiuntimo veiksmą dėl prieigos neturėjimo. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Gydytojas -
+        genetikas turi būti informuojamas apie tai, kodėl nepavyko išsiųsti
+        užklausos tyrėjui. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & . \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užklausos. \\
         \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Aukštas. \\
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} & Po to,
+        kai gydytojas - genetikas suformuoja analizės atlikimo užklausą tyrėjui,
+        kuris neturi prieigos prie aktualių biologinių duomenų, parodomas
+        pranešimas apie neleistiną sistemos veiksmą. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
         Netenkinimas: 5, tenkinimas: 5. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        Netenkinimas: 5, tenkinimas: 5. \\
+        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
+                            after=\vspace{-1em}]
+            \item \hyperlink{PA15}{\textcolor{steelblue}{\textbf{PA15:} Analizės
+            atlikimo užklausos siuntimas}}
+            \item \hyperlink{PA17}{\textcolor{steelblue}{\textbf{PA17:} Prieigos
+            prie duomenų tikrinimas}}
+        \end{itemize}
+        \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
         atvejis} &
-        \hyperlink{PA1}{\textcolor{steelblue}{\textbf{PA1:} Užsiregistruoti
-        sistemoje skirtingų kategorijų naudotojams}} \\
+        \hyperlink{PA7}{\textcolor{steelblue}{\textbf{PA7:} Atlikti biologinių
+        duomenų analizę}} \\
         \hline
     \end{tabular}
 \end{table}
@@ -3108,352 +3186,3 @@ sistema gali būti sudiegta vėliau nei yra numatyta projekto plane.
 
 % KABUTĖS: „ “
 \end{document}
-
-
-
-% Reikalavimų specifikacijos paaiškinimai
-% (Volere Šablonas)
-% Projekto varovai (Project Drivers)
-% 1.Sistemos paskirtis
-% Tai sistemos kūrimo priežastis bei nauda, kurią sistema duos, jeigu bus sukurta;Čia gali būti įvardintos veiklos problemos, su kuriomis susiduria klientas, numatant, kaip jas gali išspręsti kuriama sistema 
-% 1.1. Projekto kūrimo pagrindas (pagrindimas)
-% Projekto pagrindimui gali būti pasiremta įvairiomis nuorodomis, argumentuojančiomis sistemos kūrimo reikalingumą. Galimas atvejis, kad problemos nėra, tačiau yra poreikis (galimybė) plėsti tam tikrą veiklą. Tuomet tokia galimybė turi būti aprašyta 
-% 1.2. Sistemos tikslai (paskirtis)
-% Aprašoma, ko norima iš sistemos, ką ji turi atlikti, kaip ji įtakos veiklos tikslų sėkmingą pasiekimą.
-% 2.Užsakovai, pirkėjai ir kiti sistema suinteresuoti asmenys
-% Būtina turėti informaciją apie šiuos asmenis, kad išvengti skaudžių netikėtumų.
-% 1.Užsakovas. Tai asmuo, kuris apmoka sistemos kūrimo darbus ir taps šios sistemos savininku. dažnai tai asmuo, esantis sistemos vartotojo padalinio vadovu. Šiame punkte nurodomi šio asmens duomenys. Kartais gali būti keli asmenys. Užsakovas priima galutinį produktą (sistemą), todėl turi būti juo patenkintas. Jei sistema kuriama savoms reikmėms, tai užsakovas ir pirkėjas gali būti tas pats asmuo. Jei sistema kuriama rinkai (išorės vartotojams), tuomet užsakovu gali būti marketingo skyrius, kurį atstovauja šio skyriaus darbuotojas
-% 2.Pirkėjas. Tai sistemą perkantis asmuo (atstovaujantis organizaciją). Jei sistema skirta savoms reikmėms, tai pirkėjas yra asmuo, kuris priima galutinį sprendimą, ar sistema reikalinga. Tai gali būti padalinio, kuriame diegiama sistema, vadovas, arba visos organizacijos vadovas. Jei sistema skirta rinkai, tai pirkėjas yra sistemą įsigyjančią organizaciją atstovaujantis asmuo. Jei pirkėją atstovauja sistemą platinančios organizacijos marketingo skyrius, tuomet jie turi pateikti kuo tikslesnę numatomų faktinių pirkėjų charakteristiką. 
-% 3.Kiti sprendimus priimantys asmenys. Pateikiama informacija apie kitus sistemos kūrimą įtakojančius asmenis. Tai gali būti: 
-% Vadovybė arba projekto rėmėjai;
-% Veiklos srities ekspertai;
-% Techniniai specialistai;
-% Projektuotojai;
-% Marketingo specialistai;
-% Projekto vadovai;
-% Testuotojai ir kokybę tikrinantys asmenys;
-% Inspektoriai (darbo saugos) arba auditoriai;
-% Teisininkai.
-% Šie asmenys išreiškia tam tikrus reikalavimus sistemai.
-
-% 3.Vartotojai
-% Tai asmenų, kurie betarpiškai naudosis sistema, sąrašas. Kiekvienai vartotojų kategorijai reikia nurodyti tokią informaciją:
-% •Vartotojo kategorija, pav., mokinys, inžinierius, projekto vadovas;
-% •Vartotojo sprendžiami uždaviniai (atliekamos funkcijos) - tai vartotojo funkcijų suvestinė;
-% •Patirtis dalykinėje srityje - naujokas, įprastas darbuotojas, srities specialistas (meistras);
-% •Patirtis informacinėse technologijose - naujokas, patyręs, informatikas;
-% •Papildomos vartotojo  charakteristikos - turinčios įtaką reikalavimams bei sistemos savybėms. Tai gali būti:
-% •fizinės galimybės (negalia);
-% •intelektualinės galimybės (negalia);;
-% •požiūris į darbą;
-% •požiūris į IT;
-% •apsimokymo poreikis;
-% •kalbos įgūdžiai;
-% •amžiaus grupė;
-% •lytis.
-% Vartotojo charakteristika turi būti įvertinta pildant šablono punktą 4.1. Ji gali labai įtakoti priimamus projektinius sprendimus, nes vartotojai gali būti įvairiausi žmonės, kurių interesai ir charakteristikos labai skirtingos: dvasininkai; atsitiktiniai asmenys; neraštingi asmenys; nuo sistemos “nutolę” asmenys; saugumo tarnybų darbuotojai; žmonės, dirbsiantys per telefoną ar internetą ir t.t.
-% •Vartotojų prioritetai. Kiekvienai vartotojų grupei rekomenduojama suteikti prioritetą. Tai gali būti:
-% •svarbiausi vartotojai - jų nuomonė ir pageidavimai svarbiausi;
-% •antraeiliai vartotojai - jei kyla konfliktas su pirmąja grupe, tai jų nuomonė turi didesnę įtaką;
-% •nesvarbūs (atsitiktiniai) vartotojai
-
-% Projekto Apribojimai
-% Tai apribojimai, kurie įtakoja reikalavimų specifikaciją bei sistemos kūrimo eigą bei charakteristikas.
-
-% 4.Įpareigojantys apribojimai. (Mandated constraints) 
-% 4.1. Apribojimai sprendimui
-% Tai išankstiniai apribojimai sistemos kūrimo eigai ar charakteristikoms. Jie turi nurodymo (griežto reikalavimo) pobūdį. Juos reikia tiksliai aprašyti, nepamirštant numatyti, kaip galima “išmatuoti” (testuoti) jų laikymąsi sukurtoje sistemoje. Čia galima apibūdinti ir tokio apribojimo atsiradimo priežastis.
-% Šiuos apribojimus dažniausiai pateikia užsakovas, pirkėjas arba vartotojas dėl įvairiausių priežasčių. Neįvertinus šių apribojimų, sistema gali būti nepriimta. Šie apribojimai apibrėžia tam tikrą galimų sprendimų kontekstą, todėl juos reikia registruoti itin kruopščiai. Negalima apriboti laisvės priimti geresnį sprendimą. Čia gali būti pateikiami tik neginčytini apribojimai.
-
-% 4.2.Diegimo aplinka
-% Charakterizuojama technologinė ir fizinė aplinka, kurioje sistema bus įdiegta. Tai apima automatizavimo, mechanizavimo, organizacinius ir kitokius įrenginius, kurie atspindi su kuriama sistema bendradarbiausiančias sistemas (nevertinant žmogaus)
-% Tai technologinės aplinkos aprašas, kuris leidžia sistemos projektuotojams įvertinti ir realizuoti reikalingas komunikavimo tarp sistemos ir technologinės aplinkos priemones. Šio aprašo pagrindu sudaroma šablono punkto 4.3 specifikacija. Čia pateikiamos diegimo aplinkos visos pagrindinės charakteristikos. Jei sistema įtakos organizacinę struktūrą, tuomet galima įdėti organizacinę schemą (organization chart).
-
-% 4.3.Bendradarbiaujančios sistemos
-% Carakterizuojama sisteminė aplinka (posistemės) - su kuria kuriama sistema turės bendradarbiauti. Tai gali būti: kitos taikomosios sistemos (posistemiai), sukurtos išimtinai šiai organizacijai; specializuoti komerciniai programų paketai ir t.t. Šis punktas apibrėžia integravimo uždavinius ir problemas. Patikrinkite veiklos konteksto modelį, kad nustatyti, ar nėra gretimų sistemų, kurias galima įvardinti kaip komunikuojančias sistemas. 
-
-% 4.4.Komerciniai specializuoti programų paketai
-% Carakterizuojami specializuoti į kuriamą sistema numatomi įtraukti programų paketai, kurie bus reikalingi kuriamos sistemos funkcionalumui užtikrinti. ai reikalinga įvertinti, kadangi papildomų paketų charakteristikos, sąsajos sudėtis bei “elgesys” turi įtaką formuojant reikalavimus kuriamai sistemai;
-% Formuojant reikalavimus gali išryškėti prieštaravimai tarp reikalavimų ir numatomų naudoti specializuotų paketų. Tuomet tenka svarstyti, ar įmanoma tokius prieštaravimus išspręsti, ar specializuotas paketas yra geras sprendimo variantas.
-
-% 4.5.Numatoma darbo vietos aplinka
-% Carakterizuojama aplinka, kurioje dirbs sistemos vartotojas. Aprašomos darbo vietos savybės, kurios gali turėti įtakos sistemos projektavimui. Punkto tikslas - fizinės darbo vietos charakteristikų, kurios gali įtakoti reikalavimus sistemai, identifikavimas. Sistema turės kompensuoti darbo vietos keliamus sunkumus ir įvertinti esamus apribojimus. Tai gali būti, pavyzdžiui: “spausdintuvas bus toli nuo vartotojo darbo vietos” - matyt nereikėtų teikti prioriteto spausdintiems sistemos rezultatams; “darbo vieta yra lauke”; “darbo vieta triukšminga “ - garsiniai signalai neduos efekto; “darbo vieta mobili”.
-
-% 4.6.Sistemos kūrimo terminai
-% Numatomi visi laiko apribojimai arba galimi terminų keitimo (tikslinimo) faktoriai. Būtina numatyti konkrečias datas ir argumentus, kodėl tokie terminai fiksuojami. Gali būti numatomos ir atskirų sistemos dalių užbaigimo ar parengimo testavimui datos. Gali būti pateikiamos įvairios griežtų terminų priežastys: tenka laikytis numatyto sistemos paleidimo grafiko; kitų veiklos sričių ar sistemų priklausomybė nuo kuriamos sistemos; rinkos tyrimo rezultatų pagrindu (susidaro palanki situacija); veiklos, naudosiančios sistemą, vystymas pagal grafiką. Tikslinga įvertinti terminų nesilaikymo pasekmes (“Kas bus jei…”)
-
-% 4.7.Sistemos kūrimo biudžetas
-% Numatomi sistemos kūrimo finansiniai ištekliai kiekine išraiška. Reikalavimai negali viršyti biudžeto, todėl dalies reikalavimų gali tekti atsisakyti. Įvertinus numatomą skirti biudžetą, galima identifikuoti, ar sistema tikrai reikalinga (ar jos tikrai pageidaujama).
-
-% 5.Terminų žodynas
-% Pateikiamas terminų, kurie bus naudojami specifikuojant reikalavimus, žodynas. Žodyne sukaupiamos dalykinėje srityje naudojamos standartinės sąvokos. Kiekvienai sąvokai pateikiamas glaustas paaiškinimas. Sąvokos turi būti priimtinos dalykinės srities atstovams. Šio punkto paskirtis - sudaryti dalykinės srities sąvokų žodyną, dėl ko gali būti sutaupyta daug laiko įvairiems paaiškinimams. Taip išvengiama nesusipratimų. Žodynas naudojamas bei papildomas sistemos projektavimo metu
-
-% 6.Svarbūs faktai ir prielaidos
-% Išoriniai faktoriai, įtakojantys kuriamą sistemą, tačiau nepriklausantys iš anksto nustatomiems apribojimams, kurie įtakoja reikalavimų specifikaciją. Šiame punkte charakterizuojami kiti išoriniai veiksniai, sistemos, veiklos (pasaulio mastu), galintys įtakoti sistemą. Svarbūs faktai ne visuomet transformuojami į reikalavimus, tačiau toks atvejis galimas. Į šį punktą įtraukiami tie faktai, kurie nepatenka į kitus šablono punktus, tačiau numanoma, kad jie įtakoja reikalavimų specifikaciją
-
-% Pateikiamas prielaidų sąrašas, kurias pateikia sistemos kūrėjai. Jos gali liesti įvairius sistemos kūrimo aspektus. Prielaidos, tam tikra prasme, yra faktų priešingybė, nes gali būti neteisingos, tačiau gali ir pasiteisinti. Šis punktas turi dvi paskirtis: suteikti galimybę pateikti prielaidas; susipažinti su pateiktomis prielaidomis.
-% Tai gali būti prielaidos dėl:
-% • kitų sistemos dalių, kitų sistemų, programų paketų ar komponentų parengtumo naudojimui, kai to reiks projektuotojui;
-% •sistemos veikimo technologinės aplinkos (suderinamumo aspektas);
-% •vartotojo galimybių;
-% •kitų sistemų, kurios kuriamos kartu su pastarąja sistema;
-% •kitų (pirktinių) komponentų panaudojimo galimybių;
-% •priklausomybių nuo išorinių sistemų ar asmenų;
-% •naujų įstatymų ar politinių sprendimų.
-
-
-% Funkciniai reikalavimai
-% 7.Veiklos sfera (The scope of the work)
-% 7.1.Veiklos kontekstas (pateikiama konteksto diagrama)
-% Nagrinėjamai veiklos sričiai apibrėžti naudojama “Konteksto diagrama”. Šią sritį tenka ištirti, kad sukurti sistemą. Veiklos kontekstas apima plačiau, nei kuriamos sistemos atliekamos funkcijos. Kol nesuprasime darbo (veiklos), kuriam turi talkinti sistema, tol nesukursime tinkamos sistemos, kurį “įsirašys” į aplinką. Veiklos kontekstas apibrėžia dominančią veiklą ir jos naudojamus bei formuojamus informacijos srautus. Veiklos “atsakomybė” prasideda kai informacijos srautas įeina į sistemą ir baigiasi, kai rezultatinis srautas išeina iš sistemos. Išorinės esybės diagramoje modeliuoja kaimynines (gretimas) sistemas (tai aplinkinės sistemos arba žmonės)
-
-% Konteksto diagrama ( pavyzdys)
-% Sąsaja tarp kaimyninių sistemų ir veiklos konteksto nusako, dėl kokių priežasčių kaimyninė sistema mus domina. Informacijos srautai tarp gretimų sistemų ir veiklos srities nusako, už ką yra atsakinga nagrinėjama veikla ir už ką - kaimyninės sistemos
-
-% 7.2.Veiklos padalinimas
-% Sudaromas veiklos įvykių sąrašas, kuris apima visus veiklos įvykius, už kuriuos yra atsakinga nagrinėjama veikla. Veiklos įvykiai - tai vartotojo išskiriami veiksmai, atliekami veiklos metu. Reakcija (atsakymas) į kiekvieną įvykį atvaizduoja veiklos dalį, įeinančią į bendras veiklą sudarančias funkcijas.
-% Įvykių sąrašą sudaro: 1) Įvykio pavadinimas; 2) Įeinantys ir išeinantys informacijos srautai, kurie “lydi” įvykį. eiklos padalinimo paskirtis - identifikuoti veiklos “gabaliukus” , kurių pagrindu būtų galima nustatyti reikalavimus. iklos įvykių pagrindu toliau galima remtis atliekant  sistemos detalią analizę ir projektavimą.
-
-
-
-% Lentelė. Veiklos įvykių sąrašas ( pavyzdys)
-
-% 8.
-% Produkto veiklos sfera (The scope of the product)
-% 8.1.Sistemos ribos
-% Ribas tarp sistemos ir vartotojo nusako panaudojimo atvejų diagrama. Panaudojimo atvejų diagrama sudaroma įvertinant kiekvieną išskirtą veiklos įvykį ir kuriamos sistemos indėlį šio įvykio atžvilgiu
-
-
-
-
-% Panaudojimo atvejų diagrama ( pavyzdys)
-
-% 8.2.Panaudojimo atvejų sąrašas
-% Panaudojimo atvejų diagrama apjungia visus sistemos apimamus panaudojimo atvejus. Jei jų skaičius viršija 15-20, tuomet tikslinga sudaryti jų sąrašą ir modeliuoti atskirais fragmentais. Kiekvienam sąrašo panaudojimo atvejui pateikiamas :
-% 1) panaudojimo atvejo numeris;
-% 2) vartotojo / aktoriaus pavadinimas;
-% 3) panaudojimo atvejo aprašas; 
-% 4) panaudojimo atvejo tenkinimo kriterijus.
-% Jei yra sudarytas panaudojimo atvejo aprašas ir (arba) tam tikri jo scenarijaus modeliai, tuomet panaudojimo atvejų sąraše gali būti nuoroda į šią medžiagą.
-
-% 1. PANAUDOJIMO ATVEJIS: Informacijos apie personalą registravimas
-
-% Vartotojas/Aktorius: 	Laivo vado pavaduotojas
-% Aprašas: 	Apima procesą, kurio metu laivo vado pavaduotojas registruoja informaciją apie laivo personalą.
-% Prieš sąlyga: 	Asmuo nėra registruotas sistemoje;
-% 			Asmuo dalyvaus apskaitos procesuose.
-% Sužadinimo sąlyga: 	Atsirado naujas asmuo, kuris bus personalo narys (dalyvaus apskaitoje).
-% Po-sąlyga: 	Sistemoje užregistruojamas naujas personalo asmuo.
-
-% Panaudojimo atvejo aprašas (pavyzdys)
-
-
-% 9.Funkciniai reikalavimai ir reikalavimai duomenims
-% Funkcinius ir nefunkcinius reikalavimus tikslinga pateikti prisilaikant vieningos formos. Ši forma atstoja vieningą reikalavimo specifikavimo struktūrą. Ši reikalavimų forma gali būti pateikiama ant atskiros kortelės, tačiau vėliau tokiu pavidalu užregistruota reikalavimų specifikacija gali būti apdorojama kompiuterizuotu būdu. 
-
-% FORMA REIKALAVIMAMS REGISTRUOTI
-
-% Reikalavimo identifikavimas. Reikalavimas identifikuojamas trimis parametrais:
-% •numeriu;
-% •tipu;
-% •įvykiu arba panaudojimo atvejo numeriu.
-% Reikalavimas turi būti trasuojamas (stebimas) per visą sistemos kūrimo laiką, todėl logiška, kad numeravimas turi būti unikalus.
-% Suklasifikavus reikalavimus pagal tipus paprasčiau:
-% • nustatyti, kurie iš jų prieštarauja tarpusavyje;
-% • numatyti reikiamą tikimo kriterijų;
-% • aptikti dubliavimąsi ir trūkstamus reikalavimus.
-% Įvykių numeriai gali būti pritaikyti panaudojimo atvejams numeruoti, tačiau gali būti ir nesutapimų. Reikalavimas susiejamas su panaudojimo atvejais, nurodant jų numerius.
-% Aprašymas skirtas reikalavimo paskirčiai apibrėžti. Tai tekstinis reikalavimo apibrėžimas. Jame turi atsispindėti užsakovo arba vartotojo pageidavimai. Geriausia apsiriboti vienu aprašymo sakiniu. 
-
-% Pagrindimas skirtas nusakyti reikalavimo reikalingumą. Jame nurodoma, kodėl reikalavimas svarbus, kokia jo įtaka sistemos tikslams. Pagrindimas atskleidžia reikalavimo prasmę bei įtaką visai sistemai, todėl gali būti panaudotas įvertinant reikalavimo reikalingumą bei kokybę. 
-
-% Šaltinis - tai asmuo, kuris iškėlė reikalavimą. Tradiciškai tai tam tikromis žiniomis (susijusiomis su reikalavimu) pasižymintis ir pareigas užimantis asmuo. 
-
-% Tinkamumo kriterijus - tai kvantifikuotas tikslas, kurį turi tenkinti sistema. Nors reikalavimas aprašomas vartotojo sąvokomis, tačiau tinkamumo kriterijus rašomas tiksliai nusakant jo išmatuojamumą, kad priimtus sprendimus būtų galima testuoti reikalavimo tenkinimo aspektu. Tai tartum savotiškas standartas kuriamai sistemai, kurio turi prisilaikyti projektuotojas. Tai labai svarbus reikalavimo specifikacijos punktas. 
-
-% Užsakovo patenkinimas ir nepatenkinimas: patenkinimo rangas atspindi, kiek bus patenkintas užsakovas, jei reikalavimas bus sėkmingai įvertintas. Rangui galima naudoti skalę nuo 1 iki 5. 1 reiškia, kad užsakovas nelabai kreips dėmesį, jei reikalavimas bus įvertintas, o 5 reiškia maksimalų vartotojo patenkinimą reikalavimo įvertinimu. Analogiškai vertinamas ir nepasitenkinimo rangas. 
-% Pavyzdžiui, turime reikalavimą: “Sistema užregistruos pakeitimus kelių tinkle” . Užsakovo patenkinimo rangas galėtų būti 3-5, o nepatenkinimo - tikriausiai maksimalus - 5, kadangi vartotojas dėl tokio funkcionalumo trūkumo bus labai nepatenkintas. 
-% Kitas atvejis: “Sistema signalizuos, jei oro stotis neperduos duomenų” Šiuo atveju, užsakovo patenkinimo rangas galėtų būti 5,  nors šio reikalavimo išpildymas nėra kritinis, kadangi inžinierius pats pastebės oro sąlygų registravimo stoties sutrikimą. Todėl nepasitenkinimas galėtų turėti rangą maždaug 2-3.
-
-% Priklausomybės: tai kiti reikalavimai, turintys įtaką nagrinėjamam reikalavimui. Pavyzdžiui, jei vienas reikalavimas keičiasi, tai turi keistis ir kitas. Arba vieno reikalavimo duomenys betarpiškai siejasi su kito reikalavimo duomenimis. Gali būti, kad vienas reikalavimas negali egzistuoti be kito reikalavimo įvertinimo.
-
-% Konfliktai: tai reikalavimai, kurie prieštarauja nagrinėjamam reikalavimui. 
-% Pavyzdžiui, galimas reikalavimas, kad “sistema suskaičiuotų trumpiausią kelią iki paskirties vietos”. O kitas reikalavimas gali nurodyti “surasti greičiausią kelią iki paskirties vietos”. Šie reikalavimai gali prieštarauti vienas kitam, kadangi trumpiausias kelias ne visada yra greičiausias kelias. 
-
-% •Papildoma medžiaga: Ne viską reikia pateikti reikalavimo specifikacijoje. Jei yra kas nors papildomai aprašančio reikalavimą, tuomet gali būti panaudota nuoroda į šią medžiagą. Tačiau čia reikia pateikti tik betarpiškai su reikalavimu susijusias nuorodas.
-
-% Istorija: čia užregistruojama, kada reikalavimas pirmą kartą buvo iškeltas, kada pakeistas pašalintas ar patikrintas (kokybės aspektu). Galima registruoti ir atsakingus asmenis. 
-
-% 9.1.Funkciniai reikalavimai
-
-% Tai sistemos numatomų veiksmų aprašas. Pavyzdžiui: “Sistema turi signalizuoti, jei oro stotis neperduoda duomenų”; “Sistema suformuoja patikslintą kelių valymo grafiką, jei dėl valymo įrengimų būklės pokyčių negali būti atlikti planuoti valymo darbai”.
-% Reikalavimų aprašas turi būti suprantamas vartotojui ir užsakovui, turi būti aiškiai suformuluotas, kad galėtų būti patikrintas. Detalumo laipsnis turi būti toks, kad užsakovas sugebėtų verifikuoti numatomą sistemos funkcionalumą.
-
-
-% Užpildyta reikalavimo forma (Pavyzdys)
-% Jei reikalavimo apraše nepakanka vieno sakinio, naudojamas jungtukas “ir” arba yra keli veiksmažodžiai (tariniai), tuomet tikėtina, kad bandoma užregistruoti daugiau nei vieną reikalavimą vienu metu. Funkciniai reikalavimai išvedami panaudojimo atvejų atskirų žingsnių pagrindu. 
-% Pavyzdžiui, panaudojimo atvejo žingsnis: “Sistema nustato, kurie keliai gali apledėti ir kada tai gali įvykti” yra panaudojamas šiems reikalavimams suformuluoti:
-% •“Sistema nustato regionus su ta pačia temperatūra pagal žemėlapio izotermas”
-% •“Sistema nustato kelio ruožus, kurie patenka į numatomus apledėjimo ruožus”
-% •“Sistema prognozuoja kelių apledėjimo laiką pagal žemėlapio laiko intervalus”
-% Kiekvienas funkcinis reikalavimas privalo turėti tikimo kriterijų. Jis priklauso nuo atliekamo veiksmo. 
-% Pavyzdžiui, jei veiksmas yra įrašyti tam tikrus duomenis, tuomet tikimo kriterijus galėtų numatyti, kad būtų galimybė duomenis atrinkti, o be to jie turi tenkinti tam tikrą standartą. Atliekant skaičiavimus, gauti rezultatai turi atitikti numatomus rezultatus.
-% Jeigu jau yra sudarytas įvykių/panaudojimo atvejų sąrašas, tuomet jį galima panaudoti formuojant funkcinius reikalavimus.
-% Jeigu įvykių/panaudojimo atvejų sąrašo dar nėra, tuomet kiekvienam funkciniam reikalavimui suteikiamas unikalus numeris, o vėliau jie sugrupuojami (susiejami) su suformuotais įvykiais/panaudojimo atvejais.
-
-% 9.2.Reikalavimai duomenims
-% Tai dalykinės srities objektų specifikacija, kuri siejasi su kuriama sistema. Tai atitinka pradinį duomenų modelio variantą, kuris gali būti pateiktas ER-diagramos arba klasių diagramos forma. Ši specifikacija kartais vadinama objektų arba srities modeliu. Galima pastebėti, kad ši specifikacija artimai siejasi su sąvokų (terminų) žodynu. Ši specifikacija skirta išryškinti sistemos kontekstą ir tuo pačiu išskirti dar neapibrėžtus reikalavimus. 
-
-% Duomenų modelis (pavyzdys)
-% Nefunkciniai reikalavimai
-% Nusako sistemos savybes, kuriomis ji turi pasižymėti. Tai kokybinės funkciniuose reikalavimuose numatytų funkcijų vykdymo charakteristikos.
-
-% 10. Reikalavimai sistemos išvaizdai (Look and feel)
-% Bendri reikalavimai vartotojo sąsajai. 
-% Pavyzdžiui:
-% •lengvai skaitoma sąsaja;
-% •paprastas (nesudėtingas) panaudojimas;
-% •prieinamumas, kad vartotojas nesivaržytų naudodamas sistemą;
-% •atitinkantis kitus vartotojo naudojamus produktus (pavyzdžiui, Lotus Notes tipinės sąsajos imitavimas);
-% •spalvota ir patraukli vaikams sąsaja;
-% •neįkyri sąsaja (pavyzdžiui, nereikalaujanti pastoviai ką nors kelis kartus patvirtinti);
-% •novatoriška ir meniška išvaizda;
-% •profesionali (imituojanti realią aplinką) išvaizda;
-% •įdomi išvaizda (reklamos tikslais);
-% •sąveikaujanti (aktyviai “bendraujanti”) sąsaja.
-
-% 11.Reikalavimai panaudojamumui (Usability)
-% Panaudojimo paprastumas (lengvumas), kuris gali būti vertinamas konkrečiais kriterijais. 
-% Pavyzdžiui:
-% •galimybė dirbti su viena ranka (kita užimta), vartotojams su negalia;
-% •paprastas naudotis inžinieriams - mechanikams (įprasti žymėjimai ar pan.); 
-% •paprastai panaudojamas bet kokio asmens be apsimokymo (90% sėkmingas pasinaudojimas pirmu bandymu);
-% •klaidos kaina (klaidos kainos sumažinimas); 
-% •nacionalinės kalbos panaudojimas;
-% •veiklos našumo prieaugis dėl sistemos diegimo.
-
-% 12.Reikalavimai vykdymo charakteristikoms (Performance)
-% Užduočių vykdymo greitis; transakcijų greitis; tikslumo koeficientas; galimas reikšmių diapazonas; talpumas (DB apimtis); resursų panaudojimo efektyvumas; patikimumas; išplečiamumas ir t.t.
-
-% 13.Reikalavimai veikimo sąlygoms (Operational)
-% Sistemos veikimo aplinka ir reikalavimai jai. Pavyzdžiui, sistemos veikimo gamtinės sąlygos (žema temperatūra; sniegas-lietus; vanduo (sūrus vanduo)); vartotojų darbo sąlygos (žema temperatūra; darbas naktį, blogas apšvietimas; vartotojas su pirštinėmis; vartotojas turi dirbti paskubomis); sistemos funkcionavimo partneriai ar bendradarbiaujančios sistemos; portatyvūs įrengimai (galimybė veikti po kritimo; galimybė naudotis prie įvairaus apšvietimo; taupus baterijų energijos panaudojimas) ir t.t.
-
-% 14.Reikalavimai sistemos priežiūrai (Maintainability and portability)
-% Prognozuojami pasikeitimai ir laiko sąnaudos jiems atlikti. Kuriant sistemą, sunku nustatyti, kokios bus šios sistemos tolimesnės priežiūros sąnaudos. Tačiau įmanomas bent dalinis įvertinimas, numatant, kad keisis: pati organizacija; organizacijos gyvavimo aplinka; įstatymai, reglamentuojantys sistemos veiklą; veiklos taisyklės ir t.t.
-% Pavyzdžiui, jei numatoma, kad sistema turės veikti kelių platformų pagrindu, tai ir turi būti įvardinta (“ turi būti galimybė perkelti sistemą į Linux OS aplinką”); be to, čia reiktų įvardinti orientacines sistemos perkėlimo sąnaudas (laiko ar lėšų).
-% Kitas pavyzdys: “sistemą numatoma pritaikyti kitai kalbai  arba įvairioms kalboms” Toks reikalavimas gali ženkliai pakeisti priimamus projektinius sprendimus, užtikrinant ne tik paprastą kalbos keitimą, bet ir galimybę prisitaikyti prie skirtingų kultūrinių reikmių ar duomenų vaizdavimo formų
-
-% 15.Reikalavimai saugumui (Security)
-% Tai vienas iš sudėtingiausių reikalavimų ir, be to, susijęs su didele rizika, jei jo nepaisoma. 
-% Reikia išskirti tris saugumo aspektus: 
-% •konfidencialumas - sistemoje esantys duomenys apsaugoti nuo neteisėtos prieigos;
-% •vientisumas (integrity) - sistemos duomenys vienareikšmiškai atitinka šaltinio perduotus (iš jo gautus) duomenis, kartu užtikrinant jų panaudojimo teisėtumą;
-% •pasiekiamumas - galimybė pasinaudoti duomenimis per fiksuotą laiką teisėtiems vartotojams.
-
-% 16.Kultūriniai-politiniai reikalavimai
-% Apribojimai, susiję su politiniais bei kultūriniais sistemos veikimo terpės ypatumais. Jie ypač aktualūs platinant sistemą įvairiose šalyse. Tai gali būti:
-% •priimtini sprendimai - pavyzdžiui, sistemos komponentai galėtų būti sukurti tam tikroje (priimtinoje) valstybėje;
-% •nepriimtini sprendimai - sistemoje neturi būti naudojami komponentai, sukurti tam tikroje bendrovėje (nepatikima bendrovė, pvz. Al Qaeda);
-% •atsiribojimas nuo egzistuojančių sistemų ar darbo stiliaus - klientas gali pageidauti, kad kuriama sistema būtų unikali (skirtųsi nuo esamų sistemų)
-% •politinis reikalavimas - reikalavimas be pateisinimo, argumentuojant jį “Aš to noriu”;
-% •religinis paprotys;
-% •politinis korektiškumas - sistemoje negalima naudoti ką nors įžeidžiančių terminų ar iliustracijų;
-% •kalbos apribojimai (reikalavimai).
-
-% 17.Teisiniai reikalavimai
-% Apribojimai, susiję su įstatymais. tai būtina įvertinti netgi kuriant sistemą savo organizacijos reikmėms. Suderinamumui pasiekti, galima pasinaudoti keletu patarimų:
-% •ištirkite gretimas (kartu naudojamas) sistemas ar paklausinėkite aktorius, kurie kontaktuos su kuriama sistema;
-% •įvertinkite jų keliamus teisinius reikalavimus ir teises (pavyzdžiui, ar gretima sistema turi teisę naudotis mūsų sistemos duomenimis?);
-% •nustatykite, ar nėra įstatymų atitinkančių sistemos (atskiro panaudojimo atvejo) veikimo ar naudojimo principus (duomenų saugumas, privatumas, teisė gauti informaciją ir pan.).
-% Teisinis reikalavimas gali būti registruojamas taip: “Sistema turi laikytis xxx įstatymo reikalavimų”. 
-% Negalima pamiršti, kad kuriama sistema ne visuomet apsiriboja tik tam tikros šalies įstatymais. Kartais galima nurodyti reikalavimą, apibrėžiantį tam tikrų standartų laikymąsi (Pavyzdžiui, ISO 9000 sertifikato reikalavimai).
-
-% Projekto išeiga (Project issues)
-% 18.Atviri klausimai (problemos)
-% Tai išaiškėję, tačiau dar sprendimo neturinčios problemos arba klausimai, dar neturintys atsakymo, faktorių apibūdinimas, kurie dar nėra aiškūs, tačiau svarbūs sistemai.
-% Pavyzdžiui: 
-% “Tyrimas, siekiant nustatyti ar panaudoti regiono meteorologinio centro duomenų bazę dar nėra užbaigtas. Tai turi įtakos meteorologiniams duomenims”;
-% “Planuojami vairuotojų darbo valandų pakeitimai gali įtakoti darbo grafiko sudarymą bei nuvalomų kelių ilgį. Pakeitimai iki šiol yra tik siūlymų stadijoje, o galutinis sprendimas galimas tik metų pabaigoj ”;
-% “Vyriausybė planuoja pakeisti atsakomybės už automagistralių valymą taisykles, tačiau dar neaišku, kas bus keičiama”.
-
-% 19.Egzistuojantys sprendimai (Off-the-Shelf Solutions)
-% 19.1.Pagamintos sistemos, kurios gali būti nupirktos
-% Pateikiamas sąrašas sistemų, kurios gali būti įsigytos ir panaudotos iškilusiems uždaviniams spręsti. Čia pateiktinos nuorodos į šių sistemų platesnes apžvalgas ar kitą charakterizuojančią medžiagą. Punkto paskirtis - įvertinti jau esamų sistemų panaudojimo galimybę, čia galima pateikti ir žinomų sistemų pavadinimus, kurių nereikėtų naudoti.
-
-% 19.2.Pagaminti komponentai, kurie gali būti panaudoti
-% Pateikiamas sąrašas komponentų, kurie gali būti nupirkti iš kitų firmų arba panaudoti pakartotinai, perimant juos iš organizacijoje veikiančių sistemų. Čia reiktų įvardinti komponentų šaltinius (bibliotekas)
-
-
-
-% 19.3.Galimas pakartotinas panaudojimas
-% Pateikiamas sąrašas kitų panašių sistemų. Geriau (pigiau) pakartotinas panaudojimas, nei naujo sukūrimas.
-% Pavyzdžiui, ”Kita organizacija įdiegė užsakovų aptarnavimo sistemą, kuri naudoja kitą operacinę aplinką bei techninę įrangą. Tačiau galima pasinaudoti (nusipirkti) sistemos specifikaciją ir sutaupyti ~ 60% analizės sąnaudų”. 
-
-% 20.Naujos problemos
-% 20.1.Problemos diegimo palinkai
-% Pateikiama charakteristika kuriamos sistemos įtakos jos diegimo aplinkai. Čia reikėtų charakterizuoti ir tuos dalykus, kurių nauja sistema neturėtų daryti. Punkto paskirtis - atskleisti potencialius konfliktus, kurie gali išaiškėti tik diegiant sistemą. Šis punktas reikalauja platesnio sistemos diegimo aplinkos supratimo. 
-% Pavyzdžiui, “ Bet kuris kelių valymo tvarkaraščio sudarymo principų pakeitimas įtakos dispečerių bei valymo įrengimų vairuotojų darbą”.
-
-% 20.2.Įtaka jau instaliuotoms sistemoms
-% Pateikiama charakteristika kuriamos sistemos įtakos jau instaliuotoms sistemoms. Labai retai sistema diegiama “tuščioje vietoje”. Būtina įvertinti kuriamos sistemos eksploatavimo problemas kartu su kitomis organizacijoje eksploatuojamomis sistemomis bei numatyti galimus konfliktus.
-
-% 20.3.Neigiamas vartotojų nusiteikimas
-% Charakterizuojama esamų vartotojų bet kurio pobūdžio neigiama reakcija kuriamos sistemos atžvilgiu. Galimas atvejis, kad vartotojai taip eksploatuoja sistemą, kad jie patiria diskomfortą bei kitas neigiamus reiškinius. Reikia numatyti neigiamą vartotojų reakciją bei priimamas priemones.
-
-% 20.4.Kliudantys diegimo aplinkos apribojimai
-% Pateikiama charakteristika galimų problemų, susijusių su naujos technologijos įdiegimu arba reikalingu organizacijos restruktūrizavimu.
-% Pavyzdžiui,”Sistemai diegti numatomas serveris nėra pakankamas apdoroti planuojamą skaitmeninių vaizdų apimtį”.
-
-% 20.5.Galimos naujos sistemos sukeltos problemos
-% Charakterizuojamos situacijos, su kuriomis galime nesusidoroti. 
-% Pavyzdžiui. Ar sugebėsime susidoroti su sistemos aptarnavimu, jei bus didelis jos poreikis? Ar sistema neprivers mūsų pažeisti įstatymus? Ar egzistuojanti techninė įranga pakankama sistemai diegti?  
-
-% 21.Uždaviniai
-% 21.1.Sistemos pateikimo žingsniai (etapai)
-% Aprašoma sistemos gyvavimo ciklo detalės bei sistemos pateikimo būdas. Tam tikslui gali būti tinkama aukšto lygio (nedetalizuota) procesų diagrama, kurioje parodomi realizuojami uždaviniai bei jų sąsaja. Punktas skirtas numatyti būdus sistemai pateikti, kad kiekvienas turėtų vienodą supratimą apie sistemą. Nereikėtų pamiršti duomenų perkėlimo, apmokymo ir kitų uždavinių.
-
-% 21.2.Vystymo etapai
-% Sistemos kiekvienos vystymo fazės (etapo) specifikacija bei veikimo aplinkos komponentų charakterizavimas. Punkto paskirtis - numatyti etapus naujos sistemos veikimo aplinkai sukurti, kad kūrimo procesą būtų galima valdyti. Būtina numatyti techninę bei kitą įrangą , reikalingą kiekviename sistemos kūrimo etape. Tai gali galutinai paaiškėti tik projektavimo etape.
-
-% 22.Pritaikymas (Cutover)
-% Pateikiamas pritaikymo veikos (darbų) sąrašas; pateikiamas jų realizavimo grafikas.
-% Punkto paskirtis - identifikuoti pritaikymo uždavinius, kurie turi būti įkomponuoti į projekto planavimo procesą. Jei naudojamas nuoseklus (“pažingsninis”) sistemos diegimas, tuomet reikia pateikti kiekvieno didesnio etapo šiam procesui keliamus reikalavimus. 
-% Kokios rankinės kopijavimo/išsaugojimo operacijos reikalingos sistemos diegimo metu.
-% Sistemos kiekvienos vystymo fazės (etapo) specifikacija bei veikimo aplinkos komponentų charakterizavimas.
-
-% 22.1.Reikalavimai esamų duomenų perkėlimui
-% Kokie turi būti atlikti duomenų perkėlimo darbai, ar yra reikiama programinė įranga? Jei nėra, tai čia turi būti aprašyti reikalavimai šiai įrangai. 
-
-% 22.2.Reikalingas duomenų transformavimas perkeliant į naują sistemą
-% Pateikiamas duomenų transformavimo uždavinių sąrašas bei identifikuojami duomenys, kurie turės būti perkelti į naują sistemą. Kai tik papildomas terminų žodynas, galima kelti klausimą, kur šią sąvoką charakterizuojantys duomenys bus saugomi ir ar nauja sistema įtakos jų struktūrą, ar bus reikalingas transformavimas?
-
-% 23.Rizikos
-% 23.1.Galimos sistemos kūrimo rizikos
-% Visi projektai yra rizikingi, bet skirtingu laipsniu. Valdant projektą būtina numatyti būdus, kaip kuo anksčiau identifikuoti momentus, kuomet rizika pradeda kelti problemas. Šiame punkte pateikiamas sąrašas rizikingų faktorių, šalia pateikiant tikimybinį įvertinimą, kad rizika sukels problemas. Rizikos faktorius tikslinga susieti su sistemos kūrimo grafiku - išlaidų sąmata, įvertinant nuostolius dėl rizikos faktorių sukeltų problemų.
-
-% 23.2.Atsitiktinumų (rizikų) valdymo planas
-% Rizikos faktoriai ir numatomi planai problemoms spręsti.
-
-% 24.Kaina
-% Turi būti numatyta sistemos kūrimo kaina. Jei reikalavimų specifikacija sudaryta, tuomet galima pasinaudoti tam tikra metodika kainai arba kūrimo laikui numatyti. Kainai numatyti nėra geriausio metodo, tačiau metodas turi remtis materialiais, suskaičiuojamais bei objekto apibrėžiamais faktoriais. Naudojantis šiuo šablonu suformuojama specifikacija, kuri leidžia išskirti nemažą kiekį išmatuojamų faktorių:
-% •įvedamų/išvedamų srautų skaičius;
-% •veiklos įvykių skaičius;
-% •panaudojimo atvejų skaičius;
-% •funkcinių reikalavimų skaičius;
-% •nefunkcinių reikalavimų skaičius;
-% •apribojimų reikalavimams skaičius.
-
-% 25.Vartotojo dokumentacija ir apmokymas
-% Pateikiamas vartotojui reikalingos dokumentacijos sąrašas. Tikslas - įvertinti dokumentacijos poreikį ir numatyti atsakingus asmenis jai parengti. Klausimai, į kuriuos reikia atsakyti:
-% •Kokio lygio dokumentacija reikalinga?
-% •Ar vartotojai dalyvaus rengiant dokumentaciją?
-% •Kas bus atsakingas už savalaikį dokumentacijos rengimą ir atnaujinimą?
-% •Kokia dokumentacijos pateikimo forma?
-% Numatomas vartotojų apmokymo grafikas (jei reikia).
-
-% 26.Perspektyviniai reikalavimai (Waiting room)
-% Pateikiami šioje sistemoje neįvertinami reikalavimai, kurie gali būti įvertinti perspektyvinėje sistemos versijoje ar kitoje sistemoje. Tai bet kokio tipo reikalavimai. Tikslas - užregistruoti svarbius, bet nerealizuotus reikalavimus, kurie “laukia savo eilės”.
-
-% 27.Idėjos sprendimams (Ideas for solutions)
-% Tai registras idėjų ir minčių, prie kurių dar reiks grįžti ateityje. Šios idėjos kyla registruojant ir specifikuojant reikalavimus. Pateikimo forma gali būti pati įvairiausia, tačiau nereikalaujanti daug apiforminimo pastangų: eskizas, pastabos, nuorodos į kitus dokumentus ar asmenis.
-% Šis punktas gali būti nepateikiamas kaip privaloma specifikacijos dalis 
