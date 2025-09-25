@@ -38,6 +38,7 @@
 \definecolor{dartmouthgreen}{rgb}{0.09, 0.45, 0.27}
 \definecolor{deepcarmine}{rgb}{0.66, 0.13, 0.24}
 \definecolor{steelblue}{rgb}{0.27, 0.51, 0.71}
+\definecolor{wheat}{rgb}{0.96, 0.87, 0.7}
 \usepackage{makecell}
 
 \newcommand{\EE}{\mathbb{E}\,}
@@ -342,9 +343,76 @@ būdingos žemiau aprašytos darbo vietos charakteristikos.
 \subsection{Sistemos kūrimo terminai}
 Sistema turi būti realizuota iki 2026 m. birželio 1 dienos.
 
-\subsection{Sistemos kūrimo biudžetas}
-Sistemos kūrimui skiriamas 120 000 eurų biudžetas, tačiau, esant poreikiui,
-biudžetas gali būti didinamas iki 150 000 eurų.
+\subsection{Sistemos kūrimo biudžetas}\label{sec:BIUDZETAS}
+Žemiau esančioje lentelėje (\hyperref[table:BIUDZETAS]{3 lentelė}) pateikiamas
+sistemos kūrimo biudžeto skaičiavimas.
+
+\begin{table}[htb!]
+    \label{table:BIUDZETAS}
+    \captionsetup{justification=centering}
+    \caption{\small\textbf{Projekto biudžeto skaičiavimas}.}
+    \vskip -10pt
+    \begin{tabular}{
+        |>{\centering\arraybackslash}m{6.3cm}
+        |>{\centering\arraybackslash}m{2cm}
+        |>{\centering\arraybackslash}m{2.5cm}
+        |>{\centering\arraybackslash}m{3cm}
+        |>{\centering\arraybackslash}m{2cm}|
+    }
+        \hline
+        \textbf{\cellcolor{deepchampagne}Išlaidos} &
+        \textbf{\cellcolor{deepchampagne}Vienetas} &
+        \textbf{\cellcolor{deepchampagne}Vienetų skaičius} &
+        \textbf{\cellcolor{deepchampagne}Vieneto kaina, EUR} &
+        \textbf{\cellcolor{deepchampagne}Viso, EUR}  \\
+        \hline
+        \raggedright\textbf{\cellcolor{wheat}{1. Žmonių ištekliai}} &
+        \cellcolor{wheat} & \cellcolor{wheat} & \cellcolor{wheat} &
+        \cellcolor{wheat} \\   
+        \hline
+        \raggedright\textbf{Projekto vadovas} & Mėnesis & 24 & 3 100 & 74 400 \\
+        \hline
+        \raggedright\textbf{Programuotojas} & Mėnesis & 24 & 1 700 & 40 800 \\
+        \hline
+        \raggedright\textbf{\emph{Iš viso žmonių išteklių}} & & & &
+        \textcolor{red}{115 200} \\
+        \hline
+        \raggedright\textbf{\cellcolor{wheat}{2. Įranga ir prekės}} &
+        \cellcolor{wheat} & \cellcolor{wheat} & \cellcolor{wheat} &
+        \cellcolor{wheat} \\    
+        \hline
+        \raggedright\textbf{Kompiuterio pelytė} & Vienetas & 1 & 25 & 25 \\
+        \hline
+        \raggedright\textbf{Kompiuteris} & Vienetas & 1 & 980 & 980 \\
+        \hline
+        \raggedright\textbf{Monitorius} & Vienetas & 1 & 120 & 120 \\
+        \hline
+        \raggedright\textbf{\emph{Iš viso įranga ir prekės}} & & & &
+        \textcolor{red}{1 125} \\
+        \hline
+        \raggedright\textbf{\cellcolor{wheat}{3. Programinė įranga}} &
+        \cellcolor{wheat} & \cellcolor{wheat} & \cellcolor{wheat} &
+        \cellcolor{wheat} \\
+        \hline
+        \raggedright\textbf{Linux operacinė sistema} & Vienetas & 1 & 0 & 0 \\
+        \hline
+        \raggedright\textbf{Visual Studio Code} & Vienetas & 1 & 0 & 0 \\
+        \hline
+        \raggedright\textbf{MagicDraw} & Vienetas & 1 & 181 & 181 \\
+        \hline
+        \raggedright\textbf{Microsoft Project} & Licencija (metams) & 2 &
+        112,80 & 225,6 \\
+        \hline
+        \raggedright\textbf{\emph{Iš viso programinė įranga}} & & & &
+        \textcolor{red}{406,6} \\
+        \hline
+        \raggedright\textbf{\cellcolor{wheat}{4. Viso tiesioginiai
+        projekto kaštai}} &
+        \cellcolor{wheat} & \cellcolor{wheat} & \cellcolor{wheat} &
+        \cellcolor{wheat}\textcolor{red}{\textbf{116 731,6}} \\
+        \hline
+    \end{tabular}
+\end{table}
 
 \newpage
 
@@ -2616,8 +2684,8 @@ Kuriant savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistemą
 turi būti laikomąsi žemiau aprašytų sistemos išvaizdos reikalavimų.
 \vskip 10pt
 
-\noindent \textbf{NF1:} Sistemos sąsaja turi būti neįkyri.
-\label{sec:NF1}
+\noindent \textbf{NFR1:} Sistemos sąsaja turi būti neįkyri.
+\label{sec:NFR1}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.9cm}|m{11cm}|}
@@ -2646,9 +2714,9 @@ turi būti laikomąsi žemiau aprašytų sistemos išvaizdos reikalavimų.
     \end{tabular}
 \end{table}
 
-\noindent \textbf{NF2:} Sistema turi būti pritaikyta darbui įvairaus amžiaus
+\noindent \textbf{NFR2:} Sistema turi būti pritaikyta darbui įvairaus amžiaus
 žmonėms.
-\label{sec:NF2}
+\label{sec:NFR2}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.9cm}|m{11cm}|}
@@ -2681,8 +2749,8 @@ turi būti laikomąsi žemiau aprašytų sistemos išvaizdos reikalavimų.
 
 \newpage
 
-\noindent \textbf{NF3:} Sistema turi būti intuityvi.
-\label{sec:NF3}
+\noindent \textbf{NFR3:} Sistema turi būti intuityvi.
+\label{sec:NFR3}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \begin{tabular}{|m{4.9cm}|m{11cm}|}
@@ -2721,9 +2789,9 @@ Kuriant savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistemą
 turi būti laikomąsi žemiau aprašytų panaudojamumo reikalavimų.
 \vskip 10pt
 
-\noindent \textbf{NF4:} Sistema turi būti nesudėtinga naudotis sistemos
+\noindent \textbf{NFR4:} Sistema turi būti nesudėtinga naudotis sistemos
 naudotojams.
-\label{sec:NF4}
+\label{sec:NFR4}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \vskip -10pt
@@ -2755,9 +2823,9 @@ naudotojams.
     \end{tabular}
 \end{table}
 
-\noindent \textbf{NF5:} Turi būti suteikta galimybė visiems sistemos naudotojams
+\noindent \textbf{NFR5:} Turi būti suteikta galimybė visiems sistemos naudotojams
 suprasti sistemoje naudojamus terminus.
-\label{sec:NF5}
+\label{sec:NFR5}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \vskip -10pt
@@ -2795,9 +2863,9 @@ Kuriant savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistemą
 turi būti laikomąsi žemiau aprašytų vykdymo charakteristikų reikalavimų.
 \vskip 10pt
 
-\noindent \textbf{NF6:} Autentifikacijos (tapatybės patikrinimo) operacija turi
+\noindent \textbf{NFR6:} Autentifikacijos (tapatybės patikrinimo) operacija turi
 būti įvykdyta per < 1 s.
-\label{sec:NF6}
+\label{sec:NFR6}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \vskip -10pt
@@ -2827,9 +2895,9 @@ būti įvykdyta per < 1 s.
     \end{tabular}
 \end{table}
 
-\noindent \textbf{NF7:} Patikrinimas, ar naudotojas leido pasiekti biologinius
+\noindent \textbf{NFR7:} Patikrinimas, ar naudotojas leido pasiekti biologinius
 duomenis, turi būti atliekamas per < 500 ms.
-\label{sec:NF7}
+\label{sec:NFR7}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \vskip -10pt
@@ -2867,8 +2935,8 @@ Kuriant savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistemą
 turi būti laikomąsi žemiau aprašytų saugumo reikalavimų.
 \vskip 10pt
 
-\noindent \textbf{NF8:} Visi saugomi biologiniai duomenys turi būti šifruojami.
-\label{sec:NF8}
+\noindent \textbf{NFR8:} Visi saugomi biologiniai duomenys turi būti šifruojami.
+\label{sec:NFR8}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \vskip -10pt
@@ -2899,9 +2967,9 @@ turi būti laikomąsi žemiau aprašytų saugumo reikalavimų.
     \end{tabular}
 \end{table}
 
-\noindent \textbf{NF9:} Naudotojų identifikavimo duomenys turi būti atskirti nuo
+\noindent \textbf{NFR9:} Naudotojų identifikavimo duomenys turi būti atskirti nuo
 biologinių duomenų, naudojant pseudonimizaciją ir anonimizaciją.
-\label{sec:NF9}
+\label{sec:NFR9}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \vskip -10pt
@@ -2939,9 +3007,9 @@ Kuriant savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistemą
 turi būti laikomąsi žemiau aprašyto teisinio reikalavimo.
 \vskip 10pt
 
-\noindent \textbf{NF10:} Sistemoje turi būti laikomąsi BDAR reikalavimo dėl
+\noindent \textbf{NFR10:} Sistemoje turi būti laikomąsi BDAR reikalavimo dėl
 pacientų duomenų pseudonimizavimo.
-\label{sec:NF10}
+\label{sec:NFR10}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \vskip -10pt
@@ -3044,8 +3112,92 @@ eigoje pasiekti rezultatai.
     \end{tabular}
 \end{table}
 
+\newpage
+
 \subsection{Vystymo etapai}
-Sistemos vystymas suskaidytas į atskirus etapus, kurie detaliai aprašyti 
+Sistemos vystymas suskaidytas į atskirus etapus, kurie aprašyti žemiau
+pateikiamuose skyriuose.
+
+\subsubsection*{\noindent \textbf{1.} Grafinės naudotojo sąsajos sukūrimas
+\emph{(registracijos modulis)}}
+
+\noindent Etapas turi būti įgyvendintas iki 2025-09-01. Susiję reikalavimai:
+
+\begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt, after=\vspace{-1em}]
+    \item \hyperlink{FR1}{\textcolor{steelblue}{\textbf{FR1:} Registracijos
+    formos pateikimas}}
+    \item \hyperlink{FR2}{\textcolor{steelblue}{\textbf{FR2:} Naudotojo
+    kategorijos pasirinkimas}}
+\end{itemize}
+
+\subsubsection*{\noindent \textbf{2.} Grafinės naudotojo sąsajos sukūrimas
+\emph{(gydytojų - genetikų modulis)}}
+
+\noindent Etapas turi būti įgyvendintas iki 2025-09-01. Susiję reikalavimai:
+\begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt, after=\vspace{-1em}]
+    \item \hyperlink{FR15}{\textcolor{steelblue}{\textbf{FR15:} Analizės
+    atlikimo užklausos siuntimas}}
+\end{itemize}
+
+\subsubsection*{\noindent \textbf{3.} Grafinės naudotojo sąsajos sukūrimas
+\emph{(pacientų modulis)}}
+
+\noindent Etapas turi būti įgyvendintas iki 2025-09-01. Susiję reikalavimai:
+
+\begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt, after=\vspace{-1em}]
+    \item \hyperlink{FR13}{\textcolor{steelblue}{\textbf{FR13:} Duomenų prieigos
+    valdymas}}
+    \item \hyperlink{FR14}{\textcolor{steelblue}{\textbf{FR14:} Naudotojo
+    duomenų naikinimas}}
+\end{itemize}
+
+\subsubsection*{\noindent \textbf{4.} Sistemoje įvedamų duomenų saugojimas
+duomenų bazėje ir šifravimo realizavimas}
+
+\noindent Etapas turi būti įgyvendintas iki 2025-09-01. Susiję reikalavimai:
+
+\begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt, after=\vspace{-1em}]
+    \item \hyperlink{FR3}{\textcolor{steelblue}{\textbf{FR3:} Formų
+    validavimas}}
+    \item \hyperlink{FR4}{\textcolor{steelblue}{\textbf{FR4:} Informacijos
+    išsaugojimas}}
+    \item \hyperlink{FR5}{\textcolor{steelblue}{\textbf{FR5:} Informavimas apie
+    sėkmingai atliktą veiksmą}}
+    \item \hyperlink{FR6}{\textcolor{steelblue}{\textbf{FR6:} Informavimas apie
+    nesėkmingai atliktą veiksmą}}
+    \item \hyperlink{FR7}{\textcolor{steelblue}{\textbf{FR7:} Failų įkėlimas}}
+    \item \hyperlink{FR8}{\textcolor{steelblue}{\textbf{FR8:} Įkeltų failų
+    validavimas}}
+    \item \hyperlink{FR9}{\textcolor{steelblue}{\textbf{FR9:} Duomenų
+    šifravimas}}
+    \item \hyperlink{FR10}{\textcolor{steelblue}{\textbf{FR10:} Identifikatorių
+    priskyrimas}}
+    \item \hyperlink{FR11}{\textcolor{steelblue}{\textbf{FR11:} Išsaugotos
+    informacijos peržiūra}}
+    \item \hyperlink{FR12}{\textcolor{steelblue}{\textbf{FR12:} Išsaugotos
+    informacijos redagavimas}}
+\end{itemize}
+
+\subsubsection*{\noindent \textbf{5.} Biologinių analizių funkcionalumo
+realizavimas}
+
+\noindent Etapas turi būti įgyvendintas iki 2025-09-01. Susiję reikalavimai:
+ČIA REIKIA PAPILDOMO FR APIE TAI, KOKIOS ANALIZĖS BUS REALIZUOJAMOS
+
+\subsubsection*{\noindent \textbf{6.} Skaitmeninės piniginės realizavimas asmens
+duomenų valdymui}
+\noindent Etapas turi būti įgyvendintas iki 2025-09-01. Susiję reikalavimai:
+
+\begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt, after=\vspace{-1em}]
+    \item \hyperlink{FR13}{\textcolor{steelblue}{\textbf{FR13:}
+    Duomenų prieigos valdymas}}
+    \item \hyperlink{FR14}{\textcolor{steelblue}{\textbf{FR14:}
+    Naudotojo duomenų naikinimas}}
+    \item \hyperlink{FR17}{\textcolor{steelblue}{\textbf{FR17:}
+    Prieigos prie duomenų tikrinimas}}
+    \item \hyperlink{FR20}{\textcolor{steelblue}{\textbf{FR20:}
+    Biologinių duomenų analizės užklausos atmetimas}}
+\end{itemize}  
 
 \newpage
 
@@ -3177,6 +3329,10 @@ sistema gali būti sudiegta vėliau nei yra numatyta projekto plane.
 \newpage
 
 \section{Kaina}
+Sistema kuriama mokomaisiais tikslais kaip magistrinio baigiamojo darbo dalis,
+tačiau teoriniame lygmenyje pagal
+\textcolor{steelblue}{\emph{\ref{sec:BIUDZETAS} \nameref{sec:BIUDZETAS}}} skyrių
+įvertinta, kad sistemos kūrimui būtų reikalingas 116 731,60 eurų biudžetas.
 
 \section{Naudotojo dokumentacija}
 Žemiau yra pateiktas naudotojams aktualios dokumentacijos aprašymas.
