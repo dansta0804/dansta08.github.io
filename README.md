@@ -164,9 +164,9 @@ onmouseover="this.style.color='rgb(124, 7, 7)';" onmouseout="this.style.color='r
     projekto testavimo planą, praktiškai pritaikant ir patobulinant gebėjimus,
     įgytus modulyje <b>Programų testavimo metodai</b>.</p>
     <p><a href="PDFs/Testavimo_planas.pdf"
-    style="color:rgba(255, 255, 255, 1);font-size:13px;background-color:rgba(236, 166, 148, 1);border-radius:8px;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;font-weight:bold;font-style:italic;border: 1px solid rgba(158, 60, 15, 1);"
+    style="color:rgb(61, 61, 61);font-size:13px;background-color:rgb(185, 216, 233);border-radius:8px;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;font-weight:bold;font-style:italic;border: 1px solid rgb(106, 164, 196);"
    onmouseover="this.style.color='rgb(124, 7, 7)';this.style.backgroundColor='rgb(240, 204, 204)'"
-   onmouseout="this.style.color='rgb(61, 61, 61)';this.style.backgroundColor='rgba(236, 166, 148, 1)'">Peržiūrėti testavimo planą >></a></p>
+   onmouseout="this.style.color='rgb(61, 61, 61)';this.style.backgroundColor='rgb(185, 216, 233)'">Peržiūrėti testavimo planą >></a></p>
 </div>
 
 [Į pradžią](#)
