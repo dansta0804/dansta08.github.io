@@ -1,0 +1,80 @@
+{ 
+   "Homo sapiens":[
+      "BSgenome.Hsapiens.UCSC.hg38",
+      "TxDb.Hsapiens.UCSC.hg38.knownGene",
+      "org.Hs.eg.db",
+      "Homo sapiens",
+      "hs",
+      ["1:22", "X", "Y"],
+      "grch38",
+      "hg38",
+      [248.96, 242.19, 198.3, 190.22, 181.54, 170.81, 159.35, 145.14, 138.4,
+      133.8, 135.09, 133.28, 114.36, 107.04, 101.99, 90.34, 83.26, 80.37,
+      58.62, 64.44, 46.71, 50.82, 156.04, 57.23]
+   ],
+   "Mus musculus":[
+      "BSgenome.Mmusculus.UCSC.mm10",
+      "TxDb.Mmusculus.UCSC.mm10.knownGene",
+      "org.Mm.eg.db",
+      "Mus musculus",
+      "mm",
+      ["1:19", "X", "Y"],
+      "grcm38",
+      "mm10",
+      [195.15, 181.76, 159.75, 156.86, 151.76, 149.59, 145, 130.13, 124.36,
+      130.53, 121.97, 120.09, 120.88, 125.14, 104.07, 98.01, 95.29, 90.72,
+      61.42, 169.48, 91.46],
+      "EnsDb.Mmusculus.v79"
+   ],
+   "Rattus norvegicus":[
+      "BSgenome.Rnorvegicus.UCSC.rn6",
+      "TxDb.Rnorvegicus.UCSC.rn6.refGene",
+      "org.Rn.eg.db",
+      "Rattus norvegicus",
+      "rn",
+      ["1:20", "X", "Y"],
+      "rnor6",
+      "rn6",
+      [260.52, 249.05, 169.03, 182.69, 166.88, 140.99, 135.01, 123.9, 114.18,
+      107.21, 86.24, 46.67, 106.81, 104.89, 101.77, 84.73, 86.53, 83.83, 57.34,
+      54.44, 152.45, 18.32]
+   ],
+   "Drosophila melanogaster":[
+      "BSgenome.Dmelanogaster.UCSC.dm6",
+      "TxDb.Dmelanogaster.UCSC.dm6.ensGene",
+      "org.Dm.eg.db",
+      "Drosophila melanogaster",
+      "dm",
+      ["2:4", "X", "Y"],
+      "bdgp6",
+      "dm6",
+      [48.8, 60.19, 1.35, 23.54, 3.67]
+   ],
+   "Gallus gallus":[
+      "BSgenome.Ggallus.UCSC.galGal4",
+      "TxDb.Ggallus.UCSC.galGal4.refGene",
+      "org.Gg.eg.db",
+      "Gallus gallus",
+      "gg",
+      ["1:39", "W", "Z"],
+      "galgal5",
+      "galGal4",
+      [196.45, 149.54, 110.64, 90.86, 59.51, 36.22, 36.38, 29.58, 23.73, 20.45,
+   	19.64, 20.12, 17.91, 15.33, 12.7, 2.71, 11.09, 11.62, 10.46, 14.27, 6.97,
+      4.69, 6.25, 6.48, 3.07, 5.35, 5.23, 5.44, 0.73, 0.76, 2.46, 0.13, 3.84,
+      3.47, 0.55, 0.36, 0.16, 0.67, 0.18, 9.11, 86.04]
+   ],
+   "Macaca mulatta":[
+      "BSgenome.Mmulatta.UCSC.rheMac8",
+      "TxDb.Mmulatta.UCSC.rheMac8.refGene",
+      "org.Mmu.eg.db",
+      "Macaca mulatta",
+      "mmul",
+      ["1:20", "X", "Y"],
+      "mmul801",
+      "rheMac8",
+      [223.62, 196.2, 185.29, 169.96, 187.32, 179.09, 169.87, 145.68, 134.12,
+      99.52, 133.07, 130.04, 108.74, 128.06, 113.28, 79.63, 95.43, 74.47,
+      58.32, 77.14, 153.39, 11.75]
+   ]
+}
