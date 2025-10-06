@@ -112,12 +112,12 @@ specifikacijoje.
 \subsection{Testavimo tikslai ir objektai}
 Pagrindinis šio dokumento tikslas yra apibrėžti testavimo strategiją,
 apimtį, metodus ir išteklius, kurie yra reikalingi efektyviam pseudonimizuotos
-genetinių duomenų keitimosi sistemos testavimui. Pasinaudojus sukurtu testavimo
+genetinių duomenų keitimosi sistemos testavimui. Pasinaudojus parengtu testavimo
 planu siekiama įvertinti, ar sukurta sistema tenkina sistemai iškeltus
-funkcinius ir nefunkcinius sistemos reikalavimus. Taip pat pasinaudojus
-dokumentu siekiama turėti aiškų planą, kokie sistemos komponentai bus testuojami
-bei kaip bus identifikuojamos ir kur bus fiksuojamos nustatytos klaidos, kurios
-su vėlesnėmis sistemos versijomis bus ištaisytos.
+funkcinius ir nefunkcinius sistemos reikalavimus. Taip pat su šiuo dokumentu
+siekiama numatyti aiškų planą, kokie sistemos komponentai bus testuojami,
+kaip bus identifikuojamos sistemos klaidos ir kur jos bus fiksuojamos, kad su
+vėlesnėmis sistemos versijomis galėtų būti ištaisytos.
 
 \subsection{Testavimo apimtis ir tipai}
 \label{sec:SCOPE}
@@ -136,17 +136,17 @@ funkcinių dalių testavimą, kur funkcinės dalys apima:
 Aprašytos pagrindinės sistemos funkcinės dalys bus testuojamos, taikant šias
 testavimo strategijas:
 \begin{itemize}
-    \item \textbf{Vienetų testavimą (angl. \emph{Unit testing})}, kai bus
+    \item \textbf{Vienetų testavimą (angl. \emph{unit testing})}, kai bus
     testuojami atskiri sistemos komponentai. T.y., bus tikrinama, ar kiekvienas
     sukurtas sistemos modulis (pacientų, gydytojų - genetikų, tyrėjų) ir
     funkcinė dalis veikia pagal parengtą sistemos specifikaciją.
-    \item \textbf{Integracijos testavimą (angl. \emph{Integration testing})},
+    \item \textbf{Integracijos testavimą (angl. \emph{integration testing})},
     kai bus testuojama, kaip atskiri sistemos moduliai sąveikauja tarpusavyje,
     ar duomenys yra korektiškai perduodami tarp skirtingų sistemos modulių.
-    \item \textbf{Sistemos testavimą (angl. \emph{System testing})}, kai bus
-    testuojama, kaip sistema veikia kaip vieninga visuma, ar sistema atitinka
+    \item \textbf{Sistemos testavimą (angl. \emph{system testing})}, kai bus
+    testuojama, ar sistema veikia kaip vieninga visuma, ar sistema atitinka
     iškeltus nefunkcinius reikalavimus.
-    \item \textbf{Priėmimo testavimą (angl. \emph{Acceptance testing})}, kai bus
+    \item \textbf{Priėmimo testavimą (angl. \emph{acceptance testing})}, kai bus
     tikrinama, ar sistema atitinka visus užsakovo reikalavimus. Į šį testavimą
     bus įtrauktas ir sistemos užsakovas.
     \item \textbf{Saugumo testavimą}, kai bus tikrinama, ar sistema yra
@@ -155,8 +155,6 @@ testavimo strategijas:
     naudotojams (ar duomenų negalima atsisiųsti, ar negalima peržiūrėti
     biologinių duomenų failų informacijos be autorizuoto paciento leidimo).
 \end{itemize}
-
-\newpage
 
 \subsection{Pagrindiniai apribojimai}
 Žemiau aprašyti testavimo aplinkos - aparatinės ir programinės įrangos bei
@@ -184,15 +182,16 @@ siekiant užtikrinti efektyvų bei kokybišką testavimą.
 
 \noindent \textbf{Testavimo įrankiai}
 \begin{itemize}
-    \item Vienetų (angl. \emph{unit testing}) ir integracijos testavimui atlikti
-    turi būti naudojama Python testavimo biblioteka PyTest.
+    \item Vienetų ir integracijos testavimui atlikti turi būti naudojama Python
+    testavimo biblioteka PyTest.
     \item Naudotojo sąsajos (angl. \emph{User Interface} (UI)), sukurtos su R
     programavimo kalbos Shiny biblioteka, testavimui turi būti naudojamas
-    automatizuotas naršyklės valdymo įrankis Selenium. UI testavimas.
+    automatizuotas naršyklės valdymo įrankis Selenium.
     \item API testavimui turi būti naudojamas Postman įrankis.
     \item Sistemos saugumo testavimui atlikti turi būti naudojamas SoapUI
     įrankis.
-    \item Sistemos našumo testavimui turi būti naudojamas Apache JMeter įrankis.
+    \item Sistemos našumo testavimui atlikti turi būti naudojamas Apache JMeter
+    įrankis.
 \end{itemize}
 
 \newpage
@@ -250,7 +249,8 @@ sistema susiję dokumentai.
 
 \section{Testavimo procedūra}
 \subsection{Pradinės sąlygos}
-Tam, jog galėtų būti pradėtas testavimo etapas, turi būti:
+Tam, jog galėtų būti pradėtas testavimo etapas, turi būti tenkinamos pradinės
+testavimo sąlygos, kur turi būti:
 
 \begin{itemize}
     \item Pilnai paruošta ir patvirtinta sistemos reikalavimų specifikacija,
@@ -297,7 +297,7 @@ Testavimas turi būti atliekamas pagal šiuos nustatytus prioritetus:
     \begin{itemize}[label=$\circ$]
         \item Ar korektiškai veikia naudotojo autentifikavimo funkcijos.
         \item Ar sistemos naudotojų - pacientų - biologiniai duomenys yra
-        korektiškai šifruojami ir pseudonimizuojami.
+        korektiškai šifruojami, pseudonimizuojami ir dešifruojami.
     \end{itemize}
     \item \textbf{Po funkcinių reikalavimų testavimo vykdomas aukšto prioriteto
     sistemos ne\-funk\-ci\-nių reikalavimų testavimas}:
@@ -352,33 +352,28 @@ nurodyta skirtingų testavimo etapų pradžia ir pabaiga.
         \hline
         \multicolumn{1}{|>{\raggedright\arraybackslash}m{5cm}|}
             {Vienetų testavimas} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-09-01} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-09-14}\\
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-11-03} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-11-10}\\
         \hline
         \multicolumn{1}{|>{\raggedright\arraybackslash}m{5cm}|}
             {Integracijos testavimas} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-09-15} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-09-28}\\
-        \hline
-        \multicolumn{1}{|>{\raggedright\arraybackslash}m{5cm}|}
-            {Našumo testavimas} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-09-29} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-10-12}\\
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-11-10} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-11-17}\\
         \hline
         \multicolumn{1}{|>{\raggedright\arraybackslash}m{5cm}|}
             {Saugumo testavimas} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-10-13} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-10-26}\\
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-11-17} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-11-24}\\
         \hline
         \multicolumn{1}{|>{\raggedright\arraybackslash}m{5cm}|}
             {Sistemos testavimas} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-10-27} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-11-16}\\
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-11-19} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-12-15}\\
         \hline
         \multicolumn{1}{|>{\raggedright\arraybackslash}m{5cm}|}
             {Priėmimo testavimas} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-12-01} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-12-14}\\
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-12-15} &
+        \multicolumn{1}{>{\raggedright\arraybackslash}m{4cm}|}{2025-12-22}\\
         \hline
     \end{tabular}
     \label{table:TESTAVIMO_KALENDORIUS}
@@ -411,8 +406,8 @@ bus atliekamas sukurtos sistemos testavimas.
         Sistemos svečias turi būti atsidaręs sistemos paskyros kūrimo langą. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Įvestis:}
-        & Svečio vardas, pavardė, el. paštas, telefono numeris, lytis, adresas,
-        slaptažodis. \\
+        & Sistemos svečias turi įvesti savo vardą, pavardę, el. paštą,
+        telefono numerį, lytį, adresą ir sugalvotą slaptažodį. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Testo etapai\footnote{Čia
         ir toliau \textcolor{dartmouthgreen}{žalia} spalva pažymėti naudotojo
@@ -565,6 +560,119 @@ bus atliekamas sukurtos sistemos testavimas.
         \hline
     \end{tabular}
     \label{table:TS_3}
+\end{table}
+
+\newpage
+
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \caption{\small\textbf{Testavimo scenarijus Nr. 4.}}
+    \vskip -10pt
+    \begin{tabular}{|m{6cm}|m{11cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Kodas:} &
+        \ttfamily{TS\_004}. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pavadinimas:} & Prašymo
+        „būti pamirštam“ pateikimo ir įgyvendinimo testas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas:} & Patikrinti, ar
+        sistemos naudotojas - pacientas - gali sėkmingai pateikti prašymą
+        panaikinti visus su juo susijusius įrašus iš saugyklų. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pradinės testavimo
+        sąlygos:} & Sistemos naudotojas - pacientas - turi būti prisijungęs prie
+        sistemos ir atsidaręs biologinių duomenų prieigos valdymo langą. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Įvestis:} & Duomenų
+        prieigos valdymo lange reikia pasirinkti visų su naudotoju susijusių
+        duomenų panaikinimo parinktį. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Testo etapai:} & \vskip 5pt
+        \makecell[l]{\parbox[t]{11cm}{
+            \textbf{1.} \textcolor{dartmouthgreen}{Asmeninės paskyros redagavimo
+            lange pažymima parinktis „Prašymas būti pamirštam“.} \\
+            \textbf{2.} {Sistema pateikia pasekmių, susijusių su prašymo būti
+            pamirštam išsiuntimu, sąrašą ir nurodo, kad reikalingas naudotojo
+            patvirtinimas.} \\
+            \textbf{3.} \textcolor{dartmouthgreen}{Patvirtinama, kad 
+            susipažinta su pasekmėmis ir patvirtinamas prašymas.} \\
+            \textbf{4.} {Sistema patikrina, ar einamuoju metu nėra atliekama
+            paciento pateiktų biologinių duomenų analizė.} \\
+            \textbf{5.} {Sistema panaikina naudotojo asmeninius duomenis, visų
+            naudotojų prieigas prie biologinių duomenų, ištrina visus su
+            naudotoju susijusius duomenis iš duomenų bazių ir užfiksuoja
+            „pamiršimo“ įvykį.} \\
+            \textbf{6.} {Parodomas informacinis pranešimas, informuojantis apie
+            sėkmingai įgyvendintą prašymą būti pamirštam.}
+        }} \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikėtinas rezultatas:}
+        & Naudotojo duomenys yra pašalinti, biologiniai duomenys yra
+        nebeprieinami kitiems sistemos naudotojams. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikras rezultatas:}
+        & \textcolor{red}{\emph{Užpildoma testavimo metu...}} \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Būsena:}
+        & \textcolor{red}{\emph{Užpildoma testavimo metu: „Testas sėkmingai
+        įvykdytas“ arba „Gauta klaida“}}. \\
+        \hline
+    \end{tabular}
+    \label{table:TS_4}
+\end{table}
+
+\newpage
+
+\begin{table}[htb!]
+    \captionsetup{justification=centering}
+    \caption{\small\textbf{Testavimo scenarijus Nr. 5.}}
+    \vskip -10pt
+    \begin{tabular}{|m{6cm}|m{11cm}|}
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Kodas:} &
+        \ttfamily{TS\_005}. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pavadinimas:} & Paciento
+        analizės kortelės įrašo sukūrimo testas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas:} & Patikrinti, ar
+        sistemos naudotojas, gydytojas - genetikas, gali sėkmingai sukurti
+        naują paciento kortelės įrašą su informacija apie reikalingą analizę. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Pradinės testavimo
+        sąlygos:} & Sistemos naudotojas, gydytojas - genetikas, turi būti
+        prisijungęs prie sistemos ir atsidaręs paciento analizės kortelės įrašų
+        kūrimo langą. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Įvestis:} & Paciento
+        analizės kortelės įrašų kūrimo lange reikia nurodyti, kokiam tyrėjui
+        priskirta analizė, koks analizės tipas, analizės įrašo sukūrimo data ir
+        laikas. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Testo etapai:} & \vskip 5pt
+        \makecell[l]{\parbox[t]{11cm}{
+            \textbf{1.} \textcolor{dartmouthgreen}{Užpildomi analizės kortelės
+            įrašo formos laukai.} \\
+            \textbf{2.} \textcolor{dartmouthgreen}{Išsaugomi įvesti duomenys,
+            paspaudžiant išsaugojimo mygtuką.} \\
+            \textbf{3.} Parodomas informacinis pranešimas, informuojantis apie
+            sėkmingai sukurtą paciento analizės kortelės įrašą.
+        }} \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikėtinas rezultatas:}
+        & Gydytojas - genetikas sėkmingai sukūrė paciento analizės kortelės
+        įrašą, su kuriuo gali būti atliekami tolimesni veiksmai. \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Tikras rezultatas:}
+        & \textcolor{red}{\emph{Užpildoma testavimo metu...}} \\
+        \hline
+        \raggedleft \textbf{\cellcolor{deepchampagne}Būsena:}
+        & \textcolor{red}{\emph{Užpildoma testavimo metu: „Testas sėkmingai
+        įvykdytas“ arba „Gauta klaida“}}. \\
+        \hline
+    \end{tabular}
+    \label{table:TS_5}
 \end{table}
 
 \newpage
