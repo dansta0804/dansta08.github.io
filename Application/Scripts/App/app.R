@@ -12,9 +12,12 @@ library(BiocManager)
 options(repos = BiocManager::repositories())
 
 # Path declarations:
-PROJECT <- "./"
+PROJECT <- "./Application/"
 source(paste0(PROJECT, "Scripts/App/ui.R"))
 source(paste0(PROJECT, "Scripts/App/server.R"))
+
+# source(paste0(PROJECT, "ui.R"))
+# source(paste0(PROJECT, "server.R"))
 
 # A function that starts an app:
 shinyApp(ui = ui, server = server)
