@@ -33,9 +33,6 @@ body {
     background-color: #683030;
 }
 
-#main-panel .navbar-default {
-    color:green;
-}
 
 .navbar-default .navbar-nav>.active>a, .navbar-default
 .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
@@ -160,4 +157,40 @@ table.dataTable tbody tr.selected>* {
 .info_text {
     color: rgb(102, 10, 10);
     font-size: 15px;
+}
+
+.shiny-notification-message {
+    background-color: #cee47e;
+    border-color: #91a34e;
+    border-radius: 10px;
+    color:rgb(68, 6, 6);
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    margin-top: 10px;
+}
+
+.shiny-notification-error {
+    background-color: #e7a0a6;
+    border-color: #af5960;
+    border-radius: 10px;
+    color:rgb(68, 6, 6);
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    margin-top: 10px;
 }
