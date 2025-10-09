@@ -35,3 +35,34 @@ PDFs/Testavimo_planas.synctex.gz
 PDFs/Testavimo_planas.toc
 PDFs/Testavimo_planas.fdb_latexmk
 Diagrams/Baigiamasis_darbas_ER.mdzip
+Application/Input/BED/Human/NOT USED SAMPLES/human_bed.bed
+Application/Input/BED/Human/NOT USED SAMPLES/SRX701990.05.bed
+Application/Input/BED/Human/NOT USED SAMPLES/SRX4417527.05.bed
+Application/Input/BED/Human/NOT USED SAMPLES/SRX5716452.05.bed
+.gitignore
+Application/Input/BED/Mouse/NOT USED SAMPLES/mouse_bed.bed
+Application/Input/BED/Mouse/NOT USED SAMPLES/PEAKS054905_Tbx5_P70326_MACS2_12.bed
+.gitignore
+Application/Input/BED/Mouse/NOT USED SAMPLES/SRX4298473.05.bed
+Diagrams/Baigiamasis_darbas_ER.mdzip.bak.bak
+Diagrams/Baigiamasis_darbas_ER.mdzip
+Diagrams/Baigiamasis_darbas_ER.mdzip.bak
+Diagrams/Baigiamasis_darbas_ER.mdzip
+.gitignore
+Diagrams/.$ER.drawio.bkp
+Application/Input/BED/Mouse/NOT USED SAMPLES/SRX13476141.05.bed
+Application/Input/BED/Mouse/NOT USED SAMPLES/SRX4298469.05.bed
+.gitignore
+Application/Input/BED/Mouse/NOT USED SAMPLES/SRX2378798.05.bed
+Application/Input/BED/Human/NOT USED SAMPLES/SRX11080727.05.bed
+Application/Databases/Homo_sapiens_protein/db.zip
+.gitignore
+.gitignore
+Application/Input/BED/Mouse/Mouse.zip
+Application/Input/BED/Human/Human.zip
+Diagrams/ER.drawio
+Diagrams/ER.drawio
+Diagrams/Baigiamasis_darbas_ER.mdzip
+Diagrams/Baigiamasis_darbas_ER.mdzip
+Diagrams/.$PAM.drawio.bkp
+.vscode/launch.json
