@@ -15,6 +15,7 @@ ui <- navbarPage(
   ),
   tabPanel(
     "Registracija",
+    useShinyFeedback(),
     fluidRow(
       column(4, offset = 4,
         wellPanel(
@@ -27,11 +28,12 @@ ui <- navbarPage(
           textInput("address", "Adresas:"),
           selectInput("gender", "Lytis:",
                       list("Moteris" = "FEMALE", "Vyras" = "MALE",
-                          "Kita" = "UNDEFINED"), selected = NULL),
+                          "Kita" = "UNDEFINED", "Nenurodyta" = "NN"),
+                      selected = "NN"),
           selectInput("role", "Kategorija:",
                       list("Pacientas" = "PATIENT", "Gydytojas" = "DOCTOR",
-                          "Tyrėjas" = "RESEARCHER"), selected = NULL,
-                          multiple = FALSE),
+                          "Tyrėjas" = "RESEARCHER", "Nenurodyta" = "NN"),
+                      selected = "NN", multiple = FALSE),
           br(), br(),
           passwordInput("password", "Slaptažodis:"),
           

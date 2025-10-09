@@ -8,7 +8,7 @@ p_load(shiny, data.table, rtracklayer, ggplot2, ggthemes, plyranges, ggpubr,
        ggseqlogo, ChIPseeker, tools, reactable, annotables, enrichplot,
        clusterProfiler, shinyalert, rjson, ensembldb, deepredeff, rBLAST)
 
-p_load(DBI, RMySQL)
+p_load(DBI, RMySQL, shinyFeedback)
 
 # Declaration of options:
 options(scipen = 100)
@@ -17,47 +17,61 @@ options(shiny.maxRequestSize = 300 * 1024 ^ 2)
 # Path declarations:
 # PROJECT       <- "./"
 FUNCTIONS     <- paste0(PROJECT, "Scripts/functions.R")
+VALIDATIONS   <- paste0(PROJECT, "Scripts/validations.R")
 INPUT         <- paste0(PROJECT, "Input/")
 RESULTS       <- paste0(PROJECT, "Results/")
 HOMER_RESULTS <- paste0(RESULTS, "HOMER/")
 DATABASES     <- paste0(PROJECT, "Databases/")
 
 source(FUNCTIONS)
+source(VALIDATIONS)
 
 server <- function(input, output, session) {
-  
+  ############### REGISTRACIJOS LANGO LOGIKA ###############
   observeEvent(input$signup_btn, {
-    con <- dbConnect(RMySQL::MySQL(), dbname="GeneticDataExchangeSystem",
-                     host="127.0.0.1", user="root", password="daniele_Vostro000804",
-                     client.flag = CLIENT_MULTI_STATEMENTS + CLIENT_LOCAL_FILES)
-    print("ĮJUNGIAM!!!")
-    new_user <- data.frame(
-      Vardas = input$name,
-      Pavarde = input$surname,
-      Asmens_kodas = input$personal_code,
-      El_pastas = input$email,
-      Tel_numeris = input$phone,
-      Adresas = input$address,
-      Lytis = input$gender,
-      Kategorija = input$role,
-      Registracijos_data = Sys.time(),
-      stringsAsFactors = FALSE
-    )
+    con <- dbConnect(RMySQL::MySQL(), dbname = "GeneticDataExchangeSystem",
+                host = "127.0.0.1", user = "root",
+                password = "daniele_Vostro000804",
+                client.flag = CLIENT_MULTI_STATEMENTS + CLIENT_LOCAL_FILES)
+    
+    ERRORS <- c(ERRORS, validate_name(input$name))
+    ERRORS <- c(ERRORS, validate_surname(input$surname))
+    ERRORS <- c(ERRORS, validate_personal_code(input$personal_code))
+    ERRORS <- c(ERRORS, validate_email(input$email))
+    ERRORS <- c(ERRORS, validate_phone(input$phone))
+    ERRORS <- c(ERRORS, validate_address(input$address))
+    ERRORS <- c(ERRORS, validate_gender(input$gender))
+    ERRORS <- c(ERRORS, validate_role(input$role))
 
-    tryCatch({
-  dbWriteTable(con, "ASMUO", new_user, append = TRUE, row.names = FALSE)
-}, error = function(e) {
-  print(e)
-})
-    
-    
-    dbDisconnect(con)
+    if (length(ERRORS) == 0) {
+      new_user <- data.frame(
+        Vardas = input$name,
+        Pavarde = input$surname,
+        Asmens_kodas = input$personal_code,
+        El_pastas = input$email,
+        Tel_numeris = input$phone,
+        Adresas = input$address,
+        Lytis = input$gender,
+        Kategorija = input$role,
+        Registracijos_data = Sys.time(),
+        stringsAsFactors = FALSE
+      )
 
-    
-    output$status <- renderText("✅ User saved to database!")
+      tryCatch({
+        dbWriteTable(con, "ASMUO", new_user, append = TRUE, row.names = FALSE)
+        showNotification("Naudotojas sėkmingai sukurtas!", type = "message",
+                         closeButton = TRUE, duration = 2)
+      }, error = function(e) {
+        print(e)
+      }, finally = {
+        dbDisconnect(con)
+      })
+    } else {
+      showNotification("Klaida registruojant naudotoją!", type = "error",
+                        closeButton = TRUE, duration = 2)
+    }
   })
 }
-
 
 # server <- function(input, output, session) {
 #   json <- fromJSON(file = paste0(INPUT, "genome_data.json"))
