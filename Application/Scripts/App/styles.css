@@ -29,6 +29,13 @@ body {
     text-align: center;
 }
 
+.titles-2 {
+    color:#4e2121;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
 .navbar-default {
     background-color: #683030;
 }
@@ -193,4 +200,10 @@ table.dataTable tbody tr.selected>* {
     transform: translateX(-50%);
     z-index: 9999;
     margin-top: 10px;
+}
+
+#extraFields .well{
+    background-color: rgb(255, 243, 243);
+    border-left: 4px solid rgb(68, 6, 6);
+    padding: 10px;
 }
