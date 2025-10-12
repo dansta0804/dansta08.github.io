@@ -6,6 +6,7 @@ PATTERN <- "^[a-ząčęėįšųūž]+$"
 PCODE <- "^[0-9]+$"
 EMAIL <- "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
 PHONE <- "^\\+370 ?[0-9]{3} ?[0-9]{5}$"
+TEXTS <- "^[a-z0-9ąčęėįšųū\\.,\\-]+$"
 
 # User name validations:
 validate_name <- function(name) {
@@ -25,7 +26,8 @@ validate_name <- function(name) {
 	}
 
 	if (length(errors) > 0) {
-		showFeedbackDanger("name", paste(errors, collapse = "<br>"), color = "red")
+		showFeedbackDanger("name", paste(errors, collapse = "<br>"),
+						   color = "red")
 		return(errors)
 	}
 }
@@ -44,12 +46,13 @@ validate_surname <- function(surname) {
 	}
 
 	if (nchar(surname) > 35) {
-		errors <- c(errors, "Pavardės negali sudaryti daugiau nei 35 simboliai!")
+		errors <-
+			c(errors, "Pavardės negali sudaryti daugiau nei 35 simboliai!")
 	}
 
 	if (length(errors) > 0) {
-		showFeedbackDanger("surname", paste(errors, collapse = "<br>"), 
-												color = "red")
+		showFeedbackDanger("surname", paste(errors, collapse = "<br>"),
+						   color = "red")
 		return(errors)
 	}
 }
@@ -68,12 +71,13 @@ validate_personal_code <- function(personal_code) {
 	}
 
 	if (nchar(personal_code) > 11) {
-		errors <- c(errors, "Asmens kodo negali sudaryti daugiau nei 11 skaitmenų!")
+		errors <-
+			c(errors, "Asmens kodo negali sudaryti daugiau nei 11 skaitmenų!")
 	}
 
 	if (length(errors) > 0) {
 		showFeedbackDanger("personal_code", paste(errors, collapse = "<br>"),
-												color = "red")
+						   color = "red")
 		return(errors)
 	}
 }
@@ -88,11 +92,13 @@ validate_email <- function(email) {
 	}
 
 	if (nchar(email) > 50) {
-		errors <- c(errors, "El. paštą negali sudaryti daugiau nei 50 simbolių!")
+		errors <-
+			c(errors, "El. paštą negali sudaryti daugiau nei 50 simbolių!")
 	}
 
 	if (length(errors) > 0) {
-		showFeedbackDanger("email", paste(errors, collapse = "<br>"), color = "red")
+		showFeedbackDanger("email", paste(errors, collapse = "<br>"),
+						   color = "red")
 		return(errors)
 	}
 }
@@ -111,11 +117,13 @@ validate_phone <- function(phone) {
 	}
 
 	if (nchar(phone) > 14) {
-		errors <- c(errors, "Tel. numerio negali sudaryti daugiau nei 14 simbolių!")
+		errors <-
+			c(errors, "Tel. numerio negali sudaryti daugiau nei 14 simbolių!")
 	}
 
 	if (length(errors) > 0) {
-		showFeedbackDanger("phone", paste(errors, collapse = "<br>"), color = "red")
+		showFeedbackDanger("phone", paste(errors, collapse = "<br>"),
+						   color = "red")
 		return(errors)
 	}
 }
@@ -130,8 +138,8 @@ validate_address <- function(address) {
 	}
 
 	if (length(errors) > 0) {
-		showFeedbackDanger("address", paste(errors, collapse = "<br>"), 
-											 color = "red")
+		showFeedbackDanger("address", paste(errors, collapse = "<br>"),
+						   color = "red")
 		return(errors)
 	}
 }
@@ -147,7 +155,7 @@ validate_gender <- function(gender) {
 
 	if (length(errors) > 0) {
 		showFeedbackDanger("gender", paste(errors, collapse = "<br>"),
-												color = "red")
+						   color = "red")
 		return(errors)
 	}
 }
@@ -162,7 +170,42 @@ validate_role <- function(role) {
 	}
 
 	if (length(errors) > 0) {
-		showFeedbackDanger("role", paste(errors, collapse = "<br>"), color = "red")
+		showFeedbackDanger("role", paste(errors, collapse = "<br>"),
+						   color = "red")
+		return(errors)
+	}
+}
+
+# Doctor licence validations:
+validate_licence <- function(licence) {
+	errors <- c()
+	hideFeedback("licence")
+
+	if (nchar(licence) > 6) {
+		errors <-
+			c(errors, "Numerio negali sudaryti daugiau nei 6 simboliai!")
+	}
+
+	if (length(errors) > 0) {
+		showFeedbackDanger("licence", paste(errors, collapse = "<br>"),
+						   color = "red")
+		return(errors)
+	}
+}
+
+# Doctor/researcher institution validations:
+validate_text <- function(input_id, text_value) {
+	errors <- c()
+	hideFeedback(input_id)
+
+	if (grepl(TEXTS, text_value, ignore.case = TRUE) == FALSE &&
+		text_value != "") {
+		errors <- c(errors, "Pavadinime yra neleistinų simbolių!")
+	}
+	
+	if (length(errors) > 0) {
+		showFeedbackDanger(inputId = input_id, paste(errors, collapse = "<br>"),
+						   color = "red")
 		return(errors)
 	}
 }
