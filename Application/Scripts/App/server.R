@@ -26,6 +26,8 @@ DATABASES     <- paste0(PROJECT, "Databases/")
 source(FUNCTIONS)
 source(VALIDATIONS)
 
+ERRORS <- c()
+
 server <- function(input, output, session) {
   ############### REGISTRACIJOS LANGO LOGIKA ###############
   observeEvent(input$signup_btn, {
@@ -42,6 +44,17 @@ server <- function(input, output, session) {
     ERRORS <- c(ERRORS, validate_address(input$address))
     ERRORS <- c(ERRORS, validate_gender(input$gender))
     ERRORS <- c(ERRORS, validate_role(input$role))
+    
+    if (input$role == "DOCTOR") {
+      ERRORS <- c(ERRORS, validate_licence(input$licence))
+      ERRORS <-
+        c(ERRORS, validate_text("institution_doc", input$institution_doc))
+      ERRORS <-
+        c(ERRORS, validate_text("specialization", input$specialization))
+    } else if (input$role == "RESEARCHER") {
+      ERRORS <-
+        c(ERRORS, validate_text("institution_res", input$institution_res))
+    }
 
     if (length(ERRORS) == 0) {
       new_user <- data.frame(
@@ -69,6 +82,23 @@ server <- function(input, output, session) {
     } else {
       showNotification("Klaida registruojant naudotoją!", type = "error",
                         closeButton = TRUE, duration = 2)
+    }
+  })
+
+  output$extraFields <- renderUI({
+    if (input$role == "DOCTOR") {
+      wellPanel(
+        p(class = "titles-2", "Papildoma informacija apie gydytoją"),
+        textInput("licence", "Licencijos numeris:"),
+        textInput("institution_doc", "Institucija:"),
+        textInput("specialization", "Specializacija:")
+      )
+    }
+    else if (input$role == "RESEARCHER") {
+      wellPanel(
+        p(class = "titles-2", "Papildoma informacija apie tyrėją"),
+        textInput("institution_res", "Institucija:")
+      )
     }
   })
 }
