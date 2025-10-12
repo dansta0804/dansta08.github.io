@@ -34,6 +34,7 @@ ui <- navbarPage(
                       list("Pacientas" = "PATIENT", "Gydytojas" = "DOCTOR",
                           "Tyrėjas" = "RESEARCHER", "Nenurodyta" = "NN"),
                       selected = "NN", multiple = FALSE),
+          uiOutput("extraFields"),
           br(), br(),
           passwordInput("password", "Slaptažodis:"),
           
