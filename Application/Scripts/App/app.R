@@ -25,7 +25,10 @@ shinyApp(ui = ui, server = server)
 
 ################################ TO DO LIST ################################
 # 1. Reikia padaryti, kad asmens kodas būtų ne int tipo, bet string, nes int
-# max reikšmė yra 4,294,967,295, todėl ne visada telpa asmens kodas.
+# max reikšmė yra 4,294,967,295, todėl ne visada telpa asmens kodas. [DONE]
 
 # 2. Sutvarkyti DB stulpelių apribojimus, kad atitiktų tai, kaip aprašyta
-# reikalavimų specifikacijoje skyriuje "7.2.2 Duomenų modelio specifikacija".
+# reikalavimų specifikacijoje skyriuje "7.2.2 Duomenų modelio specifikacija". [DONE]
+
+# 3. Slaptažodžių saugojimas DB. Reikia išsiaiškinti, kaip geriausia
+# saugoti slaptažodžius DB (hash + salt?).
