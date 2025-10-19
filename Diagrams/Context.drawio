@@ -1,165 +1,118 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15">
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
   <diagram name="Page-1" id="P2k9ssoxkcrnlNnUL8rK">
-    <mxGraphModel dx="946" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="946" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="z5R62NmVlcl_oEuctuTb-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistema&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=light-dark(#FAD6A6,#625441);" vertex="1" parent="1">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Pseudonimizuota genetinių duomenų keitimosi sistema&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=light-dark(#FAD6A6,#625441);" parent="1" vertex="1">
           <mxGeometry x="350" y="330" width="160" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-3" value="&lt;b&gt;GYDYTOJAS - GENETIKAS&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-3" value="&lt;b&gt;GYDYTOJAS - GENETIKAS&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="380" width="100" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-4" value="&lt;b&gt;PACIENTAS&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-4" value="&lt;b&gt;PACIENTAS&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="220" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-5" value="&lt;b&gt;TYRĖJAS&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-5" value="&lt;b&gt;TYRĖJAS&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="660" y="380" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="z5R62NmVlcl_oEuctuTb-4" target="z5R62NmVlcl_oEuctuTb-2">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="z5R62NmVlcl_oEuctuTb-4" target="z5R62NmVlcl_oEuctuTb-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="440" y="300" as="sourcePoint" />
             <mxPoint x="540" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-7" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Biologinių&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;duomenų&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;pateiktis&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="z5R62NmVlcl_oEuctuTb-6">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-7" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Biologinių&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;duomenų&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;pateiktis&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="z5R62NmVlcl_oEuctuTb-6" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="24" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.033;entryY=0.315;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="z5R62NmVlcl_oEuctuTb-3" target="z5R62NmVlcl_oEuctuTb-2">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.033;entryY=0.315;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="z5R62NmVlcl_oEuctuTb-3" target="z5R62NmVlcl_oEuctuTb-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="220" y="380" as="sourcePoint" />
             <mxPoint x="350.79999999999995" y="380.6600000000001" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-11" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Analizės&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;įrašas&lt;/span&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="z5R62NmVlcl_oEuctuTb-10">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-11" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Analizės&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;įrašas&lt;/span&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="z5R62NmVlcl_oEuctuTb-10" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint y="-7" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="z5R62NmVlcl_oEuctuTb-5" target="z5R62NmVlcl_oEuctuTb-2">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="z5R62NmVlcl_oEuctuTb-5" target="z5R62NmVlcl_oEuctuTb-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="550" y="480" as="sourcePoint" />
             <mxPoint x="460" y="530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-13" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Analizės atlikimas&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="z5R62NmVlcl_oEuctuTb-12">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-13" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Analizės atlikimas&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="z5R62NmVlcl_oEuctuTb-12" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-5" y="-7" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.001;entryY=0.535;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="z5R62NmVlcl_oEuctuTb-3" target="z5R62NmVlcl_oEuctuTb-2">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.001;entryY=0.535;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="z5R62NmVlcl_oEuctuTb-3" target="z5R62NmVlcl_oEuctuTb-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="219.9999999999999" y="414.41" as="sourcePoint" />
             <mxPoint x="351.60000000000014" y="415.59" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-15" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Analizės&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;užklausa&lt;/span&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="z5R62NmVlcl_oEuctuTb-14">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-15" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Analizės&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;užklausa&lt;/span&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="z5R62NmVlcl_oEuctuTb-14" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint y="-8" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.81;entryY=0.105;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="z5R62NmVlcl_oEuctuTb-4" target="z5R62NmVlcl_oEuctuTb-2">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.81;entryY=0.105;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="z5R62NmVlcl_oEuctuTb-4" target="z5R62NmVlcl_oEuctuTb-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="485" y="270" as="sourcePoint" />
             <mxPoint x="490" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-17" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Prašymo&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;„būti pamirštam“&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;teikimas&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;labelBackgroundColor=none;" connectable="0" vertex="1" parent="z5R62NmVlcl_oEuctuTb-16">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-17" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Prašymo&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;„būti pamirštam“&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;teikimas&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;labelBackgroundColor=none;" parent="z5R62NmVlcl_oEuctuTb-16" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="44" y="-10" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.964;exitY=0.684;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="z5R62NmVlcl_oEuctuTb-2" target="z5R62NmVlcl_oEuctuTb-5">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.964;exitY=0.684;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="z5R62NmVlcl_oEuctuTb-2" target="z5R62NmVlcl_oEuctuTb-5" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="510" y="434" as="sourcePoint" />
             <mxPoint x="660" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-20" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span&gt;Analizės užklausa&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontStyle=2" connectable="0" vertex="1" parent="z5R62NmVlcl_oEuctuTb-19">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-20" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span&gt;Analizės užklausa&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontStyle=2" parent="z5R62NmVlcl_oEuctuTb-19" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-4" y="-7" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.189;entryY=0.105;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="z5R62NmVlcl_oEuctuTb-4" target="z5R62NmVlcl_oEuctuTb-2">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.189;entryY=0.105;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="z5R62NmVlcl_oEuctuTb-4" target="z5R62NmVlcl_oEuctuTb-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="380" y="260" as="sourcePoint" />
             <mxPoint x="385" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-22" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Prieigų&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;valdymas&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;labelBackgroundColor=none;" connectable="0" vertex="1" parent="z5R62NmVlcl_oEuctuTb-21">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-22" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Prieigų&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;valdymas&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;labelBackgroundColor=none;" parent="z5R62NmVlcl_oEuctuTb-21" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-25" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.959;entryY=0.312;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="z5R62NmVlcl_oEuctuTb-5" target="z5R62NmVlcl_oEuctuTb-2">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.959;entryY=0.312;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="z5R62NmVlcl_oEuctuTb-5" target="z5R62NmVlcl_oEuctuTb-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="540" y="320" as="sourcePoint" />
             <mxPoint x="545" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-25" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;&lt;i&gt;Prieigos užklausa&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="z5R62NmVlcl_oEuctuTb-24">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-25" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;i style=&quot;&quot;&gt;Prieigos užklausa&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="z5R62NmVlcl_oEuctuTb-24" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-3" y="-7" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.069;exitY=0.748;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="z5R62NmVlcl_oEuctuTb-2" target="z5R62NmVlcl_oEuctuTb-3">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.069;exitY=0.748;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="z5R62NmVlcl_oEuctuTb-2" target="z5R62NmVlcl_oEuctuTb-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="310" y="450" as="sourcePoint" />
             <mxPoint x="220" y="450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-27" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Analizės&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;rezultatai&lt;/span&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="z5R62NmVlcl_oEuctuTb-26">
+        <mxCell id="z5R62NmVlcl_oEuctuTb-27" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Analizės&amp;nbsp;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;rezultatai&lt;/span&gt;&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" parent="z5R62NmVlcl_oEuctuTb-26" connectable="0" vertex="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="4" y="-7" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-28" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.688;exitY=0.963;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="z5R62NmVlcl_oEuctuTb-2" target="z5R62NmVlcl_oEuctuTb-30">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="590" y="540" as="sourcePoint" />
-            <mxPoint x="500" y="540" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-29" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Patvirtinti&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;įrašai&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;labelBackgroundColor=none;fontColor=#FF0000;" connectable="0" vertex="1" parent="z5R62NmVlcl_oEuctuTb-28">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-23" y="20" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-30" value="&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;BLOKŲ GRANDINĖS INFRASTRUKTŪRA&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="560" width="180" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.313;entryY=0.961;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="z5R62NmVlcl_oEuctuTb-30" target="z5R62NmVlcl_oEuctuTb-2">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="430.2361904761908" y="560" as="sourcePoint" />
-            <mxPoint x="430.2361904761908" y="490" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-34" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Operacijų&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;registracija&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;labelBackgroundColor=none;fontColor=#FF0000;" connectable="0" vertex="1" parent="z5R62NmVlcl_oEuctuTb-33">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="29" y="-15" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="z5R62NmVlcl_oEuctuTb-30" target="z5R62NmVlcl_oEuctuTb-2">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="339.9961904761908" y="550" as="sourcePoint" />
-            <mxPoint x="339.9961904761908" y="480" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-36" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Viešųjų&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;raktų&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;valdymas&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;labelBackgroundColor=none;fontColor=#FF0000;" connectable="0" vertex="1" parent="z5R62NmVlcl_oEuctuTb-35">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-29" y="-3" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-38" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="z5R62NmVlcl_oEuctuTb-2" target="z5R62NmVlcl_oEuctuTb-30">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="470" y="494" as="sourcePoint" />
-            <mxPoint x="485" y="570" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5R62NmVlcl_oEuctuTb-39" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;Viešųjų&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;raktų&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;i&gt;teikimas&lt;/i&gt;&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;labelBackgroundColor=none;fontColor=#FF0000;" connectable="0" vertex="1" parent="z5R62NmVlcl_oEuctuTb-38">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="27" y="-4" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
