@@ -106,30 +106,27 @@
 
 \section{Sistemos paskirtis}
 \subsection{Projekto kūrimo pagrindas (pagrindimas)}
-Skaitmeniniame amžiuje, kai asmens duomenys tampa viena svarbiausių vertybių,
-privatumo užtikrinimas ir efektyvus tapatybės valdymas yra pagrindiniai
+Skaitmeniniame amžiuje, kai asmens tapatybės duomenys tampa itin svarbiu
+aspektu, privatumo užtikrinimas ir efektyvus tapatybės valdymas yra pagrindiniai
 iššūkiai, su kuriais turi susidurti ne tik privatūs asmenys, bet ir įvairios
-organizacijos. Sparčiai augantys informacijos srautai, elektroninių paslaugų
-plėtra bei kitų paslaugų, reikalaujančių naudotojų autentifikacijos, vystymas
-lėmė inovatyvių technologinių sprendimų - blokų grandinės pritaikymo, 
-realizuojant decentralizuotos asmens tapatybės valdymo modelį - kūrimą.
-Pastaruoju sprendimu siekiama užtikrinti asmens duomenų saugumą bei visapusišką
-duomenų kontrolę, kuri atliekama paties naudotojo.
+organizacijos. Šiais laikais daug dėmesio skiriama asmens identifikaciniams
+duomenims. Pavyzdžiui, vardui, pavardei, asmens kodui, adresui ir pan. Nepaisant
+to, be šių duomenų egzistuoja ir kiti jautrūs asmens duomenys, kurie reikalauja
+atitinkamo valdymo ir apsaugos. Vienas iš tokių duomenų pavyzdžių yra genetiniai
+duomenys, kurie atskleidžia ne tik asmens sveikatos informaciją, bet ir
+paveldimumo ypatybes, ligų rizikas bei kitus svarbius su asmens sveikatos būkle
+susijusius aspektus. Dėl to šiais laikais būtina kurti ne tik sistemas, kuriose
+didelis dėmesys būtų skiriamas ne tik standartiniams asmenį identifikuojantiems
+duomenims, bet ir genetinei asmens informacijai.
 
-Šiuo metu egzistuojančios asmens tapatybės valdymo sistemos, pavyzdžiui,
-centralizuotos ar federacinės, dažnai susiduria su privatumo, duomenų apsaugos
-ir patogumo iššūkiais. Centralizuotos sistemos yra itin jautrios saugumo
-pažeidimams, o federacinės sistemos dažnai riboja naudotojo autonomiją. Šie
-trūkumai skatina naujų sprendimų kūrimo poreikį, orientuotą į naudotojo teisių
-ir privatumo stiprinimą.
-
-Šis projektas skirtas sukurti savarankiškos suverenios pseudonimizuotos
-tapatybės valdymo sistemą, kuri leistų naudotojams
-ne tik valdyti asmeninę informaciją ir dalinimąsi ja, bet ir užtikrintų, kad
-asmeniniai duomenys negalėtų būti lengvai susieti su naudotoju, kurį šie
-duomenys apibūdina. Šie tikslai bus pasiekti, pritaikius decentralizuotos
-tapatybės valdymo modelį, kuris grindžiamas blokų grandinės technologija,
-duomenų šifravimo bei pseudonimizavimo metodikomis.
+Šiuo metu genetinių duomenų keitimosi procesas tarp pacientų, gydytojų ir
+mokslinių tyrimų institucijų yra sudėtingas ir dažnai nesaugus. Duomenys yra
+saugomi skirtingose nesusijusiose informacinėse sistemose, o duomenų prieigos
+kontrolės mechanizmai dažnai yra riboti arba nepakankamai patikimi. Dėl to šiuo
+projektu yra siekiama sukurti vieningą sistemą, kuri būtų skirta pacientams,
+gydytojams ir mokslinių tyrimų institucijų tyrėjams ir kuri leistų saugiai,
+pritaikius pseudonimizavimo metodikas, keistis genetiniais duomenimis bei
+vykdyti šių duomenų analizę.
 
 \subsection{Sistemos tikslai (paskirtis)}
 Sistemos kūrimo projektu siekiama įgyvendinti šiuos tikslus:
@@ -175,8 +172,8 @@ Darbo vadovo kontaktiniai duomenys:
 Sistemos pirkėjas sutampa su sistemos užsakovu.
 
 \subsection{Naudotojai}
-Žemiau yra pateikiami potencialių sistemos naudotojų - pacientų, gydytojų ir
-tyrėjų - aprašymai kartu su šių naudotojų charakteristikomis.
+Žemiau yra pateikiami potencialių sistemos naudotojų - pacientų, gydytojų
+(genetikų) ir tyrėjų - aprašymai kartu su šių naudotojų charakteristikomis.
 
 \subsubsection*{Pacientai}
 \label{sec:N1}
@@ -200,7 +197,7 @@ tyrėjų - aprašymai kartu su šių naudotojų charakteristikomis.
         charakteristikos} &
         Sistema besinaudojančius
         pacientus sieja kalba (lietuvių kalba) ir interesai (valdyti savo
-        asmeninius genetinius duomenis, kurie gali būti panaudoti, net tik
+        asmeninius genetinius duomenis, kurie gali būti panaudoti ne tik
         atliekant asmens genetinius tyrimus, bet ir moksliniais tikslais). \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Aukštas. \\
@@ -218,9 +215,9 @@ tyrėjų - aprašymai kartu su šių naudotojų charakteristikomis.
     \begin{tabular}{|m{4cm}|m{12cm}|}
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Funkcijos} &
-        Įkelti pacientų genetinius duomenis; atlikti genetinių duomenų analizes
-        ir jų rezultatus pateikti pacientams; gavus leidimą iš paciento perduoti
-        genetinius duomenis tyrėjams. \\
+        Įkelti pacientų genetinius duomenis; inicijuoti genetinių duomenų
+        analizių atlikimą ir jų rezultatus pateikti pacientams; gavus leidimą
+        iš paciento perduoti genetinius duomenis tyrėjams. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Patirtis dalykinėje
         srityje} & Aukšta. \\
@@ -231,7 +228,7 @@ tyrėjų - aprašymai kartu su šių naudotojų charakteristikomis.
         \raggedleft \textbf{\cellcolor{deepchampagne}Papildomos
         charakteristikos} &
         Gydytojus - genetikus sieja išsilavinimas (aukštasis - universitetinis),
-        darbo pobūdis (pacientų genetinių duomenų apdorojimas) ir dalykinė
+        darbo pobūdis (darbas su pacientų genetiniais duomenimis) ir dalykinė
         sritis (sveikatos priežiūra). \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Prioritetas} & Aukštas. \\
@@ -282,13 +279,14 @@ Sistemos komunikacija su gretimomis sistemomis nėra numatyta.
 
 \subsection{Komerciniai specializuoti programų paketai}
 Užsakovo nurodymu kuriama sistema turi veikti reliacinės duomenų bazės valdymo
-sistemos Microsoft Server pagrindu.
+sistemos MySQL pagrindu.
 
 \newpage
 
 \subsection{Numatoma darbo vietos aplinka}
-Numatomiems sistemoms naudotajams - pacientams, gydytojams ir tyrėjams -
-būdingos žemiau aprašytos darbo vietos charakteristikos.
+Numatomiems sistemoms naudotojams - pacientams, gydytojams ir tyrėjams -
+būdingos žemiau aprašytos darbo vietos charakteristikos
+(\hyperref[table:DARBO_VIETA]{2 lentelė}).
 
 \begin{table}[htb!]
     \captionsetup{justification=centering}
@@ -312,8 +310,8 @@ būdingos žemiau aprašytos darbo vietos charakteristikos.
         \multicolumn{1}{|>{\raggedright\arraybackslash}m{12cm}|}{
             \begin{itemize}[leftmargin=0.5cm]
                 \item Asmenys naudojasi sistema gerai apšviestuose vieno asmens
-                kabinetuose, leidžiančių užtikrinti pacientų konfidencialumą
-                konsutlacijų metu.
+                kabinetuose, leidžiančiuose užtikrinti pacientų konfidencialumą
+                konsultacijų metu.
                 \item Kabinetuose kompiuteriai išdėstyti taip, kad pacientai
                 negali matyti gydytojo kompiuterio ekrano.
                 \item Kabinetuose užtikrintas spartus internetas.
@@ -326,7 +324,8 @@ būdingos žemiau aprašytos darbo vietos charakteristikos.
                 \item Asmenys naudojasi sistema gerai apšviestuose kelių asmenų
                 kabinetuose.
                 \item Kabinetuose tyrėjų darbastaliai su kompiuteriais yra
-                išdėstyti taip, kad darbuotojai nemato vienas kito kompiuterių.
+                išdėstyti taip, kad darbuotojai nemato vienas kito kompiuterių
+                ekranų.
                 \item Aplinkoje užtikrintas spartus internetas.
                 \item Kabinetai turi ribotą fizinę prieigą - yra 
                 kortelinė durų kontrolės sistema.
@@ -334,7 +333,7 @@ būdingos žemiau aprašytos darbo vietos charakteristikos.
         } \\
         \hline
     \end{tabular}
-    \label{table:darbo_vietos_aprasymas}
+    \label{table:DARBO_VIETA}
 \end{table}
 
 \newpage
@@ -435,7 +434,7 @@ konteksto diagrama:
 \begin{figure}[ht]
     \begin{center}
         \captionsetup{justification=centering}
-        \includegraphics[width=1.0\linewidth]{Konteksto_diagrama.png}
+        \includegraphics[width=1.0\linewidth]{Konteksto_diagrama_V2.png}
         \vspace{-1\baselineskip}
         \caption{\small\textbf{Veiklos konteksto diagrama.}}
         \label{fig:context}
@@ -464,7 +463,8 @@ apibūdinimas:
 
 \section{Produkto veiklos sfera}
 \subsection{Sistemos ribos}
-Žemiau esančiame paveiksle pavaizduota sistemos panaudojimo atvejų diagrama:
+Žemiau esančiame paveiksle pavaizduota sistemos panaudojimo atvejų modelio
+diagrama:
 
 \begin{figure}[ht]
     \begin{center}
@@ -479,8 +479,8 @@ apibūdinimas:
 \newpage
 
 \subsection{Panaudojimo atvejų aprašymai}
-Šiame skyriuje yra aprašyti visi kuriamos savarankiškos suverenios
-pseudonimizuotos tapatybės valdymo sistemos panaudojimo atvejai.
+Šiame skyriuje yra aprašyti kuriamos pseudonimizuotos genetinių duomenų
+keitimosi sistemos panaudojimo atvejai.
 
 \newpage
 
@@ -499,7 +499,7 @@ kategorijų naudotojams.}
         Realizavus šį panaudojimo atvejį skirtingos naudotojų grupės sistemoje
         gali atlikti skirtingus veiksmus: pacientai gali įkelti savo biologinius
         duomenis ir valdyti kitų asmenų prieigą prie šių duomenų; gydytojai -
-        genetikai gali kurti pacientų analizių korteles, bet ir įkelti pacientų
+        genetikai gali kurti pacientų analizių korteles, įkelti pacientų
         biologinius duomenis, teikti užklausas tyrėjams dėl biologinių duomenų
         analizės atlikimo, peržiūrėti analizių atlikimo statusą; tyrėjai gali
         vykdyti biologinių duomenų analizes ir teikti jų rezultatus gydytojams -
@@ -618,16 +618,13 @@ kategorijų naudotojams.}
             mygtuką.} \\
             \textbf{3.} {Validuojamas failo formatas ir turinys.} \\
             \textbf{4.} {Duomenys užšifruojami ir išsaugomi duomenų bazėje.} \\
-            \textbf{5.} {Metainformacija apie įkeltą failą įrašoma į blokų
-            grandinę (taip užtikrinant duomenų nekintamumą ir veiksmų
-            atsekamumą).} \\
-            \textbf{6.} {Biologinių duomenų įrašui priskiriamas unikalus
+            \textbf{5.} {Biologinių duomenų įrašui priskiriamas unikalus
             identifikatorius ir susiejamas su naudotojo paskyra.} \\
-            \textbf{7.} {Parodomas informacinis pranešimas, informuojantis apie
+            \textbf{6.} {Parodomas informacinis pranešimas, informuojantis apie
             sėkmingai įkeltus duomenis.} \\
-            \textbf{8.} \textcolor{dartmouthgreen}{Atveriama naudotojo paskyros
+            \textbf{7.} \textcolor{dartmouthgreen}{Atveriama naudotojo paskyros
             skiltis su įkeltų duomenų įrašu.} \\
-            \textbf{9. Baigiamas PA.}
+            \textbf{8. Baigiamas PA.}
         }}
         \\
         \hline
@@ -710,13 +707,11 @@ kategorijų naudotojams.}
             \textbf{5.} \textcolor{dartmouthgreen}{Suteikiamos naujos prieigos
             naujiems sistemos naudotojams.} \\
             \textbf{6.} {Atnaujinamas naudotojams suteiktų prieigų sąrašas.} \\
-            \textbf{7.} {Įrašo pakeitimo informacija išsaugoma į blokų
-            grandinę.} \\
-            \textbf{8.} {Parodomas informacinis pranešimas, informuojantis apie
+            \textbf{7.} {Parodomas informacinis pranešimas, informuojantis apie
             sėkmingai atliktą atnaujinimą.} \\
-            \textbf{9.} {Sistema informuoja atitinkamus sistemos naudotojus apie
+            \textbf{8.} {Sistema informuoja atitinkamus sistemos naudotojus apie
             prieigos teisių pasikeitimus.} \\
-            \textbf{10. Baigiamas PA.}
+            \textbf{9. Baigiamas PA.}
         }}
         \\
         \hline
@@ -735,10 +730,9 @@ kategorijų naudotojams.}
             biologinių duomenų, sąrašas.} \\
             \textbf{4.} \textcolor{dartmouthgreen}{Bandoma redaguoti suteiktas
             prieigos teises konkrečiam naudotojui.} \\
-            \textbf{5.} \textcolor{dartmouthgreen}{Parodomas informacinis
-            pranešimas, informuojantis apie nesėkmingą prieigos teisių
-            atnaujinimą (tuo atveju, jei naudotojas neaktyvus - nebedirba
-            įstaigoje, dirbančioje su kuriama sistema).} \\
+            \textbf{5.} {Parodomas informacinis pranešimas, informuojantis apie
+            nesėkmingą prieigos teisių atnaujinimą (tuo atveju, jei naudotojas
+            neaktyvus - nebedirba įstaigoje, dirbančioje su kuriama sistema).} \\
             \textbf{6. Baigiamas PA.}
         }}
         \\
@@ -796,7 +790,7 @@ kategorijų naudotojams.}
             \textbf{5.} {Sistema panaikina naudotojo asmeninius duomenis, visų
             naudotojų prieigas prie biologinių duomenų, ištrina visus su
             naudotoju susijusius duomenis iš duomenų bazių ir užfiksuoja
-            „pamiršimo“ įvykį blokų grandinėje.} \\
+            „pamiršimo“ įvykį duomenų bazėje.} \\
             \textbf{6.} {Parodomas informacinis pranešimas, informuojantis apie
             sėkmingai įgyvendintą prašymą būti pamirštam.} \\
             \textbf{7. Baigiamas PA.}
@@ -821,7 +815,7 @@ kategorijų naudotojams.}
             einamuoju metu nėra atliekama paciento pateiktų biologinių duomenų
             analizė.} \\
             \textbf{5.} {Sistema nustato, kad su
-            biologiniais duomenimis tebėra atliekami tyrimai.} \\
+            biologiniais duomenimis tebėra atliekamos analizės.} \\
             \textbf{6.} {Parodomas informacinis
             pranešimas, informuojantis apie einamuoju metu negalimą prašymo
             būti pamirštam įgyvendinimą.} \\
@@ -843,7 +837,7 @@ kategorijų naudotojams.}
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Tikslas/ uždavinys} &
         Leisti gydytojui - genetikui sukurti naują paciento kortelės įrašą su
-        informacija apie analize.\\
+        informacija apie analizę.\\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} &
         Realizavus šį panaudojimo atvejį yra sukuriamas paciento medicininės
@@ -937,7 +931,7 @@ kategorijų naudotojams.}
             \textbf{1.} \textcolor{dartmouthgreen}{Naudotojas pasirenka analizės
             pateikimo užklausos funkciją.} \\
             \textbf{2.} {Sistema pateikia paciento
-            biologinių duomenų, kuriuos galima analizuoti sąrašą.} \\
+            biologinių duomenų, kuriuos galima analizuoti, sąrašą.} \\
             \textbf{3.} \textcolor{dartmouthgreen}{Naudotojas pasirenka
             aktualius biologinius duomenis bei įveda kitą su analize susijusią
             informaciją.} \\
@@ -967,7 +961,7 @@ kategorijų naudotojams.}
             \textbf{1.} \textcolor{dartmouthgreen}{Naudotojas pasirenka analizės
             pateikimo užklausos funkciją.} \\
             \textbf{2.} {Sistema pateikia paciento
-            biologinių duomenų, kuriuos galima analizuoti sąrašą.} \\
+            biologinių duomenų, kuriuos galima analizuoti, sąrašą.} \\
             \textbf{3.} \textcolor{dartmouthgreen}{Naudotojas pasirenka
             aktualius biologinius duomenis bei įveda kitą su analize susijusią
             informaciją.} \\
@@ -1047,10 +1041,10 @@ kategorijų naudotojams.}
             \textbf{2.} \textcolor{dartmouthgreen}{Naudotojas pasirenka tinkamą
             analizės metodą, naudodamasis integruota arba išorine analizės
             vykdymo programine įranga.} \\
-            \textbf{3.} \textcolor{dartmouthgreen}{Atliekant analizę paaiškėja,
-            kad pateikti biologiniai duomenys yra nepakankami arba netinkami,
-            todėl gydytojo - genetiko siųsta analizės atlikimo užklausa yra
-            atmetama, pateikiant detalias atmetimo priežastis.} \\
+            \textbf{3.} {Atliekant analizę paaiškėja, kad pateikti biologiniai
+            duomenys yra nepakankami arba netinkami, todėl gydytojo - genetiko
+            siųsta analizės atlikimo užklausa yra atmetama, pateikiant detalias
+            atmetimo priežastis.} \\
             \textbf{4. Baigiamas PA.}
         }}
         \\
@@ -1117,7 +1111,7 @@ su jais susieti panaudojimo atvejai.
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema
         turi leisti registracijos formoje pasirinkti naudotojo kategoriją
-        iš 3 galimų: „gydytojas - genetikas“, „tyrėjas“, „pacientas“. \\
+        iš 3 galimų: „pacientas“, „gydytojas - genetikas“, „tyrėjas“. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Priklausomai
         nuo to, kokia yra naudotojo kategorija, naudotojui yra prieinamas
@@ -1190,7 +1184,7 @@ su jais susieti panaudojimo atvejai.
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistemoje
         įvedus duomenis, įkėlus biologinių duomenų failus, atlikus biologinę
-        analizę arba pateikus užklausą dėl analizės atlikimo paspaudus
+        analizę arba pateikus užklausą dėl analizės atlikimo bei paspaudus
         duomenų išsaugojimo mygtuką visi duomenys turi būti išsaugoti
         atitinkamose duomenų bazės lentelėse. \\
         \hline
@@ -1444,7 +1438,7 @@ veiksmą.
         \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
-        Visi duomenys duomenų bazėje, failų sistemoje ir blokų grandinėje yra
+        Visi duomenys duomenų bazėje ir failų sistemoje yra
         saugomi naudojant šifravimą ir negalima nustatyti nešifruotų jautrių
         duomenų nei duomenų saugyklose, nei informacijos perdavimo srautuose. \\
         \hline
@@ -1641,11 +1635,8 @@ veiksmą.
         Netenkinimas: 5, tenkinimas: 5. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
-                            after=\vspace{-1em}]
-            \item \hyperlink{FR15}{\textcolor{steelblue}{\textbf{FR15:}
-            Analizės atlikimo užklausos siuntimas}}
-        \end{itemize}
+        \hyperlink{FR15}{\textcolor{steelblue}{\textbf{FR15:}
+        Analizės atlikimo užklausos siuntimas}}
         \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
@@ -1721,11 +1712,8 @@ siuntimas.
         Netenkinimas: 5, tenkinimas: 5. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
-                            after=\vspace{-1em}]
-            \item \hyperlink{FR17}{\textcolor{steelblue}{\textbf{FR17:}
-            Prieigos prie duomenų tikrinimas}}
-        \end{itemize}
+        \hyperlink{FR17}{\textcolor{steelblue}{\textbf{FR17:}
+        Prieigos prie duomenų tikrinimas}}
         \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
@@ -1761,11 +1749,8 @@ siuntimas.
         Netenkinimas: 5, tenkinimas: 3. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Priklausomybės} &
-        \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt,
-                            after=\vspace{-1em}]
-            \item \hyperlink{FR15}{\textcolor{steelblue}{\textbf{FR15:}
-            Analizės atlikimo užklausos siuntimas}}
-        \end{itemize}
+        \hyperlink{FR15}{\textcolor{steelblue}{\textbf{FR15:}
+        Analizės atlikimo užklausos siuntimas}}
         \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Susijęs panaudojimo
@@ -1789,11 +1774,10 @@ siuntimas.
         biologinių duomenų analizę turi prieigą prie šių duomenų. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} &
-        Savarankiškos suverenios asmens tapatybės valdymo sistemoje duomenų
-        savininkas pats valdo savo duomenis ir pats suteikia prieigą prie šių
-        duomenų kitiems naudotojams, todėl prieš atliekant biologinių duomenų
-        analizę svarbu įsitikinti, ar duomenų savininkas yra davęs leidimą
-        naudoti dirbti su jo duomenimis. \\
+        Kuriamoje sistemoje duomenų savininkas pats valdo savo duomenis ir pats
+        suteikia prieigą prie šių duomenų kitiems naudotojams, todėl prieš
+        atliekant biologinių duomenų analizę svarbu įsitikinti, ar duomenų
+        savininkas yra davęs leidimą dirbti su jo duomenimis. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
@@ -1833,7 +1817,8 @@ atlikimas.
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Aprašymas} & Sistema turi
         leisti atlikti skirtingas biologinių duomenų analizes. Atliekamų
-        analizių sąrašas pateiktas \textbf{\emph{\color{red}{Priede Nr.1}}}. \\
+        analizių sąrašas pateiktas
+        \hyperref[sec:ANALYSES]{\textbf{\color{steelblue}{Priede Nr.1}}}. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Pagrindimas} & Analizių
         atlikimas su biologiniais duomenimis yra esminis sistemos
@@ -1844,7 +1829,8 @@ atlikimas.
         \raggedleft \textbf{\cellcolor{deepchampagne}Tikimo kriterijus} &
         Sistemos naudotojas - tyrėjas - gavęs biologinių duomenų atlikimo
         analizės užklausą ir turintis prieigą prie aktualių duomenų gali atlikti
-        \textbf{\emph{\color{red}{Priede Nr.1}}} aprašytas analizes. \\
+        \hyperref[sec:ANALYSES]{\textbf{\color{steelblue}{Priede Nr.1}}}
+        aprašytas analizes. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo (ne)tenkinimas} &
         Netenkinimas: 5, tenkinimas: 5. \\
@@ -1969,7 +1955,7 @@ atmetimas.
 \begin{figure}[ht]
     \begin{center}
         \captionsetup{justification=centering}
-        \includegraphics[width=1.05\linewidth]{ER.png}
+        \includegraphics[width=1.05\linewidth]{ER_V2.png}
         \vspace{-1\baselineskip}
         \caption{\small\textbf{Esybių - ryšių diagrama.}}
         \label{fig:image3}
@@ -2035,13 +2021,6 @@ tyrėjams).
         \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas tekstas -
         raidžių kombinacija, kurią gali sudaryti iki 35 simbolių. Skaitmenys ir
         simboliai negali būti naudojami.} \\
-        \hline
-        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
-            {Viešasis raktas} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Vietoje, kurioje
-        yra sistemos svečias, gali būti silpnas arba spartus internetas.} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Vietoje, kurioje
-        yra sistemos svečias, gali būti silpnas arba spartus internetas.} \\
         \hline
         \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
             {Adresas} &
@@ -2173,15 +2152,6 @@ biologinius duomenis ir valdo kitų asmenų prieigą prie šių duomenų.
             \end{itemize}
         }
         \\
-        \hline
-        \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
-            {Pseudonimas} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{4.5cm}|}{Vietoje
-        tikro naudotojo vardo naudojamas sugeneruotas raidžių, skaitmenų ir
-        simbolių kombinacijos žodis.} &
-        \multicolumn{1}{>{\raggedright\arraybackslash}m{8.5cm}|}{Laisvas
-        tekstas - raidžių, skaitmenų ir simbolių kombinacija, kurią gali
-        sudaryti iki 25 simbolių.}\\
         \hline
         \multicolumn{1}{|>{\raggedright\ttfamily\arraybackslash}m{3cm}|}
             {Užmiršimo statusas} &
@@ -2317,8 +2287,8 @@ biologinių duomenų analizę ir teikia išvadas gydytojui - genetikui.
 \newpage
 
 \noindent \textbf{E5: Esybė - \ttfamily BŪTI PAMIRŠTAM PRAŠYMAS.} Prašymas,
-kuris yra sugeneruojamas paciento, norinčio, kad jo duomenys būtų panaikinti iš
-sistemos.
+kuris yra sugeneruojamas paciento, no\-rin\-čio, kad jo duomenys būtų panaikinti
+iš sistemos.
 \label{sec:E5}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
@@ -2679,8 +2649,8 @@ siunčiama tyrėjams.
 \newpage
 
 \section{Reikalavimai sistemos išvaizdai}
-Kuriant savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistemą
-turi būti laikomąsi žemiau aprašytų sistemos išvaizdos reikalavimų.
+Kuriant pseudonimizuotą genetinių duomenų keitimosi sistemą turi būti laikomasi
+žemiau aprašytų sistemos išvaizdos reikalavimų.
 \vskip 10pt
 
 \noindent \textbf{NFR1:} Sistemos sąsaja turi būti neįkyri.
@@ -2784,8 +2754,8 @@ turi būti laikomąsi žemiau aprašytų sistemos išvaizdos reikalavimų.
 \newpage
 
 \section{Reikalavimai panaudojamumui}
-Kuriant savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistemą
-turi būti laikomąsi žemiau aprašytų panaudojamumo reikalavimų.
+Kuriant pseudonimizuotą genetinių duomenų keitimosi sistemą turi būti laikomasi
+žemiau aprašytų panaudojamumo reikalavimų.
 \vskip 10pt
 
 \noindent \textbf{NFR4:} Sistema turi būti nesudėtinga naudotis sistemos
@@ -2858,8 +2828,8 @@ suprasti sistemoje naudojamus terminus.
 \newpage
 
 \section{Reikalavimai vykdymo charakteristikoms}
-Kuriant savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistemą
-turi būti laikomąsi žemiau aprašytų vykdymo charakteristikų reikalavimų.
+Kuriant pseudonimizuotą genetinių duomenų keitimosi sistemą turi būti laikomasi
+žemiau aprašytų vykdymo charakteristikų reikalavimų.
 \vskip 10pt
 
 \noindent \textbf{NFR6:} Autentifikacijos (tapatybės patikrinimo) operacija turi
@@ -2913,7 +2883,7 @@ duomenis, turi būti atliekamas per < 500 ms.
         \raggedleft \textbf{\cellcolor{deepchampagne}Atitikimo kriterijus} & 
         Jeigu pasinaudojus įrankiu Apache JMeter laiko tarpas (vidutinis atsako
         laikas) nuo naudotojo prieigos užklausos išsiuntimo iki leidimo
-        suteikimo neviršija 500 ss, laikoma, kad nefunkcinis reikalavimas
+        suteikimo neviršija 500 ms, laikoma, kad nefunkcinis reikalavimas
         įgyvendintas. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Užsakovo tenkinimas} & 4. \\
@@ -2930,8 +2900,8 @@ duomenis, turi būti atliekamas per < 500 ms.
 \newpage
 
 \section{Reikalavimai saugumui}
-Kuriant savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistemą
-turi būti laikomąsi žemiau aprašytų saugumo reikalavimų.
+Kuriant pseudonimizuotą genetinių duomenų keitimosi sistemą turi būti laikomasi
+žemiau aprašytų saugumo reikalavimų.
 \vskip 10pt
 
 \noindent \textbf{NFR8:} Visi saugomi biologiniai duomenys turi būti šifruojami.
@@ -2967,7 +2937,7 @@ turi būti laikomąsi žemiau aprašytų saugumo reikalavimų.
 \end{table}
 
 \noindent \textbf{NFR9:} Naudotojų identifikavimo duomenys turi būti atskirti nuo
-biologinių duomenų, naudojant pseudonimizaciją ir anonimizaciją.
+biologinių duomenų, naudojant pseudonimizaciją.
 \label{sec:NFR9}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
@@ -2978,7 +2948,7 @@ biologinių duomenų, naudojant pseudonimizaciją ir anonimizaciją.
         Sistemos pažeidimo atveju turi būti užtikrintas biologinių duomenų,
         galinčių atskleisti ne tik asmens, bet ir jo šeimos narių asmeninę
         informaciją, konfidencialumas, siekiant išvengti teisės pažeidimų. Šį
-        tikslą pasiekti padeda pseudonimizavimo ir anonimizacijos procesai. \\
+        tikslą pasiekti padeda pseudonimizavimo procesas. \\
         \hline
         \raggedleft \textbf{\cellcolor{deepchampagne}Šaltinis} & Užsakovas. \\
         \hline
@@ -3002,11 +2972,11 @@ biologinių duomenų, naudojant pseudonimizaciją ir anonimizaciją.
 \newpage
 
 \section{Teisiniai reikalavimai}
-Kuriant savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistemą
-turi būti laikomąsi žemiau aprašyto teisinio reikalavimo.
+Kuriant pseudonimizuotą genetinių duomenų keitimosi sistemą turi būti laikomasi
+žemiau aprašyto teisinio reikalavimo.
 \vskip 10pt
 
-\noindent \textbf{NFR10:} Sistemoje turi būti laikomąsi BDAR reikalavimo dėl
+\noindent \textbf{NFR10:} Sistemoje turi būti laikomasi BDAR reikalavimo dėl
 pacientų duomenų pseudonimizavimo.
 \label{sec:NFR10}
 \begin{table}[htb!]
@@ -3046,10 +3016,9 @@ pacientų duomenų pseudonimizavimo.
 
 \section{Uždaviniai}
 \subsection{Sistemos pateikimo žingsniai (etapai)}
-Savarankiškos suverenios pseudonimizuotos tapatybės valdymo sistema kuriama
-etapais, kur žemiau pateiktoje lentelėje
-(\hyperref[sec:PATEIKIMO_ETAPAI]{11 lentelė}) aprašyti tarpiniai sistemos kūrimo
-eigoje pasiekti rezultatai.
+Pseudonimizuota genetinių duomenų keitimosi sistema kuriama etapais, kur žemiau
+pateiktoje lentelėje (\hyperref[sec:PATEIKIMO_ETAPAI]{12 lentelė}) aprašyti
+tarpiniai sistemos kūrimo eigoje pasiekti rezultatai.
 
 \label{sec:PATEIKIMO_ETAPAI}
 \begin{table}[htb!]
@@ -3114,13 +3083,12 @@ eigoje pasiekti rezultatai.
 \newpage
 
 \subsection{Vystymo etapai}
-Sistemos vystymas suskaidytas į atskirus etapus, kurie aprašyti žemiau
-pateikiamuose skyriuose.
+Sistemos vystymas suskaidytas į atskirus etapus:
 
 \subsubsection*{\noindent \textbf{1.} Grafinės naudotojo sąsajos sukūrimas
 \emph{(registracijos modulis)}}
 
-\noindent Etapas turi būti įgyvendintas iki 2025-09-01. Susiję reikalavimai:
+\noindent Etapas turi būti įgyvendintas iki 2025-10-01. Susiję reikalavimai:
 
 \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt, after=\vspace{-1em}]
     \item \hyperlink{FR1}{\textcolor{steelblue}{\textbf{FR1:} Registracijos
@@ -3130,30 +3098,44 @@ pateikiamuose skyriuose.
 \end{itemize}
 
 \subsubsection*{\noindent \textbf{2.} Grafinės naudotojo sąsajos sukūrimas
-\emph{(gydytojų - genetikų modulis)}}
-
-\noindent Etapas turi būti įgyvendintas iki 2025-09-01. Susiję reikalavimai:
-\begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt, after=\vspace{-1em}]
-    \item \hyperlink{FR15}{\textcolor{steelblue}{\textbf{FR15:} Analizės
-    atlikimo užklausos siuntimas}}
-\end{itemize}
-
-\subsubsection*{\noindent \textbf{3.} Grafinės naudotojo sąsajos sukūrimas
 \emph{(pacientų modulis)}}
 
-\noindent Etapas turi būti įgyvendintas iki 2025-09-01. Susiję reikalavimai:
+\noindent Etapas turi būti įgyvendintas iki 2025-10-25. Susiję reikalavimai:
 
 \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt, after=\vspace{-1em}]
     \item \hyperlink{FR13}{\textcolor{steelblue}{\textbf{FR13:} Duomenų prieigos
     valdymas}}
     \item \hyperlink{FR14}{\textcolor{steelblue}{\textbf{FR14:} Naudotojo
     duomenų naikinimas}}
+    \item \hyperlink{FR17}{\textcolor{steelblue}{\textbf{FR17:} Prieigos prie
+    duomenų tikrinimas}}
 \end{itemize}
 
-\subsubsection*{\noindent \textbf{4.} Sistemoje įvedamų duomenų saugojimas
+\subsubsection*{\noindent \textbf{3.} Grafinės naudotojo sąsajos sukūrimas
+\emph{(gydytojų - genetikų modulis)}}
+
+\noindent Etapas turi būti įgyvendintas iki 2025-10-25. Susiję reikalavimai:
+\begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt, after=\vspace{-1em}]
+    \item \hyperlink{FR15}{\textcolor{steelblue}{\textbf{FR15:} Analizės
+    atlikimo užklausos siuntimas}}
+\end{itemize}
+
+\subsubsection*{\noindent \textbf{4.} Grafinės naudotojo sąsajos sukūrimas
+\emph{(tyrėjų modulis)}}
+
+\noindent Etapas turi būti įgyvendintas iki 2025-10-25. Susiję reikalavimai:
+\begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt, after=\vspace{-1em}]
+    \item \hyperlink{FR16}{\textcolor{steelblue}{\textbf{FR16:} Analizės
+    atlikimo užklausos gavimas}}
+    \item \hyperlink{FR18}{\textcolor{steelblue}{\textbf{FR18:} Biologinių
+    duomenų analizės atlikimas}}
+\end{itemize}
+
+
+\subsubsection*{\noindent \textbf{5.} Sistemoje įvedamų duomenų saugojimas
 duomenų bazėje ir šifravimo realizavimas}
 
-\noindent Etapas turi būti įgyvendintas iki 2025-09-01. Susiję reikalavimai:
+\noindent Etapas turi būti įgyvendintas iki 2025-11-15. Susiję reikalavimai:
 
 \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt, after=\vspace{-1em}]
     \item \hyperlink{FR3}{\textcolor{steelblue}{\textbf{FR3:} Formų
@@ -3177,10 +3159,10 @@ duomenų bazėje ir šifravimo realizavimas}
     informacijos redagavimas}}
 \end{itemize}
 
-\subsubsection*{\noindent \textbf{5.} Biologinių analizių funkcionalumo
+\subsubsection*{\noindent \textbf{6.} Biologinių analizių funkcionalumo
 realizavimas}
 
-\noindent Etapas turi būti įgyvendintas iki 2025-09-01. Susiję reikalavimai:
+\noindent Etapas turi būti įgyvendintas iki 2025-10-25. Susiję reikalavimai:
 
 \begin{itemize}[leftmargin=0.3cm, itemsep=-7pt, topsep=1pt, after=\vspace{-1em}]
     \item \hyperlink{FR18}{\textcolor{steelblue}{\textbf{FR18:} Biologinių
@@ -3194,30 +3176,10 @@ realizavimas}
 \newpage
 
 \section{Rizikos ir jų valdymas}
-\noindent \textbf{R1:} Pakeisti ar sugadinti biologiniai duomenys gali lemti
-neteisingą analizę.
-
-\label{sec:R1}
-\begin{table}[htb!]
-    \captionsetup{justification=centering}
-    \vskip -10pt
-    \begin{tabular}{|m{3cm}|m{13.7cm}|}
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Valdymas} &
-        Biologinius duomenis integruoti į blokų grandinę, siekiant užtikrinti
-        duomenų nekintamumą. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Tikimybė} & Žema. \\
-        \hline
-        \raggedleft \textbf{\cellcolor{deepchampagne}Poveikis} & Aukštas. \\
-        \hline
-    \end{tabular}
-\end{table}
-
-\noindent \textbf{R2:} Nepaisant pseudonimizavimo, biologiniai duomenys gali
+\noindent \textbf{R1:} Nepaisant pseudonimizavimo, biologiniai duomenys gali
 būti susieti su konkrečiais asmenimis.
 
-\label{sec:R2}
+\label{sec:R1}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \vskip -10pt
@@ -3234,10 +3196,10 @@ būti susieti su konkrečiais asmenimis.
     \end{tabular}
 \end{table}
 
-\noindent \textbf{R3:} Sistemoje realizuotas funkcionalumas gali neatitikti
+\noindent \textbf{R2:} Sistemoje realizuotas funkcionalumas gali neatitikti
 asmens duomenų apsaugos reikalavimų.
 
-\label{sec:R3}
+\label{sec:R2}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \vskip -10pt
@@ -3254,10 +3216,10 @@ asmens duomenų apsaugos reikalavimų.
     \end{tabular}
 \end{table}
 
-\noindent \textbf{R4:} Dėl sistemos gedimo ar neteisingo atsarginio kopijavimo
+\noindent \textbf{R3:} Dėl sistemos gedimo ar neteisingo atsarginio kopijavimo
 gali būti prarasti duomenys.
 
-\label{sec:R4}
+\label{sec:R3}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \vskip -10pt
@@ -3275,10 +3237,10 @@ gali būti prarasti duomenys.
     \end{tabular}
 \end{table}
 
-\noindent \textbf{R5:} Sistemos veikimo sutrikimai, galintys kilti po
+\noindent \textbf{R4:} Sistemos veikimo sutrikimai, galintys kilti po
 sistemos diegimo į užsakovo aplinkas.
 
-\label{sec:R5}
+\label{sec:R4}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \vskip -10pt
@@ -3297,9 +3259,9 @@ sistemos diegimo į užsakovo aplinkas.
     \end{tabular}
 \end{table}
 
-\noindent \textbf{R6:} Dėl nenumatytų priežasčių gali vėluoti projektas -
+\noindent \textbf{R5:} Dėl nenumatytų priežasčių gali vėluoti projektas -
 sistema gali būti sudiegta vėliau nei yra numatyta projekto plane.
-\label{sec:R6}
+\label{sec:R5}
 \begin{table}[htb!]
     \captionsetup{justification=centering}
     \vskip -10pt
@@ -3364,6 +3326,7 @@ tačiau teoriniame lygmenyje pagal
 \newpage
 
 \section{Priedai}
+\label{sec:ANALYSES}
 \subsection{Priedas A - Kokybinių analizių sąrašas}
 
 \begin{table}[htb!]
@@ -3410,7 +3373,7 @@ tačiau teoriniame lygmenyje pagal
         nustatymas} \\
         \hline
         Sudaromos lentelės, kuriose aprašyta, su kokiais biologiniais procesais,
-        molekulinėmis funkcijomis bei ląsteliniais komponenentais susijusios
+        molekulinėmis funkcijomis bei ląsteliniais komponentais susijusios
         praturtintos sekos. \\
         \hline
         \textbf{\cellcolor{deepchampagne}\emph{\color{red}{3. Pildoma ligas
