@@ -83,46 +83,46 @@ validate_personal_code <- function(personal_code) {
 }
 
 # User e-mail address validations:
-validate_email <- function(email) {
+validate_email <- function(input_id, text_value) {
 	errors <- c()
-	hideFeedback("email")
+	hideFeedback(input_id)
 
-	if (grepl(EMAIL, email) == FALSE && email != "") {
+	if (grepl(EMAIL, text_value) == FALSE && text_value != "") {
 		errors <- c(errors, "Įvesti neteisingi el. pašto simboliai!")
 	}
 
-	if (nchar(email) > 50) {
+	if (nchar(text_value) > 50) {
 		errors <-
 			c(errors, "El. paštą negali sudaryti daugiau nei 50 simbolių!")
 	}
 
 	if (length(errors) > 0) {
-		showFeedbackDanger("email", paste(errors, collapse = "<br>"),
+		showFeedbackDanger(inputId = input_id, paste(errors, collapse = "<br>"),
 						   color = "red")
 		return(errors)
 	}
 }
 
 # User phone number validations:
-validate_phone <- function(phone) {
+validate_phone <- function(input_id, text_value) {
 	errors <- c()
-	hideFeedback("phone")
+	hideFeedback(input_id)
 
-	if (phone == "") {
+	if (text_value == "") {
 		errors <- c(errors, "Privaloma nurodyti telefono numerį!")
 	}
 
-	if (grepl(PHONE, phone) == FALSE && phone != "") {
+	if (grepl(PHONE, text_value) == FALSE && text_value != "") {
 		errors <- c(errors, "Telefono numeris neatitinka formato!")
 	}
 
-	if (nchar(phone) > 14) {
+	if (nchar(text_value) > 14) {
 		errors <-
 			c(errors, "Tel. numerio negali sudaryti daugiau nei 14 simbolių!")
 	}
 
 	if (length(errors) > 0) {
-		showFeedbackDanger("phone", paste(errors, collapse = "<br>"),
+		showFeedbackDanger(inputId = input_id, paste(errors, collapse = "<br>"),
 						   color = "red")
 		return(errors)
 	}
@@ -210,4 +210,19 @@ validate_text <- function(input_id, text_value) {
 	}
 }
 
+phone_email_exists <- function(input_id, text_value) {
+	errors <- c()
+	hideFeedback(input_id)
+
+	if (text_value == "") {
+		errors <-
+			c(errors, "Privaloma nurodyti telefono numerį arba el. pašto adresą!")
+	}
+	
+	if (length(errors) > 0) {
+		showFeedbackDanger(inputId = input_id, paste(errors, collapse = "<br>"),
+						   color = "red")
+		return(errors)
+	}
+}
 # nolint end
