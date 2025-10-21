@@ -6,11 +6,8 @@ p_load(shiny, data.table, rtracklayer, ggplot2, ggthemes, plyranges, ggpubr,
        BRGenomics, reshape2, plotly, heatmaply, dplyr, gplots, genomation,
        Biostrings, scales, GenomicRanges, DT, shinythemes, shinycustomloader,
        ggseqlogo, ChIPseeker, tools, reactable, annotables, enrichplot,
-       clusterProfiler, shinyalert, rjson, ensembldb, deepredeff, rBLAST)
-
-library(shinyjs)
-
-p_load(DBI, RMySQL, shinyFeedback)
+       clusterProfiler, shinyalert, rjson, ensembldb, deepredeff, rBLAST,
+       shinyjs, DBI, RMySQL, shinyFeedback)
 
 # Declaration of options:
 options(scipen = 100)
@@ -28,8 +25,6 @@ MODULES           <- paste0(APP, "Modules/")
 PATIENT_MODULE    <- paste0(MODULES, "Patient/")
 DOCTOR_MODULE     <- paste0(MODULES, "Doctor/")
 RESEARCHER_MODULE <- paste0(MODULES, "Researcher/")
-
-print(RESEARCHER_MODULE)
 
 source(FUNCTIONS)
 source(VALIDATIONS)
@@ -147,7 +142,13 @@ server <- function(input, output, session) {
         showNotification("Naudotojas sėkmingai sukurtas!", type = "message",
                          closeButton = TRUE, duration = 2)
 
-        if (input$role == "Gydytojas") {
+        if (input$role == "Pacientas") {
+          source(paste0(PATIENT_MODULE, "ui.R"), local = TRUE)
+          output$main_ui <- renderUI({patient_ui("patient")})
+          source(paste0(PATIENT_MODULE, "server.R"), local = TRUE)
+          callModule(patient_server, "patient")
+        }
+        else if (input$role == "Gydytojas") {
           source(paste0(DOCTOR_MODULE, "ui.R"), local = TRUE)
           output$main_ui <- renderUI({doctor_ui("doctor")})
           source(paste0(DOCTOR_MODULE, "server.R"), local = TRUE)
@@ -172,6 +173,7 @@ server <- function(input, output, session) {
 
   ######################### PRISIJUNGIMO LANGO LOGIKA ##########################
   observeEvent(input$login_btn, {
+    select_exp <- "SELECT Vardas, Pavarde, Kategorija FROM ASMUO WHERE "
     con <-
       dbConnect(RMySQL::MySQL(), dbname = "GeneticDataExchangeSystem",
                 host = "127.0.0.1", user = "root",
@@ -179,44 +181,91 @@ server <- function(input, output, session) {
                 client.flag = CLIENT_MULTI_STATEMENTS + CLIENT_LOCAL_FILES)
 
     if (input$login_phone == "" && input$login_email != "") {
-        ERRORS <- c(ERRORS, validate_email("login_email", input$login_email))
-      }
-      if (input$login_phone != "" && input$login_email == "") {
-        ERRORS <- c(ERRORS, validate_phone("login_phone", input$login_phone))
-      }
-      if (input$login_phone == "" && input$login_email == "") {
-        ERRORS <- c(ERRORS, phone_email_exists("login_phone", input$login_phone))
-        ERRORS <- c(ERRORS, phone_email_exists("login_email", input$login_email))
-      }
-
-      else {
-        ERRORS <- c(ERRORS, validate_email("login_email", input$login_email))
-        ERRORS <- c(ERRORS, validate_phone("login_phone", input$login_phone))
-      }
-    
+      ERRORS <- c(ERRORS, validate_email("login_email", input$login_email))
+    }
+    else if (input$login_phone != "" && input$login_email == "") {
+      ERRORS <- c(ERRORS, validate_phone("login_phone", input$login_phone))
+    }
+    else if (input$login_phone == "" && input$login_email == "") {
+      ERRORS <- c(ERRORS, phone_email_exists("login_phone", input$login_phone))
+      ERRORS <- c(ERRORS, phone_email_exists("login_email", input$login_email))
+    }
+    else {
+      ERRORS <- c(ERRORS, validate_email("login_email", input$login_email))
+      ERRORS <- c(ERRORS, validate_phone("login_phone", input$login_phone))
+    }
     
     if (length(ERRORS) == 0) {
       tryCatch({
-        user <-
-          dbGetQuery(con,
-                     paste0("SELECT Vardas FROM ASMUO WHERE Tel_numeris = '",
-                     input$login_phone, "';")
-          )
+        user <- list()
+
+        if (input$login_phone == "" && input$login_email != "") {
+          user <-
+            dbGetQuery(
+              con, 
+              paste0(select_exp, "El_pastas = '", input$login_email, "';")
+            )
+        }
+        else if (input$login_phone != "" && input$login_email == "") {
+          user <-
+            dbGetQuery(
+              con, 
+              paste0(select_exp, "Tel_numeris = '", input$login_phone, "';")
+            )
+        }
+        else {
+          user <-
+            dbGetQuery(
+              con, 
+              paste0(select_exp,
+                    "Tel_numeris = '", input$login_phone, "' AND ",
+                    "El_pastas = '", input$login_email, "';")
+              )
+        }
+
+        if (nrow(user) == 0) {
+          showNotification("Naudotojas nesurastas!", type = "error",
+                            closeButton = TRUE, duration = 2)
+        }
+        else {
+          if (user$Kategorija == "Pacientas") {
+            showNotification("Atidaromas pacientų modulis...", type = "message",
+                              closeButton = TRUE, duration = 1)
+            source(paste0(PATIENT_MODULE, "ui.R"), local = TRUE)
+            output$main_ui <- renderUI({patient_ui("patient")})
+            source(paste0(PATIENT_MODULE, "server.R"), local = TRUE)
+            callModule(patient_server, "patient")
+          }
+          else if (user$Kategorija == "Gydytojas") {
+            showNotification("Atidaromas gydytojų modulis...", type = "message",
+                              closeButton = TRUE, duration = 1)
+            source(paste0(DOCTOR_MODULE, "ui.R"), local = TRUE)
+            output$main_ui <- renderUI({doctor_ui("doctor")})
+            source(paste0(DOCTOR_MODULE, "server.R"), local = TRUE)
+            callModule(doctor_server, "doctor")
+          }
+          else if (user$Kategorija == "Tyrėjas") {
+            showNotification("Atidaromas tyrėjų modulis...", type = "message",
+                              closeButton = TRUE, duration = 1)
+            source(paste0(RESEARCHER_MODULE, "ui.R"), local = TRUE)
+            output$main_ui <- renderUI({researcher_ui("researcher")})
+            source(paste0(RESEARCHER_MODULE, "server.R"), local = TRUE)
+            callModule(researcher_server, "researcher")
+          }
+        }
       }, error = function(e) {
         print(e)
-        
       }, finally = {
         dbDisconnect(con)
       })
     } else {
-      showNotification("Klaida bandant prisijungti!", type = "error",
+      showNotification("Ištaisykite klaidas!", type = "error",
                         closeButton = TRUE, duration = 2)
     }
-    
-    
-    
   })
 
+  ########################### PAPILDOMŲ LAUKŲ SKILTYS ##########################
+  #################### (GYDYTOJŲ IR TYRĖJŲ KATEGORIJAI) ########################
   output$extraFields <- renderUI({
     if (input$role == "Gydytojas") {
       wellPanel(
