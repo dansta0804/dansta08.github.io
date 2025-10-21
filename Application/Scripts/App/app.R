@@ -1,13 +1,4 @@
 # nolint start
-library(pacman)
-
-# Library loading:
-p_load(shiny, data.table, rtracklayer, ggplot2, ggthemes, plyranges, ggpubr,
-       BRGenomics, reshape2, plotly, heatmaply, dplyr, gplots, genomation,
-       Biostrings, scales, GenomicRanges, DT, shinythemes, shinycustomloader,
-       ggseqlogo, ChIPseeker, tools, reactable, annotables, enrichplot,
-       clusterProfiler, shinyalert, rjson, shiny, shinythemes, shinydashboard)
-
 library(BiocManager)
 options(repos = BiocManager::repositories())
 
@@ -32,3 +23,14 @@ shinyApp(ui = ui, server = server)
 
 # 3. Slaptažodžių saugojimas DB. Reikia išsiaiškinti, kaip geriausia
 # saugoti slaptažodžius DB (hash + salt?).
+
+# 4. Pereiti prie gydytojų modulio kūrimo:
+#   4.1. Sukurti gydytojo UI (panašiai kaip researcher_ui.R), kad būtų galima
+#        pasirinkti pacientą, sukurti paciento kortelę, pateikti užklausą
+#        tyrėjui.
+
+# 5. Praplėsti tyrėjų modulį:
+#   5.1. Sukurti skiltį, kurioje būtų galima matyti visas gautas užklausas ir
+#        inicijuoti analizių, nurodytų užklausoje, vykdymą.
+
+# 6. Reikia pakoreguoti validacijų logiją, nes dabar kiek kreivai veikia. [DONE]
