@@ -107,8 +107,8 @@ validate_email <- function(input_id, text_value) {
 validate_phone <- function(input_id, text_value) {
 	errors <- c()
 	hideFeedback(input_id)
-
-	if (text_value == "") {
+	
+	if (text_value == "" && input_id != "login_phone") {
 		errors <- c(errors, "Privaloma nurodyti telefono numerį!")
 	}
 
