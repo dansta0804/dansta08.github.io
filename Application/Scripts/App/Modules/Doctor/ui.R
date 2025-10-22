@@ -5,7 +5,7 @@ p_load(shiny, shinythemes, shinydashboard, shinycustomloader, reactable)
 doctor_ui <- function(id) {
   ns <- NS(id)
   navbarPage(
-    "Pseudonimizuota genetinių duomenų keitimosi sistema",
+    "Pseudonimizuota genetinių duomenų keitimosi sistema - Gydytojų modulis",
     theme = shinytheme("cosmo"),
     includeCSS("Application/Scripts/App/styles.css"),
     tabPanel(
@@ -70,27 +70,28 @@ doctor_ui <- function(id) {
       "Užklausos sukūrimas",
       sidebarLayout(
         sidebarPanel(
-          width = 4,
-          p("Pasirinkite vieną arba kelis pateiktus mėginius, kurių duomenų
-            kokybę vertinsite:", style = "font-weight:bold; font-size:17px;
-            margin-left:0px"),
+          width = 5,
+          p(class = "titles", "Sukurtos užklausos", style = "margin-left:0px"),
           DT::dataTableOutput(ns("samples2"))
         ),
         mainPanel(
-          width = 8,
-          tabsetPanel(
-            tabPanel(
-              "Pikų skaičius mėginiuose", 
-              p("Pateiktoje stulpelinėje diagramoje pavaizduota, kiek yra pikų
-                kiekviename pateiktame BED formato faile:"),
-              shinydashboard::box(
-                width = 12, 
-                withLoader(
-                  plotOutput(ns("plot1")), type = "html", loader = "dnaspin"
-                ),
-                downloadButton("download1", "Atsisiųsti vaizdą")
-              )
-            )
+          width = 7,
+          wellPanel(
+            p(class = "titles", "Analizės užklausos sukūrimas"),
+            textInput("genetic_data_id", "Biologiniai duomenys:"),
+            selectInput("researcher", "Tyrėjas:",
+                        list("Pacientas" = "Pacientas", "Gydytojas" = "Gydytojas",
+                             "Tyrėjas" = "Tyrėjas", "Nenurodyta" = "Nenurodyta"),
+                        selected = "Nenurodyta", multiple = FALSE),
+            textInput("author", "Analizės autorius:"),
+            textInput("objective", "Analizės tikslas:"),
+            textInput("analysis_creation_date", "Sukūrimo data:"), # užfiksuojama po mygtuko paspaudimo
+            textInput("analysis_deadline", "Pateikimo terminas:"),
+            br(), br(),
+            actionButton("create_analysis_request_btn", "Išsaugoti",
+                        class = "btn-primary btn-block"),
+            br(), br(),
+            textOutput("signup_message") # turi būti success message apie sėkmingai sukurtą analizės užklausą
           )
         )
       )
