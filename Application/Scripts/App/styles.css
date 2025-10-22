@@ -19,9 +19,62 @@ body {
 }
 
 .nav-tabs {
-        display: flex;
-        justify-content: flex-end;
-      }
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid #ada0a0;
+}
+
+/* First level tab panel styling: */
+.nav-tabs>li a[data-value='kokybes_vertinimas'],
+.nav-tabs>li a[data-value='biologines_analizes'] {
+    background-color: #c2a1a1;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 20px 20px 0 0;
+}
+
+.nav-tabs>li a:hover[data-value='kokybes_vertinimas'],
+.nav-tabs>li a:hover[data-value='biologines_analizes'] {
+    background-color: #683030;
+    color: #ffffff;
+}
+
+.nav-tabs>li.active a[data-value='kokybes_vertinimas'],
+.nav-tabs>li.active a[data-value='biologines_analizes'] {
+    background-color: #683030;
+    color: #ffffff;
+}
+
+/* Second level tab panel styling: */
+.nav-tabs>li a[data-value='piku_skaicius_meginiuose'],
+.nav-tabs>li a[data-value='piku_skaicius_chr'],
+.nav-tabs>li a[data-value='genomine_distribucija'],
+.nav-tabs>li a[data-value='psm_atitikimai'],
+.nav-tabs>li a[data-value='go_analize'] {
+    background-color: #f1c599;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 20px 20px 0 0;
+}
+
+.nav-tabs>li a:hover[data-value='piku_skaicius_meginiuose'],
+.nav-tabs>li a:hover[data-value='piku_skaicius_chr'],
+.nav-tabs>li a:hover[data-value='genomine_distribucija'],
+.nav-tabs>li a:hover[data-value='psm_atitikimai'],
+.nav-tabs>li a:hover[data-value='go_analize'] {
+    background-color: #a05d19;
+    color: #ffffff;
+}
+
+.nav-tabs>li.active a[data-value='piku_skaicius_meginiuose'],
+.nav-tabs>li.active a[data-value='piku_skaicius_chr'],
+.nav-tabs>li.active a[data-value='genomine_distribucija'],
+.nav-tabs>li.active a[data-value='psm_atitikimai'],
+.nav-tabs>li.active a[data-value='go_analize'] {
+    background-color: #a05d19;
+    color: #ffffff;
+}
 
 .titles {
     color:#4e2121;
