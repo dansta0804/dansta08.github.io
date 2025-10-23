@@ -26,7 +26,19 @@ ERRORS <- c()
 source(FUNCTIONS)
 source(VALIDATIONS)
 
-researcher_server <- function(input, output, session) {
+researcher_server <- function(input, output, session, user) {
+  output$res_user <- renderText({
+    paste0(user$Vardas, " ", user$Pavarde)
+  })
+  
+  updateTextInput(session, "res_name", value = user$Vardas)
+  updateTextInput(session, "res_surname", value = user$Pavarde)
+  updateTextInput(session, "res_code", value = user$Asmens_kodas)
+  updateSelectInput(session, "res_gender", selected = user$Lytis)
+  updateTextInput(session, "res_address", value = user$Adresas)
+  updateTextInput(session, "res_phone", value = user$Tel_numeris)
+  updateTextInput(session, "res_email", value = user$El_pastas)
+
   json <- fromJSON(file = paste0(INPUT, "genome_data.json"))
   genome <- reactive({unlist(json[[input$organism]][3])})
   converted_table <- data.frame(matrix(ncol = 4, nrow = 0))
