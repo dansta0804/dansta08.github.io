@@ -65,9 +65,11 @@ server <- function(input, output, session) {
             uiOutput("extraFields"),
             br(), br(),
             passwordInput("password", "Slaptažodis:"),
-            
-            actionButton("signup_btn", "Registruotis",
-                        class = "btn-primary btn-block"),
+            div(
+              style = "display: flex; justify-content: center;",
+              actionButton("signup_btn", "Registruotis",
+                            class = "btn-primary btn-block")
+            ),
             br(), br(),
             textOutput("signup_message")
           )
@@ -84,8 +86,11 @@ server <- function(input, output, session) {
             textInput("login_email", "El. pašto adresas:"),
             textInput("login_phone", "Tel. numeris:"),
             passwordInput("password", "Slaptažodis:"),
-            actionButton("login_btn", "Prisijungti",
-                        class = "btn-primary btn-block"),
+            div(
+              style = "display: flex; justify-content: center;",
+              actionButton("login_btn", "Prisijungti",
+                        class = "btn-primary btn-block")
+            ),
             br(), br(),
             textOutput("login_message")
           )
@@ -149,10 +154,24 @@ server <- function(input, output, session) {
           callModule(patient_server, "patient")
         }
         else if (input$role == "Gydytojas") {
+          doc_data <- data.frame(
+            Asmens_kodas = input$personal_code,
+            Licencijos_Nr = input$licence,
+            Specializacija = input$specialization,
+            Institucija = input$institution_doc,
+            stringsAsFactors = FALSE
+          )
+
+          dbWriteTable(con, "GYDYTOJAS", doc_data, append = TRUE,
+                       row.names = FALSE)
+
           source(paste0(DOCTOR_MODULE, "ui.R"), local = TRUE)
           output$main_ui <- renderUI({doctor_ui("doctor")})
           source(paste0(DOCTOR_MODULE, "server.R"), local = TRUE)
-          callModule(doctor_server, "doctor")
+
+          unique_cols_doc <- setdiff(names(doc_data), names(new_user))
+          doctor <- cbind(new_user, doc_data[, unique_cols_doc, drop = FALSE])
+          callModule(doctor_server, "doctor", user = doctor)
         }
         else if (input$role == "Tyrėjas") {
           source(paste0(RESEARCHER_MODULE, "ui.R"), local = TRUE)
@@ -173,7 +192,8 @@ server <- function(input, output, session) {
 
   ######################### PRISIJUNGIMO LANGO LOGIKA ##########################
   observeEvent(input$login_btn, {
-    select_exp <- "SELECT Vardas, Pavarde, Kategorija FROM ASMUO WHERE "
+    select_exp <- "SELECT * FROM ASMUO WHERE "
+    select_exp2 <- "SELECT * FROM GYDYTOJAS WHERE "
     con <-
       dbConnect(RMySQL::MySQL(), dbname = "GeneticDataExchangeSystem",
                 host = "127.0.0.1", user = "root",
@@ -234,7 +254,7 @@ server <- function(input, output, session) {
             source(paste0(PATIENT_MODULE, "ui.R"), local = TRUE)
             output$main_ui <- renderUI({patient_ui("patient")})
             source(paste0(PATIENT_MODULE, "server.R"), local = TRUE)
-            callModule(patient_server, "patient")
+            callModule(patient_server, "patient", user = user)
           }
           else if (user$Kategorija == "Gydytojas") {
             showNotification("Atidaromas gydytojų modulis...", type = "message",
@@ -242,7 +262,16 @@ server <- function(input, output, session) {
             source(paste0(DOCTOR_MODULE, "ui.R"), local = TRUE)
             output$main_ui <- renderUI({doctor_ui("doctor")})
             source(paste0(DOCTOR_MODULE, "server.R"), local = TRUE)
-            callModule(doctor_server, "doctor")
+            doc <-
+              dbGetQuery(
+                con, 
+                paste0(select_exp2,
+                      "Asmens_kodas = '", user$Asmens_kodas, "';")
+              )
+
+            unique_cols_doc <- setdiff(names(doc), names(user))
+            doctor <- cbind(user, doc[, unique_cols_doc, drop = FALSE])
+            callModule(doctor_server, "doctor", user = doctor)
           }
           else if (user$Kategorija == "Tyrėjas") {
             showNotification("Atidaromas tyrėjų modulis...", type = "message",
@@ -250,7 +279,7 @@ server <- function(input, output, session) {
             source(paste0(RESEARCHER_MODULE, "ui.R"), local = TRUE)
             output$main_ui <- renderUI({researcher_ui("researcher")})
             source(paste0(RESEARCHER_MODULE, "server.R"), local = TRUE)
-            callModule(researcher_server, "researcher")
+            callModule(researcher_server, "researcher", user = user)
           }
         }
       }, error = function(e) {
