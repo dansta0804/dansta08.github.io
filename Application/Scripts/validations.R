@@ -6,7 +6,7 @@ PATTERN <- "^[a-ząčęėįšųūž]+$"
 PCODE <- "^[0-9]+$"
 EMAIL <- "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
 PHONE <- "^\\+370 ?[0-9]{3} ?[0-9]{5}$"
-TEXTS <- "^[a-z0-9ąčęėįšųū\\.,\\-]+$"
+TEXTS <- "^[a-z0-9 ąčęėįšųū\\.,\\-]+$"
 
 # User name validations:
 validate_name <- function(name) {
